@@ -1,0 +1,417 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Coffeescript RequireJS and You! &#8211; Donald Hutchison</title>
+<meta name="description" content="
+  
+    Contents
+  
+
+
+  
+
+
+">
+<meta name="keywords" content="coffeescript, requirejs, amd, web development">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Coffeescript RequireJS and You!">
+<meta name="twitter:description" content="
+  
+    Contents
+  
+
+
+  
+
+
+">
+<meta name="twitter:site" content="@rev_kachowski">
+<meta name="twitter:creator" content="@rev_kachowski">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="/images/Coffee-Art-by-Michael-Breach-1848851.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Coffeescript RequireJS and You!">
+<meta property="og:description" content="
+  
+    Contents
+  
+
+
+  
+
+
+">
+<meta property="og:url" content="/articles/coffeescript-requirejs-and-you/">
+<meta property="og:site_name" content="Donald Hutchison">
+
+
+
+
+
+<link rel="canonical" href="/articles/coffeescript-requirejs-and-you/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Donald Hutchison Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<!-- Webfonts -->
+<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="/" >Home</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/about/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/articles/" >Articles</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/projects/" >Projects</a></li>
+		  
+        <li class="dosearch"><span><i class="fa fa-search"></i> Search</span></li>
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<div class="search-wrapper">
+  <div class="search-form">
+    <input type="text" class="search-field" placeholder="Search...">
+    <button class="close-btn"><i class="fa fa-times-circle fa-2x"></i></button>
+    <ul class="search-results post-list"></ul><!-- /.search-results -->
+  </div><!-- /.search-form -->
+</div><!-- ./search-wrapper -->
+
+<header class="masthead">
+	
+		<div class="wrap">
+			<a href="" class="site-logo" rel="home" title="Donald Hutchison"><img src="/images/site-logo.png" width="200" height="200" alt="Donald Hutchison logo" class="animated bounceInDown"></a>
+		</div>
+	
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <img src="/images/Coffee-Art-by-Michael-Breach-1848851.jpg" class="entry-feature-image" alt="Coffeescript RequireJS and You!" >
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="/tags/#coffeescript" title="Pages tagged coffeescript">coffeescript</a>&nbsp;&bull;&nbsp;<a href="/tags/#requirejs" title="Pages tagged requirejs">requirejs</a>&nbsp;&bull;&nbsp;<a href="/tags/#amd" title="Pages tagged amd">amd</a>&nbsp;&bull;&nbsp;<a href="/tags/#web development" title="Pages tagged web development">web development</a></span>
+        
+          <h1 class="entry-title">Coffeescript RequireJS and You!</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="/images/portrait.png" class="bio-photo" alt="Donald Hutchison bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Donald Hutchison</span></span>
+        <span class="entry-date date published"><time datetime="2012-04-24T00:00:00+02:00"><i class="fa fa-calendar-o"></i> April 24, 2012</time></span>
+        
+        
+        
+        
+      </footer>
+      <div class="entry-content">
+        <section id="table-of-contents" class="toc">
+  <header>
+    <h3>Contents</h3>
+  </header>
+<div id="drawer">
+<ul id="markdown-toc">
+  <li><a href="#best-friends-together-at-last">Best friends together at last!</a></li>
+  <li><a href="#oh-no-save-me-requirejs">Oh no save me, RequireJS!</a></li>
+  <li><a href="#lets-go">Let’s Go</a></li>
+</ul>
+
+  </div>
+
+</section>
+
+<h2 id="best-friends-together-at-last">Best friends together at last!</h2>
+
+<p>So you want to create a javascript application with some kind of non trivial complexity, but separating the functionality out into different script files gets hairy. You need to forward declare certain functions before you execute certain functions, and things need to be loaded before they can be displayed. </p>
+
+<p>Then when you add <a href="http://coffeescript.org/">CoffeeScript</a> into the mix you’ve got a whole new set of problems. Ultimately you want one big file containing the logic of your application, but unless you’ve passed your discrete <i>.coffee </i>files to the coffee compiler (or included them in the head of your html) in a specific order, you won’t be able to execute functions before they’ve been declared. </p>
+
+<h2 id="oh-no-save-me-requirejs">Oh no save me, RequireJS!</h2>
+
+<p>What <a href="http://requirejs.org/">RequireJS</a> does in this situation is provide a solution to the dependency problem mentioned above. What you do is create your separate script files to the <a href="https://github.com/amdjs/amdjs-api/wiki/AMD">AMD</a> format, which tells you to explicitly mention the files (modules) that each script file depends upon. You do this by wrapping your script in a call to the function <a href="http://requirejs.org/docs/api.html#define">define</a>, where the parameters passed to <code>define</code> reference the dependencies of your new script.</p>
+
+<p>By returning from this <code>define</code> function, you decide what to expose from this module when it’s requested by something else. This is similar to the <code>exports.blah = ExportedObject</code> format within CommonJS. If we manipulate exactly what is returned we can expose any number of class definitions, functions or arbitrary values that we choose.</p>
+
+<h2 id="lets-go">Let’s Go</h2>
+
+<h3 id="setup">Setup</h3>
+
+<p>We’re going to make a test project to understand how to make these things work together. This will give us an idea of how to structure our application in a way that removes the problems of dependency resolution. The first thing we’ll need to do is to get the required libraries to run RequireJS with CoffeeScript. The specific files we need are as follows:</p>
+
+<ul>
+<li>The RequireJS library</li>
+<ul>
+<li><a href="http://requirejs.org/docs/download.html">http://requirejs.org/docs/download.html</a></li>
+</ul>
+<li>The CoffeeScript plugin for RequireJS</li>
+<ul>
+<li><a href="https://raw.github.com/jrburke/require-cs/latest/cs.js">https://raw.github.com/jrburke/require-cs/latest/cs.js</a></li>
+</ul>
+<li>The latest <i>coffee-script.js</i> compiler (for use with the above plugin)</li>
+<ul>
+<li><a href="https://raw.github.com/jashkenas/coffee-script/master/extras/coffee-script.js">https://raw.github.com/jashkenas/coffee-script/master/extras/coffee-script.js</a></li>
+</ul>
+</ul>
+
+<p>Next we’ll create some folders for our application, and for the sake of this example we’ll organise the above files that we’ve downloaded as follows. </p>
+
+<p class="notice"><img src="http://3.bp.blogspot.com/-9JMMfQqrthc/T4wXMwmsdpI/AAAAAAAAAdI/j2B_0KSZ1gE/s1600/Screen+Shot+2012-04-16+at+13.57.00.png" alt="" />
+Our file layout on disk</p>
+
+<p>Next we’ll create our html file for loading the scripts, this’ll be nothing more than a standard html document with a script tag in the head to load the <i>require.js</i> library.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>RequireJS + Coffeescript<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;lib/require.js&quot;</span> <span class="na">data-main=</span><span class="s">&quot;src/main&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
+
+<p>Note the <i>data-main </i>attribute on the script tag. This is specific to RequireJS, and it defines the entry point to our application. What we’re doing is telling RequireJS where the first file we want to execute is located, in this case it’s at “<i>src/main.js</i>” (we’ve intentionally left out the <i>.js</i> suffix on this path). </p>
+
+<p>We could set this to be anywhere in the directory tree, but it’s important that the <i>coffee-script.js</i> and <i>cs.js</i> files are located in the same place as the entry point. Also at this point we want to <b><u>rename</u></b> <i>coffee-script.js</i> <b><u>to</u></b> <i>CoffeeScript.js. </i>This is a requirement specific to the <i>cs.js</i> plugin.</p>
+
+<p>Now we’ll create a simple <i>main.js</i> file for use in our application. We’ll make sure it follows the AMD format by wrapping everything in a <i>define</i> call, and because we don’t yet depend on anything it’ll be straightforward.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">define</span><span class="p">([],</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Running main.js!&quot;</span><span class="p">);</span>
+<span class="p">});</span></code></pre></div>
+
+<p>Our tree should now look like this:</p>
+
+<p class="notice"><img src="http://1.bp.blogspot.com/-3yNdVUICo-A/T4xKKVq_PAI/AAAAAAAAAdg/USB6k2r38zg/s1600/Screen+Shot+2012-04-16+at+17.34.27.png" alt="" /></p>
+
+<p>From here we can serve the files from the root of the project, and we should see our message output in the console for the index page.</p>
+
+<p><img src="http://4.bp.blogspot.com/-Rrla57aSdaM/T4wcTaLeVnI/AAAAAAAAAdY/syTx25m8OpE/s1600/Screen+Shot+2012-04-16+at+14.18.49.png" alt="" /></p>
+
+<p>It’s humble, but that little message means we’ve almost configured everything correctly, and we can finally get down to writing the logic of our application. whoopty doo!</p>
+
+<h3 id="the-application">The application</h3>
+
+<p>We’ll create a simple test application in coffeescript. Let’s make it simple and add some text to the dom when the user clicks on the page. We’ll do it in three steps</p>
+
+<ul>
+<li>populate the dom with a super cool html button</li>
+<li>bind to a click event and write to the console</li>
+<li>bind to the same event and add some text to the page</li>
+</ul>
+
+<p>For demonstrating how to organise an application, we’ll also experiment with different ways of returning values from a module to show how we can expose different objects.</p>
+
+<h3 id="adding-a-button-to-the-page">Adding a button to the page</h3>
+
+<p>We’ll do this by creating a module which simply adds a standard button element to the page. We’ll call into this module from our <i>main.js </i>module utilising the CoffeeScript plugin we have sitting nicely in the <i>src</i> folder.</p>
+
+<div class="highlight"><pre><code class="language-coffeescript" data-lang="coffeescript"><span class="nx">define</span> <span class="p">[],</span> <span class="nf">() -&gt;</span>
+    <span class="nf">-&gt;</span>
+        <span class="nv">input = </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span> <span class="s">&quot;button&quot;</span>
+        <span class="nv">input.innerText = </span><span class="s">&quot;Super Cool Test Button!&quot;</span>
+        <span class="nx">input</span><span class="p">.</span><span class="nx">setAttribute</span> <span class="s">&quot;id&quot;</span><span class="p">,</span> <span class="s">&quot;the-button&quot;</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span> <span class="s">&quot;input&quot;</span></code></pre></div>
+
+<p>As before, we’ve created a file that follows the AMD format. This is implemented via wrapping the entire module in a <i>define</i> call. The empty array is to say that this module depends on nothing, and the empty parameter list for the function reflects that we aren’t passing any dependencies in.</p>
+
+<p>What’s happening here is that within the define call we are saying “here comes a module with no dependencies” - then within that function we are defining a single function which manipulates the dom to add a button to the document</p>
+
+<div class="highlight"><pre><code class="language-coffeescript" data-lang="coffeescript"><span class="nv">input = </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span> <span class="s">&quot;button&quot;</span>
+        <span class="nv">input.innerText = </span><span class="s">&quot;Super Cool Test Button!&quot;</span>
+        <span class="nx">input</span><span class="p">.</span><span class="nx">setAttribute</span> <span class="s">&quot;id&quot;</span><span class="p">,</span> <span class="s">&quot;the-button&quot;</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span> <span class="s">&quot;input&quot;</span></code></pre></div>
+
+<p>Because this is CoffeeScript, the last expression of a function is returned. In this case, the last expression within the define call is the definition the function above - the one that adds the button. This means that when we import this module elsewhere, all we are importing is the function above. Which we’re going to do now!</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">define</span><span class="p">([</span><span class="s2">&quot;cs!app/add_button&quot;</span><span class="p">]),</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">AddButton</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Running main.js!&quot;</span><span class="p">);</span>
+    <span class="nx">AddButton</span><span class="p">();</span>
+<span class="p">});</span></code></pre></div>
+
+<p>In this case we’ve imported the module we just created and associated it with the parameter <i>AddButton. </i>Now within the context of main.js we have access to whatever we exported, which in this case was the single function we defined. By executing it directly we’re performing the add button functionality.</p>
+
+<p><img src="http://4.bp.blogspot.com/-VLwGrtfATDs/T5aUl4tKZ_I/AAAAAAAAAeg/AtRkR6GVrhU/s1600/Screen+Shot+2012-04-24+at+12.54.38.png" alt="" /></p>
+
+<p>Nice!</p>
+
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="/blog/rise-from-your-grave/" class="btn" title="rise from your grave">Previous</a>
+      
+      
+        <a href="/articles/optimising-coffeescript-files-with-r-js-unexpected-character/" class="btn" title="Optimising CoffeeScript files with r.js - "Unexpected Character"">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2014 Donald Hutchison. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="http://twitter.com/rev_kachowski" title="Donald Hutchison on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	<a href="http://linkedin.com/in/https://www.linkedin.com/pub/donald-hutchison/22/a70/16a" title="Donald Hutchison on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	<a href="https://careers.stackoverflow.com/donaldhutchison" title="Donald Hutchison on StackExchange" target="_blank"><i class="fa fa-stack-exchange fa-2x"></i></a>
+	
+	
+	<a href="http://github.com/rkachowski" title="Donald Hutchison on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  <a href="/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+<script src="/assets/js/subtitle.js"></script>
+
+<!-- Jekyll Simple Search option -->
+<script>
+  $(document).ready(function() {
+      $('.search-field').jekyllSearch({
+          jsonFile: '/search.json',
+          searchResults: '.search-results',
+          template: '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{shortdate}</time></span></a></article></li>',
+          fuzzy: true,
+          noResults: '<p>Nothing found.</p>'
+        });
+  });
+
+  (function( $, window, undefined ) {
+    
+     var bs = {
+          close: $(".close-btn"),
+          searchform: $(".search-form"),
+          canvas: $(".js-menu-screen"),
+          dothis: $('.dosearch')
+      };
+    
+    bs.dothis.on('click', function() {
+      $('.search-wrapper').css({ display: "block" });
+      $('body').toggleClass('no-scroll');
+      bs.searchform.toggleClass('active');
+      bs.searchform.find('input').focus();
+      bs.canvas.toggleClass('is-visible');
+    });
+    
+      bs.close.on('click', function() {
+        $('.search-wrapper').removeAttr( 'style' );
+        $('body').toggleClass('no-scroll');
+        bs.searchform.toggleClass('active');
+        bs.canvas.removeClass('is-visible');
+    });
+  })( jQuery, window );
+</script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-17488316-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+	        
+
+</body>
+</html>

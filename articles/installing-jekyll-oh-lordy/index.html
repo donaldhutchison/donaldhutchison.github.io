@@ -1,0 +1,333 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Jekyll Migration Woes &#8211; Donald Hutchison</title>
+<meta name="description" content="
+  (image from the awesome but short lived eponymous bbc series Jekyll )
+
+
+">
+<meta name="keywords" content="blog, ruby, setup, jekyll">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Jekyll Migration Woes">
+<meta name="twitter:description" content="
+  (image from the awesome but short lived eponymous bbc series Jekyll )
+
+
+">
+<meta name="twitter:site" content="@rev_kachowski">
+<meta name="twitter:creator" content="@rev_kachowski">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="/images/jekyll.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jekyll Migration Woes">
+<meta property="og:description" content="
+  (image from the awesome but short lived eponymous bbc series Jekyll )
+
+
+">
+<meta property="og:url" content="/articles/installing-jekyll-oh-lordy/">
+<meta property="og:site_name" content="Donald Hutchison">
+
+
+
+
+
+<link rel="canonical" href="/articles/installing-jekyll-oh-lordy/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Donald Hutchison Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<!-- Webfonts -->
+<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="/" >Home</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/about/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/articles/" >Articles</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/projects/" >Projects</a></li>
+		  
+        <li class="dosearch"><span><i class="fa fa-search"></i> Search</span></li>
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<div class="search-wrapper">
+  <div class="search-form">
+    <input type="text" class="search-field" placeholder="Search...">
+    <button class="close-btn"><i class="fa fa-times-circle fa-2x"></i></button>
+    <ul class="search-results post-list"></ul><!-- /.search-results -->
+  </div><!-- /.search-form -->
+</div><!-- ./search-wrapper -->
+
+<header class="masthead">
+	
+		<div class="wrap">
+			<a href="" class="site-logo" rel="home" title="Donald Hutchison"><img src="/images/site-logo.png" width="200" height="200" alt="Donald Hutchison logo" class="animated bounceInDown"></a>
+		</div>
+	
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <img src="/images/jekyll.jpg" class="entry-feature-image" alt="Jekyll Migration Woes" >
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="/tags/#blog" title="Pages tagged blog">blog</a>&nbsp;&bull;&nbsp;<a href="/tags/#ruby" title="Pages tagged ruby">ruby</a>&nbsp;&bull;&nbsp;<a href="/tags/#setup" title="Pages tagged setup">setup</a>&nbsp;&bull;&nbsp;<a href="/tags/#jekyll" title="Pages tagged jekyll">jekyll</a></span>
+        
+          <h1 class="entry-title">Jekyll Migration Woes</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="/images/portrait.png" class="bio-photo" alt="Donald Hutchison bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Donald Hutchison</span></span>
+        <span class="entry-date date published"><time datetime="2013-07-18T00:00:00+02:00"><i class="fa fa-calendar-o"></i> July 18, 2013</time></span>
+        
+        
+        
+        
+      </footer>
+      <div class="entry-content">
+        <blockquote>
+  <p>(image from the awesome but short lived eponymous bbc series <a href="http://www.imdb.com/title/tt0497298/">Jekyll</a> )</p>
+</blockquote>
+
+<p>After getting sick of wordpress I decided to do the cool hipster thing and move my blog to <a href="http://jekyllrb.com/">Jekyll</a>. Both for the nerd credit and the super awesome minimal design (static site = no moving parts! awesome!). After reading about Josh Kaufman’s experience with Jekyll in his <a href="http://first20hours.com/">book</a> it sounded like a pretty easy and maintainable platform to blog on.</p>
+
+<h3 id="however">However…</h3>
+<p>On the way I encountered a few issues that almost took the chill out of a refreshing Thursday night in Berlin. Here I recount my issues for the sake of future ventures.</p>
+
+<h2 id="the-bad">The Bad</h2>
+
+<h3 id="wordpress-exporter--jekyll-import">Wordpress Exporter / Jekyll Import</h3>
+<p>Wordpress comes with a library of a bajillion plugins you can install to pimp out the features available to you. One of the defaults is an export to xml feature. I’d imagine this is pretty good for the average case, but I had a heavily customised theme that I perhaps too rashly purchased off of an internet marketplace. </p>
+
+<p>Suffice it to say, jekyll’s default wordpress importer didn’t even try to change my posts. The formatting was all garbled and I had to manually edit each post to fit with the markdown syntax and change any previous gist embeds to use the cool jekyll version. Through fortune, I have not quite yet reached my maximum bloggin output (<strong>read:</strong> I am chronically lazy ) and only had a few posts to deal with. This wasn’t too hard - most of it can be done with a combination of regex and vim.</p>
+
+<h3 id="jekyll-post-recieve-git-hook">Jekyll post-recieve git hook</h3>
+
+<p>One of the coolest things for me was having a deploy process setup with git. The ability to write and preview everything locally, and then publish with a simple <code>git push</code> was something I really wanted to have with my blog setup. There’s even an example hook you can use from <a href="http://jekyllrb.com/docs/deployment-methods/">jekyll’s documentation</a>. Unfortunately I stumbled across a few hurdles whilst setting this up.</p>
+
+<h4 id="rvm">RVM</h4>
+<p>If you want to use the awesome <a href="https://rvm.io/">RVM</a> then you need to hit one of your shell’s startup files to load it in. For me this was <code>bash</code>. The example hooks run with the <code>#!/bin/sh</code> shebang - this is not <code>bash</code>.  </p>
+
+<p class="notice"><strong>Solution:</strong> Make sure you have <code>#!/bin/bash</code> at the top of your hook. You may need to run <code>#!/bin/bash -l</code> if all your setup is done in <code>.bash_profile</code>.  </p>
+
+<h3 id="file-permissions">File Permissions</h3>
+
+<p>This was just a result of my brain going on to autopilot, but make sure you create the folder you serve from with the correct user and permissions. In the hook this is <code>/var/www/myrepo</code> - the deployment user needs to be able to write to this directory.</p>
+
+<h3 id="locale-issues">Locale Issues</h3>
+
+<p>This was fun. Suddenly everything seemed to work, but Jekyll would complain about scores and scores of invalid characters in my blog post. Specifically it was saying 
+<code>/lib/jekyll/excerpt.rb:135:in 'scan': invalid byte sequence in US-ASCII (ArgumentError)</code></p>
+
+<p>Now this was weird, because I made pretty sure that all my files were encoded in UTF-8. After an hour or so of fighting and attempts at convincing the server that these files were in fact valid UTF-8 files, it turned out to be a locale issue. Running the <code>locale</code> command from a terminal gave me this</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">locale: Cannot <span class="nb">set </span>LC_CTYPE to default locale: No such file or directory
+locale: Cannot <span class="nb">set </span>LC_ALL to default locale: No such file or directory
+<span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+<span class="nv">LANGUAGE</span><span class="o">=</span>
+<span class="nv">LC_CTYPE</span><span class="o">=</span>UTF-8
+<span class="nv">LC_NUMERIC</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nv">LC_TIME</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nv">LC_COLLATE</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nv">LC_MONETARY</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nv">LC_MESSAGES</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nv">LC_PAPER</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nv">LC_NAME</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nv">LC_ADDRESS</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nv">LC_TELEPHONE</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nv">LC_MEASUREMENT</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nv">LC_IDENTIFICATION</span><span class="o">=</span><span class="s2">&quot;en_US.UTF-8&quot;</span>
+<span class="nv">LC_ALL</span><span class="o">=</span><span class="sb">`</span></code></pre></div>
+
+<p>Ahh, cool. My language isn’t set. Whatever. </p>
+
+<p class="notice"><strong>Solution:</strong> <code>LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 export LC_CTYPE LANG</code> - throw this in the top of the git hook  </p>
+
+<h2 id="and-then">And then..</h2>
+
+<p>Peaches! everything seems to work fine. The sweet is never as sweet without the sour. </p>
+
+<p>The next thing to do was to setup a comment system with disqus, customise some header images and create a flattr account (heh). I look forward to overcoming my laziness and becoming the prolific and helpful tech blogger I know I never wanted to be.</p>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="/blog/working-title-robot-go-home-gaiden/" class="btn" title="Robot Go Home : Gaiden">Previous</a>
+      
+      
+        <a href="/articles/coffeescript-skeleton/" class="btn" title="Coffeescript + RequireJS Skeleton Project">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2014 Donald Hutchison. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="http://twitter.com/rev_kachowski" title="Donald Hutchison on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	<a href="http://linkedin.com/in/https://www.linkedin.com/pub/donald-hutchison/22/a70/16a" title="Donald Hutchison on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	<a href="https://careers.stackoverflow.com/donaldhutchison" title="Donald Hutchison on StackExchange" target="_blank"><i class="fa fa-stack-exchange fa-2x"></i></a>
+	
+	
+	<a href="http://github.com/rkachowski" title="Donald Hutchison on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  <a href="/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+<script src="/assets/js/subtitle.js"></script>
+
+<!-- Jekyll Simple Search option -->
+<script>
+  $(document).ready(function() {
+      $('.search-field').jekyllSearch({
+          jsonFile: '/search.json',
+          searchResults: '.search-results',
+          template: '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{shortdate}</time></span></a></article></li>',
+          fuzzy: true,
+          noResults: '<p>Nothing found.</p>'
+        });
+  });
+
+  (function( $, window, undefined ) {
+    
+     var bs = {
+          close: $(".close-btn"),
+          searchform: $(".search-form"),
+          canvas: $(".js-menu-screen"),
+          dothis: $('.dosearch')
+      };
+    
+    bs.dothis.on('click', function() {
+      $('.search-wrapper').css({ display: "block" });
+      $('body').toggleClass('no-scroll');
+      bs.searchform.toggleClass('active');
+      bs.searchform.find('input').focus();
+      bs.canvas.toggleClass('is-visible');
+    });
+    
+      bs.close.on('click', function() {
+        $('.search-wrapper').removeAttr( 'style' );
+        $('body').toggleClass('no-scroll');
+        bs.searchform.toggleClass('active');
+        bs.canvas.removeClass('is-visible');
+    });
+  })( jQuery, window );
+</script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-17488316-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+	        
+
+</body>
+</html>

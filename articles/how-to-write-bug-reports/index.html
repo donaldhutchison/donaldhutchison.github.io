@@ -1,0 +1,357 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>How to write a bug report &#8211; Donald Hutchison</title>
+<meta name="description" content="
+  
+    Contents
+  
+
+
+  
+
+
+
+">
+<meta name="keywords" content="qa, testing, software, bugs">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="How to write a bug report">
+<meta name="twitter:description" content="
+  
+    Contents
+  
+
+
+  
+
+
+
+">
+<meta name="twitter:site" content="@rev_kachowski">
+<meta name="twitter:creator" content="@rev_kachowski">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="/images/bug_report_header.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to write a bug report">
+<meta property="og:description" content="
+  
+    Contents
+  
+
+
+  
+
+
+
+">
+<meta property="og:url" content="/articles/how-to-write-bug-reports/">
+<meta property="og:site_name" content="Donald Hutchison">
+
+
+
+
+
+<link rel="canonical" href="/articles/how-to-write-bug-reports/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Donald Hutchison Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<!-- Webfonts -->
+<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="/" >Home</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/about/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/articles/" >Articles</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/projects/" >Projects</a></li>
+		  
+        <li class="dosearch"><span><i class="fa fa-search"></i> Search</span></li>
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<div class="search-wrapper">
+  <div class="search-form">
+    <input type="text" class="search-field" placeholder="Search...">
+    <button class="close-btn"><i class="fa fa-times-circle fa-2x"></i></button>
+    <ul class="search-results post-list"></ul><!-- /.search-results -->
+  </div><!-- /.search-form -->
+</div><!-- ./search-wrapper -->
+
+<header class="masthead">
+	
+		<div class="wrap">
+			<a href="" class="site-logo" rel="home" title="Donald Hutchison"><img src="/images/site-logo.png" width="200" height="200" alt="Donald Hutchison logo" class="animated bounceInDown"></a>
+		</div>
+	
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <img src="/images/bug_report_header.jpg" class="entry-feature-image" alt="How to write a bug report" >
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="/tags/#qa" title="Pages tagged qa">qa</a>&nbsp;&bull;&nbsp;<a href="/tags/#testing" title="Pages tagged testing">testing</a>&nbsp;&bull;&nbsp;<a href="/tags/#software" title="Pages tagged software">software</a>&nbsp;&bull;&nbsp;<a href="/tags/#bugs" title="Pages tagged bugs">bugs</a></span>
+        
+          <h1 class="entry-title">How to write a bug report</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="/images/portrait.png" class="bio-photo" alt="Donald Hutchison bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Donald Hutchison</span></span>
+        <span class="entry-date date published"><time datetime="2014-02-17T00:00:00+01:00"><i class="fa fa-calendar-o"></i> February 17, 2014</time></span>
+        
+        
+        
+        
+      </footer>
+      <div class="entry-content">
+        <section id="table-of-contents" class="toc">
+  <header>
+    <h3>Contents</h3>
+  </header>
+<div id="drawer">
+<ul id="markdown-toc">
+  <li><a href="#whats-a-bug-report">What’s a bug report</a></li>
+  <li><a href="#what-should-be-in-a-bug-report">What should be in a bug report</a></li>
+  <li><a href="#an-example-bug-report">An example bug report</a></li>
+</ul>
+
+  </div>
+</section>
+<!-- /#table-of-contents -->
+
+<p class="notice"><strong>Note:</strong> This is a post I created for internal distribution when writing bug reports for mobile applications. I’m sharing it here because I think it’s useful for future situations.</p>
+
+<h2 id="whats-a-bug-report">What’s a bug report</h2>
+
+<p>Bug reports exist only to inform people about software defects. They are not for notes, for tracking work done or for planning. There are better systems for this. The best bug reports will have as much appropriate information as possible to help asses get kicked as fast and effectively as possible.</p>
+
+<p>Including the correct information in a bug report will help the problem to be discovered, diagnosed and solved in a timely manner - without this information, more questions will be needed before an attempt can be made at trying to fix whatever went wrong.</p>
+
+<h2 id="what-should-be-in-a-bug-report">What should be in a bug report</h2>
+
+<h3 id="steps-to-reproduce">Steps to reproduce</h3>
+<p>The <em>most</em> important thing in a bug report is <em>reproduction steps</em>. This means a short description of what you did to make things go wrong. The best version of this will include only the steps necessary to recreate the defect. By following this, a developer should be able to come across the same problem as was reported by the tester / user. If the problem isn’t always reproducible, a rough estimate of how often the problem occurs would be helpful in keeping sanity in check..</p>
+
+<p>This is useful not only in helping locate the issue, but can be used to identify duplicates or related issues.</p>
+
+<h3 id="version--device-information">Version / Device information</h3>
+<p>A listing of the artifact version and device used when the defect was encountered will help pinpoint where the problem lies and when it was released. It is also very helpful when trying to reproduce the problem in the same situation as it was discovered. Without this info, there is no way of really knowing if the problem has already been fixed or tracking it’s lifetime.</p>
+
+<h3 id="tester-assumptions--expectations">Tester assumptions / expectations</h3>
+<p>Next, a listing of the results that the tester had in mind when encountering the problem can be used to help assess the validity of the problem. This is usually in the form of “Expected Results” and “Actual Results”, i.e. “I <em>expected</em> the items in the well to increase when tapping on the resource icon, but what <em>actually</em> happened was that the application didn’t respond to the input.”</p>
+
+<h3 id="summary">Summary</h3>
+
+<p>A very short and concise summary is great. Try and balance it between being as short as possible and as specific as possible. “Graphical Issues in UI” is pretty bad, but there have been worse. “UI distorted in Contact View with German locale” is great.</p>
+
+<h3 id="other-awesome-things">Other awesome things</h3>
+<ul>
+  <li>Screenshots - if it’s a UI based issue or something that can only really be seen, screenshots are awesome</li>
+  <li>Related Issues - if there are existing bugs that have a similar scope, linking against them will be useful in finding the severity of the issue.</li>
+  <li>Logs / Crash Dumps / Stack Traces - if you have related logs, please attach them to your ticket. Everyone will love you for it.</li>
+</ul>
+
+<h2 id="an-example-bug-report">An example bug report</h2>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">Items are uncollectable on far left of screen
+
+If you try to touch something on the left edge of the screen <span class="o">(</span>a resource or collectable item<span class="o">)</span>, the touch seems to be registered in the wrong place and the item cannot be collected.
+
+To Reproduce:  
+1. Start harvesting something on the left edge of the map <span class="o">(</span>in an explored area<span class="o">)</span>  
+2. Move the screen so that the object is just barely contained within the viewport  
+3. Try to tap on the item  
+
+Expected:  
+You can collect the stuff, and the functionality works as <span class="k">if</span> it was touched in regular circumstances.
+
+Actual:  
+The wrong functionality is invoked. In the above <span class="k">case</span> an <span class="s2">&quot;Explore Area&quot;</span> popup is usually shown, as <span class="k">if</span> an expansion had been tapped instead of a resource.
+
+Incidence:  
+Happens about <span class="m">3</span> out of <span class="m">5</span> <span class="nb">times</span>
+
+Tested on:  
+* Snapshot <span class="c">#2874</span>
+* iphone5 running ios 6.1.4</code></pre></div>
+
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="/articles/ccnode-recursive-description/" class="btn" title="CCNode Recursive Description">Previous</a>
+      
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2014 Donald Hutchison. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="http://twitter.com/rev_kachowski" title="Donald Hutchison on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	<a href="http://linkedin.com/in/https://www.linkedin.com/pub/donald-hutchison/22/a70/16a" title="Donald Hutchison on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	<a href="https://careers.stackoverflow.com/donaldhutchison" title="Donald Hutchison on StackExchange" target="_blank"><i class="fa fa-stack-exchange fa-2x"></i></a>
+	
+	
+	<a href="http://github.com/rkachowski" title="Donald Hutchison on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  <a href="/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+<script src="/assets/js/subtitle.js"></script>
+
+<!-- Jekyll Simple Search option -->
+<script>
+  $(document).ready(function() {
+      $('.search-field').jekyllSearch({
+          jsonFile: '/search.json',
+          searchResults: '.search-results',
+          template: '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{shortdate}</time></span></a></article></li>',
+          fuzzy: true,
+          noResults: '<p>Nothing found.</p>'
+        });
+  });
+
+  (function( $, window, undefined ) {
+    
+     var bs = {
+          close: $(".close-btn"),
+          searchform: $(".search-form"),
+          canvas: $(".js-menu-screen"),
+          dothis: $('.dosearch')
+      };
+    
+    bs.dothis.on('click', function() {
+      $('.search-wrapper').css({ display: "block" });
+      $('body').toggleClass('no-scroll');
+      bs.searchform.toggleClass('active');
+      bs.searchform.find('input').focus();
+      bs.canvas.toggleClass('is-visible');
+    });
+    
+      bs.close.on('click', function() {
+        $('.search-wrapper').removeAttr( 'style' );
+        $('body').toggleClass('no-scroll');
+        bs.searchform.toggleClass('active');
+        bs.canvas.removeClass('is-visible');
+    });
+  })( jQuery, window );
+</script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-17488316-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+	        
+
+</body>
+</html>

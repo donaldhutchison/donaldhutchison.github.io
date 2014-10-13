@@ -1,0 +1,358 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Ruby Development in the Bar &#8211; Donald Hutchison</title>
+<meta name="description" content="For reasons I won&#8217;t get into, I found myself spending Christmas in Wick on the north east tip of Scotland. This being the second time it&#8217;s occurred I was familiar with the quirks and isolation of this part of the world. One of the more upswinging things that happens is that every 26th December, there&#8217;s a charity raffle in the local Seaforth Club. This is where you buy some tickets, drink, win prizes and drink some more. 
+
+">
+<meta name="keywords" content="ruby, mobile, android, ruboto">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Ruby Development in the Bar">
+<meta name="twitter:description" content="For reasons I won&#8217;t get into, I found myself spending Christmas in Wick on the north east tip of Scotland. This being the second time it&#8217;s occurred I was familiar with the quirks and isolation of this part of the world. One of the more upswinging things that happens is that every 26th December, there&#8217;s a charity raffle in the local Seaforth Club. This is where you buy some tickets, drink, win prizes and drink some more. 
+
+">
+<meta name="twitter:site" content="@rev_kachowski">
+<meta name="twitter:creator" content="@rev_kachowski">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="/images/ruby/header.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ruby Development in the Bar">
+<meta property="og:description" content="For reasons I won&#8217;t get into, I found myself spending Christmas in Wick on the north east tip of Scotland. This being the second time it&#8217;s occurred I was familiar with the quirks and isolation of this part of the world. One of the more upswinging things that happens is that every 26th December, there&#8217;s a charity raffle in the local Seaforth Club. This is where you buy some tickets, drink, win prizes and drink some more. 
+
+">
+<meta property="og:url" content="/articles/ruby-at-the-bar/">
+<meta property="og:site_name" content="Donald Hutchison">
+
+
+
+
+
+<link rel="canonical" href="/articles/ruby-at-the-bar/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Donald Hutchison Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<!-- Webfonts -->
+<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="/" >Home</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/about/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/articles/" >Articles</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/projects/" >Projects</a></li>
+		  
+        <li class="dosearch"><span><i class="fa fa-search"></i> Search</span></li>
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<div class="search-wrapper">
+  <div class="search-form">
+    <input type="text" class="search-field" placeholder="Search...">
+    <button class="close-btn"><i class="fa fa-times-circle fa-2x"></i></button>
+    <ul class="search-results post-list"></ul><!-- /.search-results -->
+  </div><!-- /.search-form -->
+</div><!-- ./search-wrapper -->
+
+<header class="masthead">
+	
+		<div class="wrap">
+			<a href="" class="site-logo" rel="home" title="Donald Hutchison"><img src="/images/site-logo.png" width="200" height="200" alt="Donald Hutchison logo" class="animated bounceInDown"></a>
+		</div>
+	
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <img src="/images/ruby/header.jpg" class="entry-feature-image" alt="Ruby Development in the Bar" >
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="/tags/#ruby" title="Pages tagged ruby">ruby</a>&nbsp;&bull;&nbsp;<a href="/tags/#mobile" title="Pages tagged mobile">mobile</a>&nbsp;&bull;&nbsp;<a href="/tags/#android" title="Pages tagged android">android</a>&nbsp;&bull;&nbsp;<a href="/tags/#ruboto" title="Pages tagged ruboto">ruboto</a></span>
+        
+          <h1 class="entry-title">Ruby Development in the Bar</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+        
+          <img src="/images/portrait.png" class="bio-photo" alt="Donald Hutchison bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Donald Hutchison</span></span>
+        <span class="entry-date date published"><time datetime="2014-02-02T00:00:00+01:00"><i class="fa fa-calendar-o"></i> February 02, 2014</time></span>
+        
+        
+        
+        
+      </footer>
+      <div class="entry-content">
+        <p>For reasons I won’t get into, I found myself spending Christmas in Wick on the <a href="http://goo.gl/maps/BBa7b">north east tip of Scotland</a>. This being the second time it’s occurred I was familiar with the quirks and isolation of this part of the world. One of the more upswinging things that happens is that every 26th December, there’s a charity raffle in the local Seaforth Club. This is where you buy some tickets, drink, win prizes and drink some more. </p>
+
+<p>Again, this being the second time I’ve attended, I had a grudge to bear after last years events - specifically I didn’t win anything and I felt pretty grumpy about it. <em>“2013 will be different!”</em>, I said to myself as I prepared a full on tactical strike against my previous misfortune.</p>
+
+<h2 id="tickets-everywhere">Tickets everywhere</h2>
+
+<p>As you can see in the header image, I went and bought as many tickets as my conscience would allow. You buy 10 tickets at a time, and the numbers increase sequentially from the first. I made sure to buy them at different intervals so I didn’t end up with a completely contiguous series of numbers (I don’t know if this helped but it made me feel smart.) </p>
+
+<p>Now, the way the raffle works is that an announcer will read out a number over the PA system (say - “56724!!”), and everyone will have to frantically check through their tickets for the number and, if lucky, present the winning ticket. If you take too long, or the announcer doesn’t like you, a new number will be read out and you’ve lost your chance to claim a novelty stuffed dog or kitsch souvenir. If only there were some way I could automate this verification process… I could spend more time enjoying festive beverages and the Christmas atmosphere, rather than continually reading through the far too many sheets of paper I had.</p>
+
+<h2 id="ruboto-ruby-for-android">Ruboto! Ruby for Android!</h2>
+
+<p>Fortunately I get paid to make computer programs, and this kind of thing is totally possible (to the point of being almost trivial) so I was able to go for it. Sneaking outside to the smoking area (there’s no signal inside the building) I went out to search the Google Play store for mobile programming environments. </p>
+
+<p>I’ve previously experimented with these on device programming tools, but dismissed them due to their pretty impractical nature. Trying to do anything other than very basic alphanumeric text input on a smartphone is frustrating at the best of times, let alone anything with multiple brackets. But right now it seems like a prime use for such a thing, and after this experience I’m finding myself looking for other similar niche situations where I could be without access to a keyboard and need programming ability.</p>
+
+<p>I found the awesome <a href="http://ruboto.org/">Ruboto</a> framework for Ruby. This was exactly what I needed - an android runtime for ruby with an IRB application. Nice.</p>
+
+<h2 id="the-code">The Code</h2>
+
+<p>Now it’s pretty simple. All I need are a few methods to keep track of some ranges (defined by a block of tickets), who they belong to, and whether a specific number is within the range. This kind of thing is totally handled by the standard lib, <a href="http://www.ruby-doc.org/core-1.9.3/Range.html"><code>Range</code></a> is awesome. After a few too many beers I ended up with the following code jammed into my phone.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">save_ranges</span> <span class="nb">name</span><span class="p">,</span> <span class="n">range</span>
+  <span class="vi">@ranges</span> <span class="o">||=</span> <span class="p">{}</span>
+  <span class="vi">@ranges</span><span class="o">[</span><span class="nb">name</span><span class="o">]</span> <span class="o">||=</span> <span class="o">[]</span>
+
+  <span class="vi">@ranges</span><span class="o">[</span><span class="nb">name</span><span class="o">]</span> <span class="o">&lt;&lt;</span> <span class="n">range</span>
+<span class="k">end</span>
+  
+<span class="k">def</span> <span class="nf">clear</span>
+  <span class="vi">@ranges</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">end</span>
+
+<span class="k">def</span> <span class="nf">who_has</span> <span class="n">number</span>
+  <span class="vi">@ranges</span><span class="o">.</span><span class="n">each_pair</span> <span class="k">do</span> <span class="o">|</span><span class="n">n</span><span class="p">,</span><span class="n">r</span><span class="o">|</span>
+    <span class="n">person_ranges</span> <span class="o">=</span> <span class="vi">@ranges</span><span class="o">[</span><span class="n">n</span><span class="o">]</span>
+    <span class="n">person_ranges</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">ran</span><span class="o">|</span>
+      <span class="k">return</span> <span class="n">n</span> <span class="k">if</span> <span class="n">ran</span><span class="o">.</span><span class="n">member?</span> <span class="n">number</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+
+  <span class="s2">&quot;noone has </span><span class="si">#{</span><span class="n">number</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">end</span></code></pre></div>
+
+<p>Very simple, but exactly what I needed. Short and concise. But even with this small scope I ran into a few issues whilst creating the above methods. First of all, what is the exact method called that you use to determine whether a specific number is included within a range? <code>include?</code> or maybe <code>contains?</code>??  </p>
+
+<h3 id="some-stumbling">Some Stumbling</h3>
+
+<p>I was in a situation where there was no 3G / GSM signal indoors, and Ruboto doesn’t come with Rdoc, so I used the dirty hack of <code>[1..2].methods - "".methods</code>. Typing this into iRB gives you a crude and dirty way of listing the exact methods attached to an object. The subtraction part is just a cheeky way of removing all the methods that exist on any subclass of <code>Object</code>. Anyway, it turns out the method is called <code>member?</code> - awesome.</p>
+
+<p>Another issue was the expected problem of data entry. Not only during development (switching between the symbolic keyboard and alphabetic on the stock android setup was a pain), but whilst using the application itself. I’d convinced everyone else at my table to use my program - in exchange for a drink - and got some genuine in field testing. By getting my sister to read out random ticket numbers (and throwing in some false numbers at the same time) I discovered that I’d considered a few pages of tickets to be consecutive, when they were quite disparate. Now I had to manually sort out my nested array / hash of ranges with the touchscreen. More effort into validation would have helped here, but the data set was small enough that I could fix everything in 10 minutes or so.</p>
+
+<p>I’d considered adding some basic serialization support but after my sister’s boyfriend bought the next round, I discovered I had more pressing matters to take care of.</p>
+
+<h2 id="the-results">The Results!</h2>
+
+<p>Later the raffle started, and I got the chance to see if things would work out in my favour. The announcer read out a 5 digit number and waited for about 15 seconds. This is when you shout in excitement and run to the middle of the room with your ticket in order to claim your prize. After inputting everyone’s tickets, and then triply validating them with as much attention I could muster, it was simply a case of typing in the winning numbers as they were announced.</p>
+
+<figure class="half">
+    <a href="/images/ruby/input.png"><img src="/images/ruby/input.png" /></a>
+    <a href="/images/ruby/use.png"><img src="/images/ruby/use.png" /></a>
+    <figcaption>Data entry and usage!</figcaption>
+</figure>
+
+<p>It was quite a while before someone at my table got a winner. I was actually starting to get nervous that I hadn’t tested enough and everyone was missing out on novelty prizes due to my arrogance. Fortunately that wasn’t the case, and soon enough my sister got a winning ticket.</p>
+
+<figure class="half">
+    <a href="/images/ruby/kirstywin.png"><img src="/images/ruby/kirstywin.png" /></a>
+    <a href="/images/ruby/kirstyprize.jpg"><img src="/images/ruby/kirstyprize.jpg" /></a>
+    <figcaption>Kirsty wins a hat, a fanny pack and some D cell batteries!! Super jealous!</figcaption>
+</figure>
+
+<p>After putting in all this effort, I felt entitled to some kind of reward (aside from the drinks that I tricked everyone else out of). Perhaps it was the Christmas spirit(s), but soon I received all I was hoping for and more.</p>
+
+<figure class="half">
+    <a href="/images/ruby/iwin.png"><img src="/images/ruby/iwin.png" /></a>
+    <a href="/images/ruby/straighteners.jpg"><img src="/images/ruby/straighteners.jpg" /></a>
+    <figcaption>Hair stylers! Lucky number 72887 never fails</figcaption>
+</figure>
+
+<p>Beautiful. Exactly what I was wanting. <a href="/images/ruby/me.jpg">Here</a> is a recent photo of me, to show how much I appreciate and need such a styling product in my life. It was pretty funny :P</p>
+
+<p>The other prizes everyone got included a stuffed dog, a bottle of whisky, a large crate of cider and a stationary set. However, before setting out my mother had given me some money to buy tickets for her. This managing of other peoples’ tickets was one of the reasons I decided to solve this with a phone, and as such is the original cause behind this post. The final prize to be drawn was the star prize - a mystery sum of money in an envelope. Everyone in the room was ablaze with excitement and blazing. And what do you know, the winning ticket was in my possession.</p>
+
+<figure class="half">
+    <a href="/images/ruby/mumwin.png"><img src="/images/ruby/mumwin.png" /></a>
+    <a href="/images/ruby/mumprize1.jpg"><img src="/images/ruby/mumprize1.jpg" /></a>
+    <figcaption>Star Prize! ROI: &gt;300%! Good deal!</figcaption>
+</figure>
+
+<p>The final number was detected by the program and now I have to pay my mother. The guys at the table opposite us were pretty annoyed at how much we’d won, and recommended I use the money to <a href="http://goo.gl/maps/S3NJB">“buy a one way ticket to inverness and don’t come back”</a>. You guys are the best. Also at this point I’d aliased the <code>who_has</code> method to simply <code>w</code>, which I probably should have done a long time before.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>Ruboto is pretty cool. This application was incredibly trivial and very specific to the situation I was in, but I question in what other similar situations I could create a short simple program to help me out. I feel the inherent nature of touch screens makes it difficult to input structured code, and as such would make anything pretty involving to be a frustrating experience - a topic brushed on by <a href="http://www.codinghorror.com/blog/2010/10/the-keyboard-cult.html">Jeff Atwood</a> in an old post. Still, I want to keep my eyes open for another situation like this, and maybe come out with hair straighteners, whisky and £80 as a bonus for my initiative.</p>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="/articles/global-game-jame2014/" class="btn" title="Global Game Jam 2014">Previous</a>
+      
+      
+        <a href="/articles/ccnode-recursive-description/" class="btn" title="CCNode Recursive Description">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span>&copy; 2014 Donald Hutchison. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/">So Simple Theme</a>.</span>
+<div class="social-icons">
+	<a href="http://twitter.com/rev_kachowski" title="Donald Hutchison on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	
+	
+	<a href="http://linkedin.com/in/https://www.linkedin.com/pub/donald-hutchison/22/a70/16a" title="Donald Hutchison on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	<a href="https://careers.stackoverflow.com/donaldhutchison" title="Donald Hutchison on StackExchange" target="_blank"><i class="fa fa-stack-exchange fa-2x"></i></a>
+	
+	
+	<a href="http://github.com/rkachowski" title="Donald Hutchison on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  <a href="/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+<script src="/assets/js/subtitle.js"></script>
+
+<!-- Jekyll Simple Search option -->
+<script>
+  $(document).ready(function() {
+      $('.search-field').jekyllSearch({
+          jsonFile: '/search.json',
+          searchResults: '.search-results',
+          template: '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{shortdate}</time></span></a></article></li>',
+          fuzzy: true,
+          noResults: '<p>Nothing found.</p>'
+        });
+  });
+
+  (function( $, window, undefined ) {
+    
+     var bs = {
+          close: $(".close-btn"),
+          searchform: $(".search-form"),
+          canvas: $(".js-menu-screen"),
+          dothis: $('.dosearch')
+      };
+    
+    bs.dothis.on('click', function() {
+      $('.search-wrapper').css({ display: "block" });
+      $('body').toggleClass('no-scroll');
+      bs.searchform.toggleClass('active');
+      bs.searchform.find('input').focus();
+      bs.canvas.toggleClass('is-visible');
+    });
+    
+      bs.close.on('click', function() {
+        $('.search-wrapper').removeAttr( 'style' );
+        $('body').toggleClass('no-scroll');
+        bs.searchform.toggleClass('active');
+        bs.canvas.removeClass('is-visible');
+    });
+  })( jQuery, window );
+</script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-17488316-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+	        
+
+</body>
+</html>
