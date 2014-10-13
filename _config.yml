@@ -33,7 +33,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Site owner
 owner:
   name: Donald Hutchison
-  avatar: bio-photo.jpg
+  avatar: portrait.png
   email: contact@donaldhutchison.info
   disqus-shortname: "donaldhutchisoninfo"
   twitter: rev_kachowski
