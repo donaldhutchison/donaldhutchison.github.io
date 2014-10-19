@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/rkachowski
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://donaldhutchison.info
+  * I am rkachowski (https://keybase.io/rkachowski) on keybase.
+  * I have a public key with fingerprint 74A1 D07F 4F6E F13C DD16  3757 5758 E143 DEEC 91B1
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "74a1d07f4f6ef13cdd1637575758e143deec91b1",
+            "host": "keybase.io",
+            "key_id": "5758e143deec91b1",
+            "uid": "65603cb06d004edd241a08b8fc95a000",
+            "username": "rkachowski"
+        },
+        "service": {
+            "hostname": "donaldhutchison.info",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1413720701,
+    "expire_in": 157680000,
+    "prev": "afbb4cc8d014facea44424ed49182dc2ccd80ae2b83c7f74308177db772946b9",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.1.3
+Comment: https://keybase.io/crypto
+
+yMMEAnicO8LLzMDF6KLmUxex2i6d8fSB36UMIc6raquVkvJTKpWsqpWyU8FUWmZe
+empRQVFmXomSlZK5SaJhioF5mkmaWWqaoXFySoqhmbG5KQhapBqaGKekpiZbGiYZ
+KukoZeQXg3QAjUlKLE7Vy8wHigE58ZkpQFEs6kvBEmamZgbGyUkGZikGBiapKSlG
+JoaJBhZJFmnJlqaJBgYGIIXFqUV5ibmpQNVF2YnJGfnlxdmZSrU6SkDxsszkVJCr
+QZZD1aTk5yXmpGSUliRnZBbn5+ll5qWBnFJQlF+Sn5yfA1SRUVJSYAUyoKSyAKSj
+PDUpHmpWfFJmXgowBIAaylKLijPz85SsDIEqk0syQYYbmhgamxsZmBsY6iilVhRk
+FqXGZ4JUmJqbWQAdawCyJrUMaGRiWlKSSXKyRYqBoUlaYnJqoomJiRHQfyaWhhZG
+KclGyckpFgaJqUZJFsbJ5mnmJsYGFobm5ilJ5uZGliZmSZZKIN8V5uUrWZkAnZmY
+DjSyODM9L7GktChVqfbQwRgWBkYuBjZWJlAcMnBxCsBiNtuR/69ktU+9x+KgDdbc
+zWu1t55c+njXnHCBbvGg3zP2vZ5cf/Xawa+MljZbI55plZ7+W6Z298iZ3ScM7m22
+ElW8kjPvTFBmNMMW71CNlo/PiyZxbu34vNLY2551zqQPzbN+BW2SfyVqd9nrv6W8
+7tLgX5zc94ue79d/6FQ2rTLU6Pet0/Kr7r/JSAyYvPhc4unDjQo5bcfvXdH2nPc9
+6cCB+D67Gkn5+Waf/t0Qbf91SqxjqWZUuMKui9/nTH2732lG/bRJSoJdsQcknyy4
+FPtkWcTq88121vle29gy4t+GVzcoTMz6uOV2nyCbBkd00eeFO+VPLEjsZ3mjzdbx
+ztj7/cpOh66T59rmuaofu6devI1hNtvRtE9S7C8LHTq8VGMt7y1aOm/PyX3ufPcP
+JK+6KeH/dIpe/JsPz+UfTnfhEjYKlD0bs37Rl1Cz5ps/7iww+GDb4/nu9PMz4dFq
+gZfUcspZL/6UM10vou0ZEZjd/Ol+3Evj/Kh2oV96QT0fysT9lFpK5jbttdWIf/tl
+008rheX90zRrlz/bsuL0kZSAucuXGgv0ZkU5dtx9lWG8rmt/ltSb3nkc01qjI0Vn
++VyTfOKpkFQ/ecLv+sIq4alRBwq1/nHI6P5ad7HE56WFwuk+u0PBmpO/PhOWPPI4
+W/5H3OpY9UKf7SpFWezl217nfGH8HsOz6vKJy7e+qXa5LFlstUHIMtLJ4nPRIQOT
+zf0AqfCabg==
+=VQoR
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rkachowski
+
+==================================================================
+
