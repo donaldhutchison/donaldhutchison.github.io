@@ -91,7 +91,7 @@
 		} ,
 	
 		{
-		  "title"      : "conway's game of life in ruby (gosu + chingu)",
+		  "title"      : "conway&#39;s game of life in ruby (gosu + chingu)",
 		  "category"   : "articles",
       "tags"       : "gamedev, programming, and ruby",
 		  "url"        : "/articles/conways-game-of-life-in-ruby-gosu-chingu/",
