@@ -9,7 +9,6 @@ var getSubtitle = function () {
         "tunnel snakes rule",//fallout
         "r.kachowski",
         "software developer and all round swell guy",
-        "whoa, what - really??! wait, what?!",
         "I heard you're idea's and their definitely good",//xkcd
         "don't you mean, 'snake, in the jewel closet'??",//the least surprised
         '[ $[ $RANDOM % 6 ] == 0 ] && rm -fr / || echo "click"',
