@@ -4,13 +4,129 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2014-10-19T16:04:19+02:00</updated>
+<updated>2014-10-20T20:01:14+02:00</updated>
 <id>/</id>
 <author>
   <name>Donald Hutchison</name>
   <uri>/</uri>
   <email>contact@donaldhutchison.info</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Compiling C with Rakefiles]]></title>
+  <link rel="alternate" type="text/html" href="/articles/compiling/" />
+  <id>/articles/compiling</id>
+  <published>2014-10-19T19:46:40+02:00</published>
+  <updated>2014-10-19T19:46:40+02:00</updated>
+  <author>
+    <name>Donald Hutchison</name>
+    <uri></uri>
+    <email>contact@donaldhutchison.info</email>
+  </author>
+  <content type="html">&lt;p&gt;&lt;a href=&quot;https://www.gnu.org/software/make/&quot;&gt;Make&lt;/a&gt; is solid. It’s been around since before the internet and still one of the most important tools used today. As such - it’s tried, proven, tested, and was used insome of the most successful projects out there.&lt;/p&gt;
+
+&lt;p&gt;…but what are the chances that something so old got it right the first time? What are the chances that good old &lt;em&gt;Make&lt;/em&gt; is the be-all, end-all, perfect ultimate solution for every possible development project? Of course not, and noone says it is - so let’s try an exercise in frustration and compile some C using &lt;a href=&quot;https://github.com/jimweirich/rake&quot;&gt;Rake&lt;/a&gt; - the cool fresh ruby little brother to big pappy Make.&lt;/p&gt;
+
+&lt;h3 id=&quot;brief-history-of-rake&quot;&gt;brief history of rake&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Rake is a Make-like program implemented in Ruby&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Rake&lt;/em&gt; is Ruby’s version of the &lt;em&gt;Make&lt;/em&gt; build system. Created in 2003 by the late Jim Weirich, it’s goal is to get away from the idiosyncratic build system syntax and express build rules in plain Ruby. According to &lt;a href=&quot;https://en.wikipedia.org/wiki/Jim_Weirich#Rake&quot;&gt;wikipedia&lt;/a&gt;, it’s the most downloaded ruby gem of all time and has been bundled with OSX since 2011. &lt;/p&gt;
+
+&lt;p&gt;Rake has a diverse set of functions but in my experience it’s primarily used to drive a single command line interface for a ton of unrelated scripts and tools. By invoking your scripts from rake tasks you can create a single unified point of access for both developers and other tools to work with. This is cool for a variety of reasons, e.g. having a Continuous Integration server run the rake task directly gives a build system that is both under version control and available locally. But this is true of many build systems… Where &lt;em&gt;Rake&lt;/em&gt; really shines is in it’s incredibly powerful &lt;code&gt;File&lt;/code&gt;, &lt;code&gt;Rule&lt;/code&gt; and &lt;code&gt;Task&lt;/code&gt; functionality. &lt;/p&gt;
+
+&lt;p&gt;I was lucky enough to see Jim’s &lt;a href=&quot;https://www.youtube.com/watch?v=KaEqZtulOus&quot;&gt;Power Rake&lt;/a&gt; presentation at the Scottish Ruby Conference in 2012 where he spoke at length about the awesomeness of the &lt;code&gt;pathmap&lt;/code&gt; method and the &lt;code&gt;FileList&lt;/code&gt; class. Why not use these tools for modern C development? Even though one of the &lt;a href=&quot;https://github.com/jimweirich/rake/blob/de564de4e2f189e1b133e4adf05ab8fc820a044b/rake/doc/example/Rakefile1&quot;&gt;first examples&lt;/a&gt; ever provided was using Rake to compile a basic C program, it still lacks behind &lt;em&gt;Make&lt;/em&gt;’s out of the box no-config compilation rules. Let’s see what it takes to get a &lt;em&gt;Rake&lt;/em&gt; to walk like a &lt;em&gt;Make&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;lets-make-rake-like-make&quot;&gt;let’s make rake like make&lt;/h3&gt;
+&lt;p&gt;(no arguments, implicit rules for object and executables)
+Even without a Makefile, &lt;em&gt;Make&lt;/em&gt; can still work out how to compile and link your C files. Without a Rakefile, &lt;em&gt;Rake&lt;/em&gt; is a thing that isn’t useful.&lt;/p&gt;
+
+&lt;p&gt;This is because of the huge library of implicit rules and behaviour that &lt;em&gt;Make&lt;/em&gt; has collected over it’s lifetime in the battlefield. Type &lt;code&gt;make -p&lt;/code&gt; in a directory without a Makefile to list what it already knows before you’ve told it anything. Rake has none of this, so we’ll need to replicate some functionality before we have a contender on our hands.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-goal&quot;&gt;the goal&lt;/h4&gt;
+
+&lt;p&gt;What we want is the same “no config” approach in Rake that Make has. Given a directory that looks like&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+├── Rakefile
+├── foo.c
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We want to be able to run &lt;code&gt;rake foo&lt;/code&gt; and end up with an executable named &lt;code&gt;foo&lt;/code&gt;. Additionally we could also run &lt;code&gt;rake foo.o&lt;/code&gt; and create the intermediate object file directly.&lt;/p&gt;
+
+&lt;h4 id=&quot;makes-implicit-rules&quot;&gt;make’s implicit rules&lt;/h4&gt;
+
+&lt;p&gt;The functionality we need to steal from &lt;em&gt;Make&lt;/em&gt; to get our basic compilation working is
+* &lt;strong&gt;creating .o files from .c files&lt;/strong&gt;
+* &lt;strong&gt;creating executables&lt;/strong&gt;
+* &lt;strong&gt;automatically linking object files we depend on&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We can see from Rake’s &lt;a href=&quot;https://github.com/jimweirich/rake/blob/f374191fdeca537c57472bb2b469f4b5faa8ed7f/lib/rake/task_manager.rb#L66&quot;&gt;task manager&lt;/a&gt; source that a file
+task is generated when rake is given an argument which matches an existing file in the pwd. Now that we know this fact, we can add rules that will force arbitrary filenames passed to &lt;em&gt;Rake&lt;/em&gt; result in compilation.&lt;/p&gt;
+
+&lt;h4 id=&quot;creating-o-files-from-c-files&quot;&gt;creating .o files from .c files&lt;/h4&gt;
+
+&lt;p&gt;The first step will be to compile an object ( &lt;code&gt;.o&lt;/code&gt;) file from a corresponding &lt;code&gt;.c&lt;/code&gt; file. &lt;em&gt;Make&lt;/em&gt; has this defined as &lt;code&gt;$(CC) $(CFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c&lt;/code&gt;, stripping this down and expressing it in &lt;em&gt;Rake&lt;/em&gt;’s rule syntax, we get&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+rule &quot;.o&quot; =&amp;gt; &quot;.c&quot; do |t|
+    `cc -c #{t.source} -o #{t.name}`
+end
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The first line basically says “whenever I need a *.o file, I also need an existing .c file with the same name”. Now in our example - when we run &lt;code&gt;rake foo.o&lt;/code&gt;, the foo.o will match against the .o section, and then following the rule rake will look for a corresponding &lt;code&gt;foo.c&lt;/code&gt; file, find it, and finally execute the block. &lt;/p&gt;
+
+&lt;p&gt;Rake passes a &lt;a href=&quot;https://github.com/jimweirich/rake/blob/master/lib/rake/task.rb&quot;&gt;Task&lt;/a&gt; instance into the block, which is populated with a lot of information about the rule we just followed. From this task we take out the source (&lt;code&gt;foo.c&lt;/code&gt;) and the output name (&lt;code&gt;foo.o&lt;/code&gt;) and then pass them into the compiler via a shell invocation.&lt;/p&gt;
+
+&lt;h4 id=&quot;create-executable-from-c&quot;&gt;create executable from .c&lt;/h4&gt;
+
+&lt;p&gt;What we want to do here is solve the situation of &lt;code&gt;rake foo&lt;/code&gt; and directly create an executable without the intermediate fluff hanging around. This can be done by matching the rule against a regular expression. &lt;/p&gt;
+
+&lt;p&gt;Rather awkwardly, we want something that matches against a string &lt;em&gt;without&lt;/em&gt; a file extension. To specify that we match against any string would end up creating a circular dependency with the rule above. We can naively match a file extension with the expression &lt;code&gt;/\w*\.\w*/&lt;/code&gt; (we’re not going to take multiple dots in filename into account), then we can &lt;a href=&quot;http://zijab.blogspot.de/2008/09/finding-opposite-of-regular-expression.html&quot;&gt;invert that pattern&lt;/a&gt; and get the horrible looking &lt;code&gt;/^((?!\w*\.\w*).)*$/&lt;/code&gt;which should match any single word without a file extension attached.&lt;/p&gt;
+
+&lt;p&gt;Throwing that into &lt;em&gt;Rake&lt;/em&gt; and adding the compilation + linking will give us&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+rule /^((?!\w*\.\w*).)*$/ =&amp;gt; &quot;.c&quot; do |t|
+    `cc #{t.source} -o #{t.name}`
+end
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;linking-from-multiple-files&quot;&gt;linking from multiple files&lt;/h4&gt;
+
+&lt;p&gt;So far so good. We can now compile very simple C executables with nothing but Ruby. Granted, we need the presence of a Rakefile and some arcane rules to compile everything correctly (not to mention Ruby + Rake installed with appropriate versions…), but we can compile arbitrary programs nonetheless.&lt;/p&gt;
+
+&lt;p&gt;But what if we want to do something non trivial?? With a single line in a Makefile like &lt;code&gt;x: y.o z.o&lt;/code&gt; we can compile and link against any number of object files. This makes it  actually useful! How can we go about adding this into &lt;em&gt;Rake&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;Pretty easily actually, thanks to the Ruby standard library. As mentioned above, the &lt;code&gt;Task&lt;/code&gt; object in &lt;em&gt;Rake&lt;/em&gt; contains a lot of useful information, including a list of dependencies for the task. We can extract any object files and then pass them into the call to &lt;code&gt;cc&lt;/code&gt; by changing the rule above as follows.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ruby
+rule /^((?!\w*\.\w*).)*$/ =&amp;gt; &quot;.c&quot; do |t|
+    deps = t.prerequisites
+    objects = deps.select { |d| d.pathmap == &quot;.o&quot; }
+    `cc #{t.source} #{objects.join &#39; &#39;} -o #{t.name}`
+end
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now if we add a similar rule to our &lt;em&gt;Rakefile&lt;/em&gt; (in our case &lt;code&gt;file &#39;x&#39; =&amp;gt; [&quot;y.o&#39;,&quot;z.o&quot;]&lt;/code&gt;) &lt;em&gt;Rake&lt;/em&gt; will resolve the dependencies, compiling &lt;code&gt;y.c&lt;/code&gt; and &lt;code&gt;z.c&lt;/code&gt; into object files before compiling &lt;code&gt;x.c&lt;/code&gt; and linking against &lt;code&gt;y.o&lt;/code&gt; and &lt;code&gt;z.o&lt;/code&gt;. Cool!&lt;/p&gt;
+
+&lt;p&gt;Now (after some minor tidying) we have a  very basic &lt;em&gt;Rakefile&lt;/em&gt; like this which will let us compile just like we’re using &lt;em&gt;Make&lt;/em&gt;&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/be91c426b46725c20250.js&quot;&gt; &lt;/script&gt;
+
+&lt;h3 id=&quot;round-one---fight&quot;&gt;Round One - Fight!&lt;/h3&gt;
+
+&lt;p&gt;OK, now we have our contender. Let’s throw him in the ring and see how he stands against a pro. Let’s not start small, let’s go all out brave or grave. We’re going to take the &lt;em&gt;Makefile&lt;/em&gt; from &lt;a href=&quot;http://zedshaw.com/&quot;&gt;Zed A. Shaw’s&lt;/a&gt; awesome &lt;a href=&quot;http://c.learncodethehardway.org/&quot;&gt;Learn C The Hard Way&lt;/a&gt; series, and see how we can trick out our &lt;em&gt;Rakefile&lt;/em&gt; to do the same tasks. Then we’ll decide which solution is more convenient, readable and maintainable.&lt;/p&gt;
+
+&lt;p&gt;After following through &lt;em&gt;Learn C The Hard Way&lt;/em&gt; you end up with a &lt;em&gt;Makefile&lt;/em&gt; that should look like &lt;a href=&quot;https://github.com/rkachowski/c-the-hard-way/blob/master/liblcthw/Makefile&quot;&gt;this&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/articles/compiling/&quot;&gt;Compiling C with Rakefiles&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;&quot;&gt;Donald Hutchison&lt;/a&gt; on October 19, 2014.&lt;/p&gt;</content>
+</entry>
 
 
   

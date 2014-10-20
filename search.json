@@ -1,6 +1,15 @@
 [
 	
 		{
+		  "title"      : "Compiling C with Rakefiles",
+		  "category"   : "articles",
+      "tags"       : "ruby, rake, and c",
+		  "url"        : "/articles/compiling/",
+		  "date"       : "2014-10-19 19:46:40 +0200",
+		  "shortdate"  : "October 19, 2014"
+		} ,
+	
+		{
 		  "title"      : "How to write a bug report",
 		  "category"   : "articles",
       "tags"       : "qa, testing, software, and bugs",
