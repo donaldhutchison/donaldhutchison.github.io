@@ -3,7 +3,7 @@
   
   
   <url>
-    <loc>donaldhutchison.info/articles/how-to-write-bug-reports/</loc>
+    <loc>http://donaldhutchison.info/articles/how-to-write-bug-reports/</loc>
     
     <lastmod>2014-02-17T00:00:00+01:00</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>donaldhutchison.info/articles/ccnode-recursive-description/</loc>
+    <loc>http://donaldhutchison.info/articles/ccnode-recursive-description/</loc>
     
     <lastmod>2014-02-04T00:00:00+01:00</lastmod>
     
@@ -19,7 +19,7 @@
   </url>
   
   <url>
-    <loc>donaldhutchison.info/articles/ruby-at-the-bar/</loc>
+    <loc>http://donaldhutchison.info/articles/ruby-at-the-bar/</loc>
     
     <lastmod>2014-02-02T00:00:00+01:00</lastmod>
     
@@ -27,7 +27,7 @@
   </url>
   
   <url>
-    <loc>donaldhutchison.info/articles/global-game-jame2014/</loc>
+    <loc>http://donaldhutchison.info/articles/global-game-jame2014/</loc>
     
     <lastmod>2014-01-30T00:00:00+01:00</lastmod>
     
@@ -35,7 +35,7 @@
   </url>
   
   <url>
-    <loc>donaldhutchison.info/articles/coffeescript-skeleton/</loc>
+    <loc>http://donaldhutchison.info/articles/coffeescript-skeleton/</loc>
     
     <lastmod>2014-01-10T00:00:00+01:00</lastmod>
     
@@ -43,7 +43,7 @@
   </url>
   
   <url>
-    <loc>donaldhutchison.info/articles/installing-jekyll-oh-lordy/</loc>
+    <loc>http://donaldhutchison.info/articles/installing-jekyll-oh-lordy/</loc>
     
     <lastmod>2013-07-18T00:00:00+02:00</lastmod>
     
@@ -51,7 +51,7 @@
   </url>
   
   <url>
-    <loc>donaldhutchison.info/blog/working-title-robot-go-home-gaiden/</loc>
+    <loc>http://donaldhutchison.info/blog/working-title-robot-go-home-gaiden/</loc>
     
     <lastmod>2013-03-24T00:00:00+01:00</lastmod>
     
@@ -59,7 +59,7 @@
   </url>
   
   <url>
-    <loc>donaldhutchison.info/articles/optimising-coffeescript-files-with-r-js-unexpected-character/</loc>
+    <loc>http://donaldhutchison.info/articles/optimising-coffeescript-files-with-r-js-unexpected-character/</loc>
     
     <lastmod>2012-06-11T00:00:00+02:00</lastmod>
     
@@ -67,7 +67,7 @@
   </url>
   
   <url>
-    <loc>donaldhutchison.info/articles/coffeescript-requirejs-and-you/</loc>
+    <loc>http://donaldhutchison.info/articles/coffeescript-requirejs-and-you/</loc>
     
     <lastmod>2012-04-24T00:00:00+02:00</lastmod>
     
@@ -75,7 +75,7 @@
   </url>
   
   <url>
-    <loc>donaldhutchison.info/blog/rise-from-your-grave/</loc>
+    <loc>http://donaldhutchison.info/blog/rise-from-your-grave/</loc>
     
     <lastmod>2012-03-17T00:00:00+01:00</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>donaldhutchison.info/articles/conways-game-of-life-in-ruby-gosu-chingu/</loc>
+    <loc>http://donaldhutchison.info/articles/conways-game-of-life-in-ruby-gosu-chingu/</loc>
     
     <lastmod>2010-06-06T00:00:00+02:00</lastmod>
     
@@ -91,7 +91,7 @@
   </url>
   
   <url>
-    <loc>donaldhutchison.info/articles/2d-obb-collisions-in-xna/</loc>
+    <loc>http://donaldhutchison.info/articles/2d-obb-collisions-in-xna/</loc>
     
     <lastmod>2010-03-07T00:00:00+01:00</lastmod>
     
@@ -99,7 +99,7 @@
   </url>
   
   <url>
-    <loc>donaldhutchison.info/blog/syobon-action-155-lives/</loc>
+    <loc>http://donaldhutchison.info/blog/syobon-action-155-lives/</loc>
     
     <lastmod>2010-01-06T00:00:00+01:00</lastmod>
     
@@ -107,7 +107,7 @@
   </url>
   
   <url>
-    <loc>donaldhutchison.info/blog/bigjam-2009/</loc>
+    <loc>http://donaldhutchison.info/blog/bigjam-2009/</loc>
     
     <lastmod>2009-08-10T00:00:00+02:00</lastmod>
     
@@ -115,7 +115,7 @@
   </url>
   
   <url>
-    <loc>donaldhutchison.info/blog/cho-ren-sha-68k/</loc>
+    <loc>http://donaldhutchison.info/blog/cho-ren-sha-68k/</loc>
     
     <lastmod>2009-06-17T00:00:00+02:00</lastmod>
     
@@ -124,50 +124,50 @@
   
   
   <url>
-    <loc>donaldhutchison.info/</loc>
-    <lastmod>2014-10-20T21:10:07+02:00</lastmod>
+    <loc>http://donaldhutchison.info/</loc>
+    <lastmod>2014-10-20T21:13:52+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>donaldhutchison.info/blog/</loc>
-    <lastmod>2014-10-20T21:10:07+02:00</lastmod>
+    <loc>http://donaldhutchison.info/blog/</loc>
+    <lastmod>2014-10-20T21:13:52+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>donaldhutchison.info/articles/</loc>
-    <lastmod>2014-10-20T21:10:07+02:00</lastmod>
+    <loc>http://donaldhutchison.info/articles/</loc>
+    <lastmod>2014-10-20T21:13:52+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>donaldhutchison.info/tags/</loc>
-    <lastmod>2014-10-20T21:10:07+02:00</lastmod>
+    <loc>http://donaldhutchison.info/tags/</loc>
+    <lastmod>2014-10-20T21:13:52+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>donaldhutchison.info/about/</loc>
-    <lastmod>2014-10-20T21:10:07+02:00</lastmod>
+    <loc>http://donaldhutchison.info/about/</loc>
+    <lastmod>2014-10-20T21:13:52+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>donaldhutchison.info/theme-setup/</loc>
-    <lastmod>2014-10-20T21:10:07+02:00</lastmod>
+    <loc>http://donaldhutchison.info/theme-setup/</loc>
+    <lastmod>2014-10-20T21:13:52+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>donaldhutchison.info/projects/</loc>
-    <lastmod>2014-10-20T21:10:07+02:00</lastmod>
+    <loc>http://donaldhutchison.info/projects/</loc>
+    <lastmod>2014-10-20T21:13:52+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

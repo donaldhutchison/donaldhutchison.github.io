@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Donald Hutchison</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="donaldhutchison.info/feed.xml" />
-<link rel="alternate" type="text/html" href="donaldhutchison.info" />
-<updated>2014-10-20T21:10:07+02:00</updated>
-<id>donaldhutchison.info/</id>
+<link rel="self" type="application/atom+xml" href="http://donaldhutchison.info/feed.xml" />
+<link rel="alternate" type="text/html" href="http://donaldhutchison.info" />
+<updated>2014-10-20T21:13:52+02:00</updated>
+<id>http://donaldhutchison.info/</id>
 <author>
   <name>Donald Hutchison</name>
-  <uri>donaldhutchison.info/</uri>
+  <uri>http://donaldhutchison.info/</uri>
   <email>contact@donaldhutchison.info</email>
 </author>
 
@@ -17,13 +17,13 @@
 
 <entry>
   <title type="html"><![CDATA[How to write a bug report]]></title>
-  <link rel="alternate" type="text/html" href="donaldhutchison.info/articles/how-to-write-bug-reports/" />
-  <id>donaldhutchison.info/articles/how-to-write-bug-reports</id>
+  <link rel="alternate" type="text/html" href="http://donaldhutchison.info/articles/how-to-write-bug-reports/" />
+  <id>http://donaldhutchison.info/articles/how-to-write-bug-reports</id>
   <published>2014-02-17T00:00:00+01:00</published>
   <updated>2014-02-17T00:00:00+01:00</updated>
   <author>
     <name>Donald Hutchison</name>
-    <uri>donaldhutchison.info</uri>
+    <uri>http://donaldhutchison.info</uri>
     <email>contact@donaldhutchison.info</email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
@@ -98,7 +98,7 @@ Tested on:
 * iphone5 running ios 6.1.4&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;donaldhutchison.info/articles/how-to-write-bug-reports/&quot;&gt;How to write a bug report&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on February 17, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://donaldhutchison.info/articles/how-to-write-bug-reports/&quot;&gt;How to write a bug report&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;http://donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on February 17, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -106,13 +106,13 @@ Tested on:
 
 <entry>
   <title type="html"><![CDATA[CCNode Recursive Description]]></title>
-  <link rel="alternate" type="text/html" href="donaldhutchison.info/articles/ccnode-recursive-description/" />
-  <id>donaldhutchison.info/articles/ccnode-recursive-description</id>
+  <link rel="alternate" type="text/html" href="http://donaldhutchison.info/articles/ccnode-recursive-description/" />
+  <id>http://donaldhutchison.info/articles/ccnode-recursive-description</id>
   <published>2014-02-04T00:00:00+01:00</published>
   <updated>2014-02-04T00:00:00+01:00</updated>
   <author>
     <name>Donald Hutchison</name>
-    <uri>donaldhutchison.info</uri>
+    <uri>http://donaldhutchison.info</uri>
     <email>contact@donaldhutchison.info</email>
   </author>
   <content type="html">&lt;p&gt;&lt;code&gt;recusiveDescription&lt;/code&gt; is a pretty cool method. It’s on each UIView, and when called it gives you a quick and dirty description of the current view hierarchy relative to that view. &lt;/p&gt;
@@ -122,7 +122,7 @@ Tested on:
 &lt;script src=&quot;https://gist.github.com/8801621.js&quot;&gt; &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;donaldhutchison.info/articles/ccnode-recursive-description/&quot;&gt;CCNode Recursive Description&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on February 04, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://donaldhutchison.info/articles/ccnode-recursive-description/&quot;&gt;CCNode Recursive Description&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;http://donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on February 04, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -130,13 +130,13 @@ Tested on:
 
 <entry>
   <title type="html"><![CDATA[Ruby Development in the Bar]]></title>
-  <link rel="alternate" type="text/html" href="donaldhutchison.info/articles/ruby-at-the-bar/" />
-  <id>donaldhutchison.info/articles/ruby-at-the-bar</id>
+  <link rel="alternate" type="text/html" href="http://donaldhutchison.info/articles/ruby-at-the-bar/" />
+  <id>http://donaldhutchison.info/articles/ruby-at-the-bar</id>
   <published>2014-02-02T00:00:00+01:00</published>
   <updated>2014-02-02T00:00:00+01:00</updated>
   <author>
     <name>Donald Hutchison</name>
-    <uri>donaldhutchison.info</uri>
+    <uri>http://donaldhutchison.info</uri>
     <email>contact@donaldhutchison.info</email>
   </author>
   <content type="html">&lt;p&gt;For reasons I won’t get into, I found myself spending Christmas in Wick on the &lt;a href=&quot;http://goo.gl/maps/BBa7b&quot;&gt;north east tip of Scotland&lt;/a&gt;. This being the second time it’s occurred I was familiar with the quirks and isolation of this part of the world. One of the more upswinging things that happens is that every 26th December, there’s a charity raffle in the local Seaforth Club. This is where you buy some tickets, drink, win prizes and drink some more. &lt;/p&gt;
@@ -198,34 +198,34 @@ Tested on:
 &lt;p&gt;Later the raffle started, and I got the chance to see if things would work out in my favour. The announcer read out a 5 digit number and waited for about 15 seconds. This is when you shout in excitement and run to the middle of the room with your ticket in order to claim your prize. After inputting everyone’s tickets, and then triply validating them with as much attention I could muster, it was simply a case of typing in the winning numbers as they were announced.&lt;/p&gt;
 
 &lt;figure class=&quot;half&quot;&gt;
-    &lt;a href=&quot;donaldhutchison.info/images/ruby/input.png&quot;&gt;&lt;img src=&quot;donaldhutchison.info/images/ruby/input.png&quot; /&gt;&lt;/a&gt;
-    &lt;a href=&quot;donaldhutchison.info/images/ruby/use.png&quot;&gt;&lt;img src=&quot;donaldhutchison.info/images/ruby/use.png&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://donaldhutchison.info/images/ruby/input.png&quot;&gt;&lt;img src=&quot;http://donaldhutchison.info/images/ruby/input.png&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://donaldhutchison.info/images/ruby/use.png&quot;&gt;&lt;img src=&quot;http://donaldhutchison.info/images/ruby/use.png&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Data entry and usage!&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;It was quite a while before someone at my table got a winner. I was actually starting to get nervous that I hadn’t tested enough and everyone was missing out on novelty prizes due to my arrogance. Fortunately that wasn’t the case, and soon enough my sister got a winning ticket.&lt;/p&gt;
 
 &lt;figure class=&quot;half&quot;&gt;
-    &lt;a href=&quot;donaldhutchison.info/images/ruby/kirstywin.png&quot;&gt;&lt;img src=&quot;donaldhutchison.info/images/ruby/kirstywin.png&quot; /&gt;&lt;/a&gt;
-    &lt;a href=&quot;donaldhutchison.info/images/ruby/kirstyprize.jpg&quot;&gt;&lt;img src=&quot;donaldhutchison.info/images/ruby/kirstyprize.jpg&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://donaldhutchison.info/images/ruby/kirstywin.png&quot;&gt;&lt;img src=&quot;http://donaldhutchison.info/images/ruby/kirstywin.png&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://donaldhutchison.info/images/ruby/kirstyprize.jpg&quot;&gt;&lt;img src=&quot;http://donaldhutchison.info/images/ruby/kirstyprize.jpg&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Kirsty wins a hat, a fanny pack and some D cell batteries!! Super jealous!&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;After putting in all this effort, I felt entitled to some kind of reward (aside from the drinks that I tricked everyone else out of). Perhaps it was the Christmas spirit(s), but soon I received all I was hoping for and more.&lt;/p&gt;
 
 &lt;figure class=&quot;half&quot;&gt;
-    &lt;a href=&quot;donaldhutchison.info/images/ruby/iwin.png&quot;&gt;&lt;img src=&quot;donaldhutchison.info/images/ruby/iwin.png&quot; /&gt;&lt;/a&gt;
-    &lt;a href=&quot;donaldhutchison.info/images/ruby/straighteners.jpg&quot;&gt;&lt;img src=&quot;donaldhutchison.info/images/ruby/straighteners.jpg&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://donaldhutchison.info/images/ruby/iwin.png&quot;&gt;&lt;img src=&quot;http://donaldhutchison.info/images/ruby/iwin.png&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://donaldhutchison.info/images/ruby/straighteners.jpg&quot;&gt;&lt;img src=&quot;http://donaldhutchison.info/images/ruby/straighteners.jpg&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Hair stylers! Lucky number 72887 never fails&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Beautiful. Exactly what I was wanting. &lt;a href=&quot;donaldhutchison.info/images/ruby/me.jpg&quot;&gt;Here&lt;/a&gt; is a recent photo of me, to show how much I appreciate and need such a styling product in my life. It was pretty funny :P&lt;/p&gt;
+&lt;p&gt;Beautiful. Exactly what I was wanting. &lt;a href=&quot;http://donaldhutchison.info/images/ruby/me.jpg&quot;&gt;Here&lt;/a&gt; is a recent photo of me, to show how much I appreciate and need such a styling product in my life. It was pretty funny :P&lt;/p&gt;
 
 &lt;p&gt;The other prizes everyone got included a stuffed dog, a bottle of whisky, a large crate of cider and a stationary set. However, before setting out my mother had given me some money to buy tickets for her. This managing of other peoples’ tickets was one of the reasons I decided to solve this with a phone, and as such is the original cause behind this post. The final prize to be drawn was the star prize - a mystery sum of money in an envelope. Everyone in the room was ablaze with excitement and blazing. And what do you know, the winning ticket was in my possession.&lt;/p&gt;
 
 &lt;figure class=&quot;half&quot;&gt;
-    &lt;a href=&quot;donaldhutchison.info/images/ruby/mumwin.png&quot;&gt;&lt;img src=&quot;donaldhutchison.info/images/ruby/mumwin.png&quot; /&gt;&lt;/a&gt;
-    &lt;a href=&quot;donaldhutchison.info/images/ruby/mumprize1.jpg&quot;&gt;&lt;img src=&quot;donaldhutchison.info/images/ruby/mumprize1.jpg&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://donaldhutchison.info/images/ruby/mumwin.png&quot;&gt;&lt;img src=&quot;http://donaldhutchison.info/images/ruby/mumwin.png&quot; /&gt;&lt;/a&gt;
+    &lt;a href=&quot;http://donaldhutchison.info/images/ruby/mumprize1.jpg&quot;&gt;&lt;img src=&quot;http://donaldhutchison.info/images/ruby/mumprize1.jpg&quot; /&gt;&lt;/a&gt;
     &lt;figcaption&gt;Star Prize! ROI: &amp;gt;300%! Good deal!&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -234,7 +234,7 @@ Tested on:
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Ruboto is pretty cool. This application was incredibly trivial and very specific to the situation I was in, but I question in what other similar situations I could create a short simple program to help me out. I feel the inherent nature of touch screens makes it difficult to input structured code, and as such would make anything pretty involving to be a frustrating experience - a topic brushed on by &lt;a href=&quot;http://www.codinghorror.com/blog/2010/10/the-keyboard-cult.html&quot;&gt;Jeff Atwood&lt;/a&gt; in an old post. Still, I want to keep my eyes open for another situation like this, and maybe come out with hair straighteners, whisky and £80 as a bonus for my initiative.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;donaldhutchison.info/articles/ruby-at-the-bar/&quot;&gt;Ruby Development in the Bar&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on February 02, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://donaldhutchison.info/articles/ruby-at-the-bar/&quot;&gt;Ruby Development in the Bar&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;http://donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on February 02, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -242,13 +242,13 @@ Tested on:
 
 <entry>
   <title type="html"><![CDATA[Global Game Jam 2014]]></title>
-  <link rel="alternate" type="text/html" href="donaldhutchison.info/articles/global-game-jame2014/" />
-  <id>donaldhutchison.info/articles/global-game-jame2014</id>
+  <link rel="alternate" type="text/html" href="http://donaldhutchison.info/articles/global-game-jame2014/" />
+  <id>http://donaldhutchison.info/articles/global-game-jame2014</id>
   <published>2014-01-30T00:00:00+01:00</published>
   <updated>2014-01-30T00:00:00+01:00</updated>
   <author>
     <name>Donald Hutchison</name>
-    <uri>donaldhutchison.info</uri>
+    <uri>http://donaldhutchison.info</uri>
     <email>contact@donaldhutchison.info</email>
   </author>
   <content type="html">&lt;p&gt;Last weekend was the &lt;a href=&quot;http://ggjberlin.de/&quot;&gt;Berlin Global Game Jam 2014&lt;/a&gt;. I’d made it part of a new years resolution plan to get more involved and release some games / projects, and this represented the first step towards doing something.&lt;/p&gt;
@@ -263,9 +263,9 @@ Tested on:
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/kA5JSRQ6UUQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;img src=&quot;donaldhutchison.info/images/ggj.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://donaldhutchison.info/images/ggj.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;donaldhutchison.info/articles/global-game-jame2014/&quot;&gt;Global Game Jam 2014&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on January 30, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://donaldhutchison.info/articles/global-game-jame2014/&quot;&gt;Global Game Jam 2014&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;http://donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on January 30, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -273,13 +273,13 @@ Tested on:
 
 <entry>
   <title type="html"><![CDATA[Coffeescript + RequireJS Skeleton Project]]></title>
-  <link rel="alternate" type="text/html" href="donaldhutchison.info/articles/coffeescript-skeleton/" />
-  <id>donaldhutchison.info/articles/coffeescript-skeleton</id>
+  <link rel="alternate" type="text/html" href="http://donaldhutchison.info/articles/coffeescript-skeleton/" />
+  <id>http://donaldhutchison.info/articles/coffeescript-skeleton</id>
   <published>2014-01-10T00:00:00+01:00</published>
   <updated>2014-01-10T00:00:00+01:00</updated>
   <author>
     <name>Donald Hutchison</name>
-    <uri>donaldhutchison.info</uri>
+    <uri>http://donaldhutchison.info</uri>
     <email>contact@donaldhutchison.info</email>
   </author>
   <content type="html">&lt;p&gt;After being introduced to the awesome &lt;a href=&quot;http://www.pixijs.com/&quot;&gt;pixi.js&lt;/a&gt; framework by a colleague, I decided to update an old project of mine to make screwing around with it a little easier. This &lt;a href=&quot;https://github.com/rkachowski/coffeescript-skeleton&quot;&gt;skeleton project&lt;/a&gt; comes with everything you need to run a pretty decent setup, and all at the cost of only two command line options.&lt;/p&gt;
@@ -318,7 +318,7 @@ Tested on:
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/rkachowski/coffeescript-skeleton&quot; class=&quot;btn&quot;&gt;Check it out on github!&lt;/a&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;donaldhutchison.info/articles/coffeescript-skeleton/&quot;&gt;Coffeescript + RequireJS Skeleton Project&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on January 10, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://donaldhutchison.info/articles/coffeescript-skeleton/&quot;&gt;Coffeescript + RequireJS Skeleton Project&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;http://donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on January 10, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -326,13 +326,13 @@ Tested on:
 
 <entry>
   <title type="html"><![CDATA[Jekyll Migration Woes]]></title>
-  <link rel="alternate" type="text/html" href="donaldhutchison.info/articles/installing-jekyll-oh-lordy/" />
-  <id>donaldhutchison.info/articles/installing-jekyll-oh-lordy</id>
+  <link rel="alternate" type="text/html" href="http://donaldhutchison.info/articles/installing-jekyll-oh-lordy/" />
+  <id>http://donaldhutchison.info/articles/installing-jekyll-oh-lordy</id>
   <published>2013-07-18T00:00:00+02:00</published>
   <updated>2013-07-18T00:00:00+02:00</updated>
   <author>
     <name>Donald Hutchison</name>
-    <uri>donaldhutchison.info</uri>
+    <uri>http://donaldhutchison.info</uri>
     <email>contact@donaldhutchison.info</email>
   </author>
   <content type="html">&lt;blockquote&gt;
@@ -399,7 +399,7 @@ locale: Cannot &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;LC_ALL to defau
 
 &lt;p&gt;The next thing to do was to setup a comment system with disqus, customise some header images and create a flattr account (heh). I look forward to overcoming my laziness and becoming the prolific and helpful tech blogger I know I never wanted to be.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;donaldhutchison.info/articles/installing-jekyll-oh-lordy/&quot;&gt;Jekyll Migration Woes&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on July 18, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://donaldhutchison.info/articles/installing-jekyll-oh-lordy/&quot;&gt;Jekyll Migration Woes&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;http://donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on July 18, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -407,20 +407,20 @@ locale: Cannot &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;LC_ALL to defau
 
 <entry>
   <title type="html"><![CDATA[Robot Go Home : Gaiden]]></title>
-  <link rel="alternate" type="text/html" href="donaldhutchison.info/blog/working-title-robot-go-home-gaiden/" />
-  <id>donaldhutchison.info/blog/working-title-robot-go-home-gaiden</id>
+  <link rel="alternate" type="text/html" href="http://donaldhutchison.info/blog/working-title-robot-go-home-gaiden/" />
+  <id>http://donaldhutchison.info/blog/working-title-robot-go-home-gaiden</id>
   <published>2013-03-24T00:00:00+01:00</published>
   <updated>2013-03-24T00:00:00+01:00</updated>
   <author>
     <name>Donald Hutchison</name>
-    <uri>donaldhutchison.info</uri>
+    <uri>http://donaldhutchison.info</uri>
     <email>contact@donaldhutchison.info</email>
   </author>
   <content type="html">&lt;p&gt;An iOS game prototype that was designed for the &lt;a href=&quot;http://www.onegameamonth.com/&quot;&gt;one game a month&lt;/a&gt; initiative.&lt;/p&gt;
 
 &lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Lesson Learned :&lt;/strong&gt; be fast but don’t rush..&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;donaldhutchison.info/blog/working-title-robot-go-home-gaiden/&quot;&gt;Robot Go Home : Gaiden&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on March 24, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://donaldhutchison.info/blog/working-title-robot-go-home-gaiden/&quot;&gt;Robot Go Home : Gaiden&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;http://donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on March 24, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -428,13 +428,13 @@ locale: Cannot &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;LC_ALL to defau
 
 <entry>
   <title type="html"><![CDATA[Optimising CoffeeScript files with r.js - "Unexpected Character"]]></title>
-  <link rel="alternate" type="text/html" href="donaldhutchison.info/articles/optimising-coffeescript-files-with-r-js-unexpected-character/" />
-  <id>donaldhutchison.info/articles/optimising-coffeescript-files-with-r-js-unexpected-character</id>
+  <link rel="alternate" type="text/html" href="http://donaldhutchison.info/articles/optimising-coffeescript-files-with-r-js-unexpected-character/" />
+  <id>http://donaldhutchison.info/articles/optimising-coffeescript-files-with-r-js-unexpected-character</id>
   <published>2012-06-11T00:00:00+02:00</published>
   <updated>2012-06-11T00:00:00+02:00</updated>
   <author>
     <name>Donald Hutchison</name>
-    <uri>donaldhutchison.info</uri>
+    <uri>http://donaldhutchison.info</uri>
     <email>contact@donaldhutchison.info</email>
   </author>
   <content type="html">&lt;h3 id=&quot;the-problem&quot;&gt;The Problem…&lt;/h3&gt;
@@ -459,7 +459,7 @@ locale: Cannot &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;LC_ALL to defau
 
 &lt;p&gt;Because we’re using a simple shell script to invoke the r.js command, we can throw this command in there to do some preprocessing work on our source files. Ideally, this would be in a rake/make/cakefile but this fits my needs right now.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;donaldhutchison.info/articles/optimising-coffeescript-files-with-r-js-unexpected-character/&quot;&gt;Optimising CoffeeScript files with r.js - "Unexpected Character"&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on June 11, 2012.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://donaldhutchison.info/articles/optimising-coffeescript-files-with-r-js-unexpected-character/&quot;&gt;Optimising CoffeeScript files with r.js - "Unexpected Character"&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;http://donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on June 11, 2012.&lt;/p&gt;</content>
 </entry>
 
 
@@ -467,13 +467,13 @@ locale: Cannot &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;LC_ALL to defau
 
 <entry>
   <title type="html"><![CDATA[Coffeescript RequireJS and You!]]></title>
-  <link rel="alternate" type="text/html" href="donaldhutchison.info/articles/coffeescript-requirejs-and-you/" />
-  <id>donaldhutchison.info/articles/coffeescript-requirejs-and-you</id>
+  <link rel="alternate" type="text/html" href="http://donaldhutchison.info/articles/coffeescript-requirejs-and-you/" />
+  <id>http://donaldhutchison.info/articles/coffeescript-requirejs-and-you</id>
   <published>2012-04-24T00:00:00+02:00</published>
   <updated>2012-04-24T00:00:00+02:00</updated>
   <author>
     <name>Donald Hutchison</name>
-    <uri>donaldhutchison.info</uri>
+    <uri>http://donaldhutchison.info</uri>
     <email>contact@donaldhutchison.info</email>
   </author>
   <content type="html">&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
@@ -609,7 +609,7 @@ Our file layout on disk&lt;/p&gt;
 &lt;p&gt;Nice!&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;donaldhutchison.info/articles/coffeescript-requirejs-and-you/&quot;&gt;Coffeescript RequireJS and You!&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on April 24, 2012.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://donaldhutchison.info/articles/coffeescript-requirejs-and-you/&quot;&gt;Coffeescript RequireJS and You!&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;http://donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on April 24, 2012.&lt;/p&gt;</content>
 </entry>
 
 
@@ -617,18 +617,18 @@ Our file layout on disk&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[rise from your grave]]></title>
-  <link rel="alternate" type="text/html" href="donaldhutchison.info/blog/rise-from-your-grave/" />
-  <id>donaldhutchison.info/blog/rise-from-your-grave</id>
+  <link rel="alternate" type="text/html" href="http://donaldhutchison.info/blog/rise-from-your-grave/" />
+  <id>http://donaldhutchison.info/blog/rise-from-your-grave</id>
   <published>2012-03-17T00:00:00+01:00</published>
   <updated>2012-03-17T00:00:00+01:00</updated>
   <author>
     <name>Donald Hutchison</name>
-    <uri>donaldhutchison.info</uri>
+    <uri>http://donaldhutchison.info</uri>
     <email>contact@donaldhutchison.info</email>
   </author>
   <content type="html">it's time to resurrect a blog..
 
-  &lt;p&gt;&lt;a href=&quot;donaldhutchison.info/blog/rise-from-your-grave/&quot;&gt;rise from your grave&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on March 17, 2012.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://donaldhutchison.info/blog/rise-from-your-grave/&quot;&gt;rise from your grave&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;http://donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on March 17, 2012.&lt;/p&gt;</content>
 </entry>
 
 
@@ -636,13 +636,13 @@ Our file layout on disk&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[conway's game of life in ruby (gosu + chingu)]]></title>
-  <link rel="alternate" type="text/html" href="donaldhutchison.info/articles/conways-game-of-life-in-ruby-gosu-chingu/" />
-  <id>donaldhutchison.info/articles/conways-game-of-life-in-ruby-gosu-chingu</id>
+  <link rel="alternate" type="text/html" href="http://donaldhutchison.info/articles/conways-game-of-life-in-ruby-gosu-chingu/" />
+  <id>http://donaldhutchison.info/articles/conways-game-of-life-in-ruby-gosu-chingu</id>
   <published>2010-06-06T00:00:00+02:00</published>
   <updated>2010-06-06T00:00:00+02:00</updated>
   <author>
     <name>Donald Hutchison</name>
-    <uri>donaldhutchison.info</uri>
+    <uri>http://donaldhutchison.info</uri>
     <email>contact@donaldhutchison.info</email>
   </author>
   <content type="html">&lt;p&gt;inspired by this &lt;a href=&quot;http://www.glitchds.com/cellular-automaton-music-sequencer/&quot;&gt;awesome nds tracker&lt;/a&gt; and an old &lt;a href=&quot;http://www.boingboing.net/2009/05/27/celluar-automata-at.html&quot;&gt;boingboing&lt;/a&gt; post, i decided to make an implementation of conway’s game of life in ruby, using the gosu and chingu game development gems.&lt;/p&gt;
@@ -652,7 +652,7 @@ Our file layout on disk&lt;/p&gt;
 &lt;script src=&quot;https://gist.github.com/427880.js&quot;&gt; &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;donaldhutchison.info/articles/conways-game-of-life-in-ruby-gosu-chingu/&quot;&gt;conway's game of life in ruby (gosu + chingu)&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on June 06, 2010.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://donaldhutchison.info/articles/conways-game-of-life-in-ruby-gosu-chingu/&quot;&gt;conway's game of life in ruby (gosu + chingu)&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;http://donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on June 06, 2010.&lt;/p&gt;</content>
 </entry>
 
 
@@ -660,13 +660,13 @@ Our file layout on disk&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[2D OBB Collisions in XNA]]></title>
-  <link rel="alternate" type="text/html" href="donaldhutchison.info/articles/2d-obb-collisions-in-xna/" />
-  <id>donaldhutchison.info/articles/2d-obb-collisions-in-xna</id>
+  <link rel="alternate" type="text/html" href="http://donaldhutchison.info/articles/2d-obb-collisions-in-xna/" />
+  <id>http://donaldhutchison.info/articles/2d-obb-collisions-in-xna</id>
   <published>2010-03-07T00:00:00+01:00</published>
   <updated>2010-03-07T00:00:00+01:00</updated>
   <author>
     <name>Donald Hutchison</name>
-    <uri>donaldhutchison.info</uri>
+    <uri>http://donaldhutchison.info</uri>
     <email>contact@donaldhutchison.info</email>
   </author>
   <content type="html">&lt;p&gt;OBBs (Oriented Bounding Boxes) allow for a greater degree of accuracy than their axis aligned counterparts in the field of collision detection. It turns out this is a &lt;i&gt;lot &lt;/i&gt;simpler to implement in 2D than 3D.&lt;/p&gt;
@@ -678,7 +678,7 @@ Our file layout on disk&lt;/p&gt;
 &lt;script src=&quot;https://gist.github.com/324608.js&quot;&gt; &lt;/script&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;donaldhutchison.info/articles/2d-obb-collisions-in-xna/&quot;&gt;2D OBB Collisions in XNA&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on March 07, 2010.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://donaldhutchison.info/articles/2d-obb-collisions-in-xna/&quot;&gt;2D OBB Collisions in XNA&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;http://donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on March 07, 2010.&lt;/p&gt;</content>
 </entry>
 
 
@@ -686,19 +686,19 @@ Our file layout on disk&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[syobon action]]></title>
-  <link rel="alternate" type="text/html" href="donaldhutchison.info/blog/syobon-action-155-lives/" />
-  <id>donaldhutchison.info/blog/syobon-action-155-lives</id>
+  <link rel="alternate" type="text/html" href="http://donaldhutchison.info/blog/syobon-action-155-lives/" />
+  <id>http://donaldhutchison.info/blog/syobon-action-155-lives</id>
   <published>2010-01-06T00:00:00+01:00</published>
   <updated>2010-01-06T00:00:00+01:00</updated>
   <author>
     <name>Donald Hutchison</name>
-    <uri>donaldhutchison.info</uri>
+    <uri>http://donaldhutchison.info</uri>
     <email>contact@donaldhutchison.info</email>
   </author>
   <content type="html">&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a style=&quot;margin-left: 1em; margin-right: 1em;&quot; href=&quot;http://3.bp.blogspot.com/_LQqiRvv_0aI/S0Spva3HNAI/AAAAAAAAAVA/STrJfUcWj_E/s1600-h/syobon.jpg&quot;&gt;155 lives
 &lt;img alt=&quot;&quot; src=&quot;http://3.bp.blogspot.com/_LQqiRvv_0aI/S0Spva3HNAI/AAAAAAAAAVA/STrJfUcWj_E/s320/syobon.jpg&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;donaldhutchison.info/blog/syobon-action-155-lives/&quot;&gt;syobon action&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on January 06, 2010.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://donaldhutchison.info/blog/syobon-action-155-lives/&quot;&gt;syobon action&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;http://donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on January 06, 2010.&lt;/p&gt;</content>
 </entry>
 
 
@@ -706,18 +706,18 @@ Our file layout on disk&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[BIGJam 2009]]></title>
-  <link rel="alternate" type="text/html" href="donaldhutchison.info/blog/bigjam-2009/" />
-  <id>donaldhutchison.info/blog/bigjam-2009</id>
+  <link rel="alternate" type="text/html" href="http://donaldhutchison.info/blog/bigjam-2009/" />
+  <id>http://donaldhutchison.info/blog/bigjam-2009</id>
   <published>2009-08-10T00:00:00+02:00</published>
   <updated>2009-08-10T00:00:00+02:00</updated>
   <author>
     <name>Donald Hutchison</name>
-    <uri>donaldhutchison.info</uri>
+    <uri>http://donaldhutchison.info</uri>
     <email>contact@donaldhutchison.info</email>
   </author>
   <content type="html">&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;a onblur=&quot;try {parent.deselectBloggerImageGracefully();} catch(e) {}&quot; href=&quot;http://4.bp.blogspot.com/_LQqiRvv_0aI/Sn_-jkDA-gI/AAAAAAAAASI/efeVtQqVTyQ/s1600-h/DSC_0324.JPG&quot;&gt;&lt;img style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 455px; height: 304px;&quot; src=&quot;http://4.bp.blogspot.com/_LQqiRvv_0aI/Sn_-jkDA-gI/AAAAAAAAASI/efeVtQqVTyQ/s400/DSC_0324.JPG&quot; alt=&quot;&quot; id=&quot;BLOGGER_PHOTO_ID_5368289167774120450&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;span style=&quot;font-size:78%;&quot;&gt;photo by sir alex may&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;br /&gt;Berlin was incredible. I made 3 terrible games, each in their own 3 hour segments. I also met some very cool people and learnt a lot about games dev.&lt;br /&gt;&lt;br /&gt;Most importantly, I think I've unstuck all that was keeping me back and blocking my ideas. I did so much more in one of those 3 hour periods than I've probably done all summer. Can't wait for next year to roll around.&lt;br /&gt;&lt;br /&gt;&lt;div style=&quot;text-align: center; font-style: italic;&quot;&gt;bigjam stats:&lt;br /&gt;lines of ruby code : &gt;2000&lt;br /&gt;hangovers: 3&lt;br /&gt;coffees: 13&lt;br /&gt;hours of sleep: negligible&lt;br /&gt;awesomeness: very much so&lt;br /&gt;&lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;donaldhutchison.info/blog/bigjam-2009/&quot;&gt;BIGJam 2009&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on August 10, 2009.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://donaldhutchison.info/blog/bigjam-2009/&quot;&gt;BIGJam 2009&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;http://donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on August 10, 2009.&lt;/p&gt;</content>
 </entry>
 
 
@@ -725,18 +725,18 @@ Our file layout on disk&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Cho Ren Sha 68k]]></title>
-  <link rel="alternate" type="text/html" href="donaldhutchison.info/blog/cho-ren-sha-68k/" />
-  <id>donaldhutchison.info/blog/cho-ren-sha-68k</id>
+  <link rel="alternate" type="text/html" href="http://donaldhutchison.info/blog/cho-ren-sha-68k/" />
+  <id>http://donaldhutchison.info/blog/cho-ren-sha-68k</id>
   <published>2009-06-17T00:00:00+02:00</published>
   <updated>2009-06-17T00:00:00+02:00</updated>
   <author>
     <name>Donald Hutchison</name>
-    <uri>donaldhutchison.info</uri>
+    <uri>http://donaldhutchison.info</uri>
     <email>contact@donaldhutchison.info</email>
   </author>
   <content type="html">&gt;&lt;a onblur=&quot;try {parent.deselectBloggerImageGracefully();} catch(e) {}&quot; href=&quot;http://4.bp.blogspot.com/_LQqiRvv_0aI/SjkJiKicj-I/AAAAAAAAAFY/0nx0QI4XouA/s1600-h/pic.png&quot;&gt;&lt;img style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 299px;&quot; src=&quot;http://4.bp.blogspot.com/_LQqiRvv_0aI/SjkJiKicj-I/AAAAAAAAAFY/0nx0QI4XouA/s400/pic.png&quot; alt=&quot;&quot; id=&quot;BLOGGER_PHOTO_ID_5348316515028209634&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;a onblur=&quot;try {parent.deselectBloggerImageGracefully();} catch(e) {}&quot; href=&quot;http://db.tigsource.com/screenshot/image/492/medium/chorensha01.png?1229563406&quot;&gt;&lt;img style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 300px;&quot; src=&quot;http://db.tigsource.com/screenshot/image/492/medium/chorensha01.png?1229563406&quot; alt=&quot;&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_0&quot;&gt;&lt;br /&gt;Cho&lt;/span&gt; &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_1&quot;&gt;Ren&lt;/span&gt; &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_2&quot;&gt;Sha&lt;/span&gt; 68k (not actually 68&lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_3&quot;&gt;kB&lt;/span&gt;) is your generic vertical &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_4&quot;&gt;shmup&lt;/span&gt;. 16-bit niceties from an obscure &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_5&quot;&gt;japanese&lt;/span&gt; computer and a jarring &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_6&quot;&gt;bleepy&lt;/span&gt; soundtrack meet up over coffee to discuss how much they hate you.&lt;br /&gt;&lt;br /&gt;As usual, you pilot your angular craft like soap in a fat man's bathtub - squirting from side to side whilst deftly avoiding the overwhelming mass that threatens to crush your liberation and &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_7&quot;&gt;independance&lt;/span&gt;. The familiar arrow keys + Z and X controls pose no problems for people who know what's happening. The lack of auto-fire and unusual fanning motion of your default weapon means the player has to tap out a constant beat in order to hit what's directly in front.&lt;br /&gt;&lt;br /&gt;The difficulty isn't too soul crushing. The bullet patterns never force you into pixel-perfect dance routines, nor does it require the amphetamine riddled &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_8&quot;&gt;twitchyness&lt;/span&gt; that defines so many of the genre. In fact, this game is pretty &lt;span class=&quot;blsp-spelling-corrected&quot; id=&quot;SPELLING_ERROR_9&quot;&gt;accessible&lt;/span&gt; as far as vertical &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_10&quot;&gt;shmups&lt;/span&gt; go.&lt;br /&gt;&lt;br /&gt;The graphics quickly get repetitive and the backgrounds remains constant throughout play. The game never offers anything to stand out from others in it's genre and provides nothing more to improve it's replay value.&lt;br /&gt;&lt;br /&gt;&lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_11&quot;&gt;Cho&lt;/span&gt; &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_12&quot;&gt;Ren&lt;/span&gt; &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_13&quot;&gt;Sha&lt;/span&gt; 68k runs fine on Vista, with some jarring sound issues sporadically affecting the soundtrack.&lt;br /&gt;&lt;br /&gt;&lt;a href=&quot;http://db.tigsource.com/games/cho-ren-sha-68k&quot;&gt;(link)&lt;/a&gt;
 
-  &lt;p&gt;&lt;a href=&quot;donaldhutchison.info/blog/cho-ren-sha-68k/&quot;&gt;Cho Ren Sha 68k&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on June 17, 2009.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://donaldhutchison.info/blog/cho-ren-sha-68k/&quot;&gt;Cho Ren Sha 68k&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;http://donaldhutchison.info&quot;&gt;Donald Hutchison&lt;/a&gt; on June 17, 2009.&lt;/p&gt;</content>
 </entry>
 
 </feed>

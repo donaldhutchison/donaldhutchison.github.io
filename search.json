@@ -4,7 +4,7 @@
 		  "title"      : "How to write a bug report",
 		  "category"   : "articles",
       "tags"       : "qa, testing, software, and bugs",
-		  "url"        : "donaldhutchison.info/articles/how-to-write-bug-reports/",
+		  "url"        : "http://donaldhutchison.info/articles/how-to-write-bug-reports/",
 		  "date"       : "2014-02-17 00:00:00 +0100",
 		  "shortdate"  : "February 17, 2014"
 		} ,
@@ -13,7 +13,7 @@
 		  "title"      : "CCNode Recursive Description",
 		  "category"   : "articles",
       "tags"       : "objective-c, cocos2d, and programming",
-		  "url"        : "donaldhutchison.info/articles/ccnode-recursive-description/",
+		  "url"        : "http://donaldhutchison.info/articles/ccnode-recursive-description/",
 		  "date"       : "2014-02-04 00:00:00 +0100",
 		  "shortdate"  : "February 04, 2014"
 		} ,
@@ -22,7 +22,7 @@
 		  "title"      : "Ruby Development in the Bar",
 		  "category"   : "articles",
       "tags"       : "ruby, mobile, android, and ruboto",
-		  "url"        : "donaldhutchison.info/articles/ruby-at-the-bar/",
+		  "url"        : "http://donaldhutchison.info/articles/ruby-at-the-bar/",
 		  "date"       : "2014-02-02 00:00:00 +0100",
 		  "shortdate"  : "February 02, 2014"
 		} ,
@@ -31,7 +31,7 @@
 		  "title"      : "Global Game Jam 2014",
 		  "category"   : "articles",
       "tags"       : "game jam, ggj, and unity",
-		  "url"        : "donaldhutchison.info/articles/global-game-jame2014/",
+		  "url"        : "http://donaldhutchison.info/articles/global-game-jame2014/",
 		  "date"       : "2014-01-30 00:00:00 +0100",
 		  "shortdate"  : "January 30, 2014"
 		} ,
@@ -40,7 +40,7 @@
 		  "title"      : "Coffeescript + RequireJS Skeleton Project",
 		  "category"   : "articles",
       "tags"       : "coffeescript, web development, requirejs, and game development",
-		  "url"        : "donaldhutchison.info/articles/coffeescript-skeleton/",
+		  "url"        : "http://donaldhutchison.info/articles/coffeescript-skeleton/",
 		  "date"       : "2014-01-10 00:00:00 +0100",
 		  "shortdate"  : "January 10, 2014"
 		} ,
@@ -49,7 +49,7 @@
 		  "title"      : "Jekyll Migration Woes",
 		  "category"   : "articles",
       "tags"       : "blog, ruby, setup, and jekyll",
-		  "url"        : "donaldhutchison.info/articles/installing-jekyll-oh-lordy/",
+		  "url"        : "http://donaldhutchison.info/articles/installing-jekyll-oh-lordy/",
 		  "date"       : "2013-07-18 00:00:00 +0200",
 		  "shortdate"  : "July 18, 2013"
 		} ,
@@ -58,7 +58,7 @@
 		  "title"      : "Robot Go Home : Gaiden",
 		  "category"   : "blog",
       "tags"       : "gamedev and mock",
-		  "url"        : "donaldhutchison.info/blog/working-title-robot-go-home-gaiden/",
+		  "url"        : "http://donaldhutchison.info/blog/working-title-robot-go-home-gaiden/",
 		  "date"       : "2013-03-24 00:00:00 +0100",
 		  "shortdate"  : "March 24, 2013"
 		} ,
@@ -67,7 +67,7 @@
 		  "title"      : "Optimising CoffeeScript files with r.js - &quot;Unexpected Character&quot;",
 		  "category"   : "articles",
       "tags"       : "coffee-script, development, and programming",
-		  "url"        : "donaldhutchison.info/articles/optimising-coffeescript-files-with-r-js-unexpected-character/",
+		  "url"        : "http://donaldhutchison.info/articles/optimising-coffeescript-files-with-r-js-unexpected-character/",
 		  "date"       : "2012-06-11 00:00:00 +0200",
 		  "shortdate"  : "June 11, 2012"
 		} ,
@@ -76,7 +76,7 @@
 		  "title"      : "Coffeescript RequireJS and You!",
 		  "category"   : "articles",
       "tags"       : "coffeescript, requirejs, amd, and web development",
-		  "url"        : "donaldhutchison.info/articles/coffeescript-requirejs-and-you/",
+		  "url"        : "http://donaldhutchison.info/articles/coffeescript-requirejs-and-you/",
 		  "date"       : "2012-04-24 00:00:00 +0200",
 		  "shortdate"  : "April 24, 2012"
 		} ,
@@ -85,7 +85,7 @@
 		  "title"      : "rise from your grave",
 		  "category"   : "blog",
       "tags"       : "",
-		  "url"        : "donaldhutchison.info/blog/rise-from-your-grave/",
+		  "url"        : "http://donaldhutchison.info/blog/rise-from-your-grave/",
 		  "date"       : "2012-03-17 00:00:00 +0100",
 		  "shortdate"  : "March 17, 2012"
 		} ,
@@ -94,7 +94,7 @@
 		  "title"      : "conway's game of life in ruby (gosu + chingu)",
 		  "category"   : "articles",
       "tags"       : "gamedev, programming, and ruby",
-		  "url"        : "donaldhutchison.info/articles/conways-game-of-life-in-ruby-gosu-chingu/",
+		  "url"        : "http://donaldhutchison.info/articles/conways-game-of-life-in-ruby-gosu-chingu/",
 		  "date"       : "2010-06-06 00:00:00 +0200",
 		  "shortdate"  : "June 06, 2010"
 		} ,
@@ -103,7 +103,7 @@
 		  "title"      : "2D OBB Collisions in XNA",
 		  "category"   : "articles",
       "tags"       : "collisions, gamedev, programming, and xna",
-		  "url"        : "donaldhutchison.info/articles/2d-obb-collisions-in-xna/",
+		  "url"        : "http://donaldhutchison.info/articles/2d-obb-collisions-in-xna/",
 		  "date"       : "2010-03-07 00:00:00 +0100",
 		  "shortdate"  : "March 07, 2010"
 		} ,
@@ -112,7 +112,7 @@
 		  "title"      : "syobon action",
 		  "category"   : "blog",
       "tags"       : "completed",
-		  "url"        : "donaldhutchison.info/blog/syobon-action-155-lives/",
+		  "url"        : "http://donaldhutchison.info/blog/syobon-action-155-lives/",
 		  "date"       : "2010-01-06 00:00:00 +0100",
 		  "shortdate"  : "January 06, 2010"
 		} ,
@@ -121,7 +121,7 @@
 		  "title"      : "BIGJam 2009",
 		  "category"   : "blog",
       "tags"       : "bigjam, games, and meetup",
-		  "url"        : "donaldhutchison.info/blog/bigjam-2009/",
+		  "url"        : "http://donaldhutchison.info/blog/bigjam-2009/",
 		  "date"       : "2009-08-10 00:00:00 +0200",
 		  "shortdate"  : "August 10, 2009"
 		} ,
@@ -130,7 +130,7 @@
 		  "title"      : "Cho Ren Sha 68k",
 		  "category"   : "blog",
       "tags"       : "game review, gamereview, and tigdb",
-		  "url"        : "donaldhutchison.info/blog/cho-ren-sha-68k/",
+		  "url"        : "http://donaldhutchison.info/blog/cho-ren-sha-68k/",
 		  "date"       : "2009-06-17 00:00:00 +0200",
 		  "shortdate"  : "June 17, 2009"
 		} 
