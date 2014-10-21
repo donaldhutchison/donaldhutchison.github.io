@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2014-10-21T19:49:44+02:00</updated>
+<updated>2014-10-21T19:55:39+02:00</updated>
 <id>/</id>
 <author>
   <name>Donald Hutchison</name>
@@ -26,7 +26,7 @@
     <uri></uri>
     <email>contact@donaldhutchison.info</email>
   </author>
-  <content type="html">&lt;p&gt;&lt;a href=&quot;https://www.gnu.org/software/make/&quot;&gt;Make&lt;/a&gt; is solid. It’s been around since before the internet and still one of the most important tools used today. As such - it’s tried, proven, tested, and was used insome of the most successful projects out there.&lt;/p&gt;
+  <content type="html">&lt;p&gt;&lt;a href=&quot;https://www.gnu.org/software/make/&quot;&gt;Make&lt;/a&gt; is solid. It’s been around since before the internet and still one of the most important tools used today. As such - it’s tried, proven, tested, and was used in some of the most successful projects out there.&lt;/p&gt;
 
 &lt;p&gt;…but what are the chances that something so old got it right the first time? What are the chances that good old &lt;em&gt;Make&lt;/em&gt; is the be-all, end-all, perfect ultimate solution for every possible development project? Of course not, and noone says it is - so let’s try an exercise in frustration and compile some C using &lt;a href=&quot;https://github.com/jimweirich/rake&quot;&gt;Rake&lt;/a&gt; - the cool fresh ruby little brother to big pappy Make.&lt;/p&gt;
 
