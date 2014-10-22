@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2014-10-21T19:55:39+02:00</updated>
+<updated>2014-10-22T08:25:23+02:00</updated>
 <id>/</id>
 <author>
   <name>Donald Hutchison</name>
@@ -137,7 +137,7 @@ task is generated when rake is given an argument which matches an existing file 
 
 &lt;p&gt;The interesting part comes to when we encounter the programmatic tasks, like the &lt;code&gt;$(PROGRAMS)&lt;/code&gt; task on &lt;a href=&quot;https://github.com/rkachowski/c-the-hard-way/blob/master/liblcthw/Makefile#L22&quot;&gt;line 22&lt;/a&gt;. Here the &lt;code&gt;PROGRAMS&lt;/code&gt; variable has been set to the contents of the &lt;code&gt;bin&lt;/code&gt; directory, but with all suffixes removed - to indicate executable files that need to be created. This is already handled by the rules we made earlier, but the Makefile also modifies the &lt;code&gt;CFLAGS&lt;/code&gt; variable to link against the entire built library. &lt;/p&gt;
 
-&lt;p&gt;Here we can see that &lt;em&gt;Make&lt;/em&gt; has a pretty interesting feature where it exploits a feature in the way it implements variables, and essentially changes the existing &lt;code&gt;CFLAGS&lt;/code&gt; variable &lt;em&gt;within the scope of a certain task.&lt;/em&gt; This means that &lt;code&gt;CFLAGS&lt;/code&gt; refers to something different for each task, namely it has the built library appended to it for the &lt;code&gt;PROGRAMS&lt;/code&gt; and &lt;code&gt;SO_TARGET&lt;/code&gt; tasks.&lt;/p&gt;
+&lt;p&gt;Here we can see that &lt;em&gt;Make&lt;/em&gt; has a pretty interesting feature where it exploits a the way it variables, and essentially changes the existing &lt;code&gt;CFLAGS&lt;/code&gt; variable &lt;em&gt;within the scope of a certain task.&lt;/em&gt; This means that &lt;code&gt;CFLAGS&lt;/code&gt; refers to something different for each task, namely it has the built library appended to it for the &lt;code&gt;PROGRAMS&lt;/code&gt; and &lt;code&gt;SO_TARGET&lt;/code&gt; tasks.&lt;/p&gt;
 
 &lt;p class=&quot;notice&quot;&gt;For more info on how make does this, you can check out &lt;em&gt;Make’s&lt;/em&gt; manual in the section &lt;a href=&quot;https://www.gnu.org/software/make/manual/make.html#Flavors&quot;&gt;Two Flavours of Variable&lt;/a&gt;&lt;/p&gt;
 

@@ -278,7 +278,7 @@ task is generated when rake is given an argument which matches an existing file 
 
 <p>The interesting part comes to when we encounter the programmatic tasks, like the <code>$(PROGRAMS)</code> task on <a href="https://github.com/rkachowski/c-the-hard-way/blob/master/liblcthw/Makefile#L22">line 22</a>. Here the <code>PROGRAMS</code> variable has been set to the contents of the <code>bin</code> directory, but with all suffixes removed - to indicate executable files that need to be created. This is already handled by the rules we made earlier, but the Makefile also modifies the <code>CFLAGS</code> variable to link against the entire built library. </p>
 
-<p>Here we can see that <em>Make</em> has a pretty interesting feature where it exploits a feature in the way it implements variables, and essentially changes the existing <code>CFLAGS</code> variable <em>within the scope of a certain task.</em> This means that <code>CFLAGS</code> refers to something different for each task, namely it has the built library appended to it for the <code>PROGRAMS</code> and <code>SO_TARGET</code> tasks.</p>
+<p>Here we can see that <em>Make</em> has a pretty interesting feature where it exploits a the way it variables, and essentially changes the existing <code>CFLAGS</code> variable <em>within the scope of a certain task.</em> This means that <code>CFLAGS</code> refers to something different for each task, namely it has the built library appended to it for the <code>PROGRAMS</code> and <code>SO_TARGET</code> tasks.</p>
 
 <p class="notice">For more info on how make does this, you can check out <em>Make’s</em> manual in the section <a href="https://www.gnu.org/software/make/manual/make.html#Flavors">Two Flavours of Variable</a></p>
 
