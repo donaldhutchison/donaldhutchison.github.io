@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2014-11-10T15:35:54+01:00</updated>
+<updated>2015-11-12T22:13:25+01:00</updated>
 <id>/</id>
 <author>
   <name>Donald Hutchison</name>
@@ -36,9 +36,9 @@
   &lt;p&gt;Rake is a Make-like program implemented in Ruby&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;em&gt;Rake&lt;/em&gt; is Ruby’s version of the &lt;em&gt;Make&lt;/em&gt; build system. Created in 2003 by the late Jim Weirich, it’s goal is to get away from the idiosyncratic build system syntax and express build rules in plain Ruby. According to &lt;a href=&quot;https://en.wikipedia.org/wiki/Jim_Weirich#Rake&quot;&gt;wikipedia&lt;/a&gt;, it’s the most downloaded ruby gem of all time and has been bundled with OSX since 2011. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Rake&lt;/em&gt; is Ruby’s version of the &lt;em&gt;Make&lt;/em&gt; build system. Created in 2003 by the late Jim Weirich, it’s goal is to get away from the idiosyncratic build system syntax and express build rules in plain Ruby. According to &lt;a href=&quot;https://en.wikipedia.org/wiki/Jim_Weirich#Rake&quot;&gt;wikipedia&lt;/a&gt;, it’s the most downloaded ruby gem of all time and has been bundled with OSX since 2011.&lt;/p&gt;
 
-&lt;p&gt;Rake has a diverse set of functions but in my experience it’s primarily used to drive a single command line interface for a ton of unrelated scripts and tools. By invoking your scripts from rake tasks you can create a single unified point of access for both developers and other tools to work with. This is cool for a variety of reasons, e.g. having a Continuous Integration server run the rake task directly gives a build system that is both under version control and available locally. But this is true of many build systems… Where &lt;em&gt;Rake&lt;/em&gt; really shines is in it’s incredibly powerful &lt;code&gt;File&lt;/code&gt;, &lt;code&gt;Rule&lt;/code&gt; and &lt;code&gt;Task&lt;/code&gt; functionality. &lt;/p&gt;
+&lt;p&gt;Rake has a diverse set of functions but in my experience it’s primarily used to drive a single command line interface for a ton of unrelated scripts and tools. By invoking your scripts from rake tasks you can create a single unified point of access for both developers and other tools to work with. This is cool for a variety of reasons, e.g. having a Continuous Integration server run the rake task directly gives a build system that is both under version control and available locally. But this is true of many build systems… Where &lt;em&gt;Rake&lt;/em&gt; really shines is in it’s incredibly powerful &lt;code&gt;File&lt;/code&gt;, &lt;code&gt;Rule&lt;/code&gt; and &lt;code&gt;Task&lt;/code&gt; functionality.&lt;/p&gt;
 
 &lt;p&gt;I was lucky enough to see Jim’s &lt;a href=&quot;https://www.youtube.com/watch?v=KaEqZtulOus&quot;&gt;Power Rake&lt;/a&gt; presentation at the Scottish Ruby Conference in 2012 where he spoke at length about the awesomeness of the &lt;code&gt;pathmap&lt;/code&gt; method and the &lt;code&gt;FileList&lt;/code&gt; class. Why not use these tools for modern C development? Even though one of the &lt;a href=&quot;https://github.com/jimweirich/rake/blob/de564de4e2f189e1b133e4adf05ab8fc820a044b/rake/doc/example/Rakefile1&quot;&gt;first examples&lt;/a&gt; ever provided was using Rake to compile a basic C program, it still lacks behind &lt;em&gt;Make&lt;/em&gt;’s out of the box no-config compilation rules. Let’s see what it takes to get a &lt;em&gt;Rake&lt;/em&gt; to walk like a &lt;em&gt;Make&lt;/em&gt;.&lt;/p&gt;
 
@@ -77,13 +77,13 @@ task is generated when rake is given an argument which matches an existing file 
     &lt;span class=&quot;sb&quot;&gt;`cc -c &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt; -o &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;The first line basically says “whenever I need a *.o file, I also need an existing .c file with the same name”. Now in our example - when we run &lt;code&gt;rake foo.o&lt;/code&gt;, the foo.o will match against the .o section, and then following the rule rake will look for a corresponding &lt;code&gt;foo.c&lt;/code&gt; file, find it, and finally execute the block. &lt;/p&gt;
+&lt;p&gt;The first line basically says “whenever I need a *.o file, I also need an existing .c file with the same name”. Now in our example - when we run &lt;code&gt;rake foo.o&lt;/code&gt;, the foo.o will match against the .o section, and then following the rule rake will look for a corresponding &lt;code&gt;foo.c&lt;/code&gt; file, find it, and finally execute the block.&lt;/p&gt;
 
 &lt;p&gt;Rake passes a &lt;a href=&quot;https://github.com/jimweirich/rake/blob/master/lib/rake/task.rb&quot;&gt;Task&lt;/a&gt; instance into the block, which is populated with a lot of information about the rule we just followed. From this task we take out the source (&lt;code&gt;foo.c&lt;/code&gt;) and the output name (&lt;code&gt;foo.o&lt;/code&gt;) and then pass them into the compiler via a shell invocation.&lt;/p&gt;
 
 &lt;h4 id=&quot;create-executable-from-c&quot;&gt;Create Executable From .c&lt;/h4&gt;
 
-&lt;p&gt;What we want to do here is solve the situation of &lt;code&gt;rake foo&lt;/code&gt; and directly create an executable without the intermediate fluff hanging around. This can be done by matching the rule against a regular expression. &lt;/p&gt;
+&lt;p&gt;What we want to do here is solve the situation of &lt;code&gt;rake foo&lt;/code&gt; and directly create an executable without the intermediate fluff hanging around. This can be done by matching the rule against a regular expression.&lt;/p&gt;
 
 &lt;p&gt;Rather awkwardly, we want something that matches against a string &lt;em&gt;without&lt;/em&gt; a file extension. To specify that we match against any string would end up creating a circular dependency with the rule above. We can naively match a file extension with the expression &lt;code&gt;/\w*\.\w*/&lt;/code&gt; (we’re not going to take multiple dots in filename into account), then we can &lt;a href=&quot;http://zijab.blogspot.de/2008/09/finding-opposite-of-regular-expression.html&quot;&gt;invert that pattern&lt;/a&gt; and get the horrible looking &lt;code&gt;/^((?!\w*\.\w*).)*$/&lt;/code&gt;which should match any single word without a file extension attached.&lt;/p&gt;
 
@@ -111,6 +111,8 @@ task is generated when rake is given an argument which matches an existing file 
 
 &lt;p&gt;Now (after some minor tidying) we have a  very basic &lt;em&gt;Rakefile&lt;/em&gt; like this which will let us compile just like we’re using &lt;em&gt;Make&lt;/em&gt;&lt;/p&gt;
 
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/be91c426b46725c20250.js&quot;&gt; &lt;/script&gt;
 
 &lt;h3 id=&quot;round-one---fight&quot;&gt;Round One - Fight!&lt;/h3&gt;
@@ -133,9 +135,9 @@ task is generated when rake is given an argument which matches an existing file 
 
 &lt;h4 id=&quot;tasks&quot;&gt;Tasks&lt;/h4&gt;
 
-&lt;p&gt;Here’s where we start getting into the actual work of the build system. &lt;em&gt;Make&lt;/em&gt;’s default task is simply the first declared in the Makefile, &lt;em&gt;Rake&lt;/em&gt; has an explicit &lt;code&gt;:default&lt;/code&gt; task that can be set to  any desired value. We can set dependencies to have the default task build everything, much like in Zed’s Makefile. &lt;/p&gt;
+&lt;p&gt;Here’s where we start getting into the actual work of the build system. &lt;em&gt;Make&lt;/em&gt;’s default task is simply the first declared in the Makefile, &lt;em&gt;Rake&lt;/em&gt; has an explicit &lt;code&gt;:default&lt;/code&gt; task that can be set to  any desired value. We can set dependencies to have the default task build everything, much like in Zed’s Makefile.&lt;/p&gt;
 
-&lt;p&gt;The interesting part comes to when we encounter the programmatic tasks, like the &lt;code&gt;$(PROGRAMS)&lt;/code&gt; task on &lt;a href=&quot;https://github.com/rkachowski/c-the-hard-way/blob/master/liblcthw/Makefile#L22&quot;&gt;line 22&lt;/a&gt;. Here the &lt;code&gt;PROGRAMS&lt;/code&gt; variable has been set to the contents of the &lt;code&gt;bin&lt;/code&gt; directory, but with all suffixes removed - to indicate executable files that need to be created. This is already handled by the rules we made earlier, but the Makefile also modifies the &lt;code&gt;CFLAGS&lt;/code&gt; variable to link against the entire built library. &lt;/p&gt;
+&lt;p&gt;The interesting part comes to when we encounter the programmatic tasks, like the &lt;code&gt;$(PROGRAMS)&lt;/code&gt; task on &lt;a href=&quot;https://github.com/rkachowski/c-the-hard-way/blob/master/liblcthw/Makefile#L22&quot;&gt;line 22&lt;/a&gt;. Here the &lt;code&gt;PROGRAMS&lt;/code&gt; variable has been set to the contents of the &lt;code&gt;bin&lt;/code&gt; directory, but with all suffixes removed - to indicate executable files that need to be created. This is already handled by the rules we made earlier, but the Makefile also modifies the &lt;code&gt;CFLAGS&lt;/code&gt; variable to link against the entire built library.&lt;/p&gt;
 
 &lt;p&gt;Here we can see that &lt;em&gt;Make&lt;/em&gt; has a pretty interesting feature where it exploits a the way it variables, and essentially changes the existing &lt;code&gt;CFLAGS&lt;/code&gt; variable &lt;em&gt;within the scope of a certain task.&lt;/em&gt; This means that &lt;code&gt;CFLAGS&lt;/code&gt; refers to something different for each task, namely it has the built library appended to it for the &lt;code&gt;PROGRAMS&lt;/code&gt; and &lt;code&gt;SO_TARGET&lt;/code&gt; tasks.&lt;/p&gt;
 
@@ -164,7 +166,7 @@ task is generated when rake is given an argument which matches an existing file 
 
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion!&lt;/h3&gt;
 
-&lt;p&gt;Awesome! We can now build and link our library using nothing but &lt;em&gt;Rake&lt;/em&gt;. Following the steps above, we now have a &lt;a href=&quot;https://github.com/rkachowski/c-the-hard-way/blob/master/liblcthw/Rakefile&quot;&gt;Rakefile that looks like this&lt;/a&gt;, and can do everything our &lt;em&gt;Makefile&lt;/em&gt; initially did. &lt;/p&gt;
+&lt;p&gt;Awesome! We can now build and link our library using nothing but &lt;em&gt;Rake&lt;/em&gt;. Following the steps above, we now have a &lt;a href=&quot;https://github.com/rkachowski/c-the-hard-way/blob/master/liblcthw/Rakefile&quot;&gt;Rakefile that looks like this&lt;/a&gt;, and can do everything our &lt;em&gt;Makefile&lt;/em&gt; initially did.&lt;/p&gt;
 
 &lt;p&gt;Except uh… we have almost doubled the LOC… we’ve made awful compromises to one of the core classes of &lt;em&gt;Rake&lt;/em&gt; itself, and we don’t nearly have the flexibility and control that &lt;em&gt;Make&lt;/em&gt; gives us from the get go. It’s pretty clear from this that we are forcing &lt;em&gt;Rake&lt;/em&gt; to do something that it’s not totally designed for. Not to mention the dependencies and portablity concerns we’re placing on having Ruby + Rake installed on every target build machine. Were we to take this further we’d ideally have a set of &lt;code&gt;Task&lt;/code&gt; / &lt;code&gt;FileTask&lt;/code&gt; subclasses to encapsulate any C specific options, and we’d have a set of rules that match &lt;em&gt;Make&lt;/em&gt;’s impressive repertoire that we could painlessly import at the top.&lt;/p&gt;
 
@@ -196,9 +198,9 @@ task is generated when rake is given an argument which matches an existing file 
   &lt;/header&gt;
 &lt;div id=&quot;drawer&quot;&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#whats-a-bug-report&quot;&gt;What’s a bug report&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#what-should-be-in-a-bug-report&quot;&gt;What should be in a bug report&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#an-example-bug-report&quot;&gt;An example bug report&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#whats-a-bug-report&quot; id=&quot;markdown-toc-whats-a-bug-report&quot;&gt;What’s a bug report&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-should-be-in-a-bug-report&quot; id=&quot;markdown-toc-what-should-be-in-a-bug-report&quot;&gt;What should be in a bug report&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#an-example-bug-report&quot; id=&quot;markdown-toc-an-example-bug-report&quot;&gt;An example bug report&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
   &lt;/div&gt;
@@ -279,10 +281,12 @@ Tested on:
     <uri></uri>
     <email>contact@donaldhutchison.info</email>
   </author>
-  <content type="html">&lt;p&gt;&lt;code&gt;recusiveDescription&lt;/code&gt; is a pretty cool method. It’s on each UIView, and when called it gives you a quick and dirty description of the current view hierarchy relative to that view. &lt;/p&gt;
+  <content type="html">&lt;p&gt;&lt;code&gt;recusiveDescription&lt;/code&gt; is a pretty cool method. It’s on each UIView, and when called it gives you a quick and dirty description of the current view hierarchy relative to that view.&lt;/p&gt;
 
 &lt;p&gt;Usually you’d use this in the debugger, whilst on a breakpoint, to sanity check the positions and children of a view. This is a short gist that adds the same functionality to a CCNode subclass - the common subclass of most visual entities in a Cocos2d project.&lt;/p&gt;
 
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/8801621.js&quot;&gt; &lt;/script&gt;
 
 
@@ -303,19 +307,19 @@ Tested on:
     <uri></uri>
     <email>contact@donaldhutchison.info</email>
   </author>
-  <content type="html">&lt;p&gt;For reasons I won’t get into, I found myself spending Christmas in Wick on the &lt;a href=&quot;http://goo.gl/maps/BBa7b&quot;&gt;north east tip of Scotland&lt;/a&gt;. This being the second time it’s occurred I was familiar with the quirks and isolation of this part of the world. One of the more upswinging things that happens is that every 26th December, there’s a charity raffle in the local Seaforth Club. This is where you buy some tickets, drink, win prizes and drink some more. &lt;/p&gt;
+  <content type="html">&lt;p&gt;For reasons I won’t get into, I found myself spending Christmas in Wick on the &lt;a href=&quot;http://goo.gl/maps/BBa7b&quot;&gt;north east tip of Scotland&lt;/a&gt;. This being the second time it’s occurred I was familiar with the quirks and isolation of this part of the world. One of the more upswinging things that happens is that every 26th December, there’s a charity raffle in the local Seaforth Club. This is where you buy some tickets, drink, win prizes and drink some more.&lt;/p&gt;
 
 &lt;p&gt;Again, this being the second time I’ve attended, I had a grudge to bear after last years events - specifically I didn’t win anything and I felt pretty grumpy about it. &lt;em&gt;“2013 will be different!”&lt;/em&gt;, I said to myself as I prepared a full on tactical strike against my previous misfortune.&lt;/p&gt;
 
 &lt;h2 id=&quot;tickets-everywhere&quot;&gt;Tickets everywhere&lt;/h2&gt;
 
-&lt;p&gt;As you can see in the header image, I went and bought as many tickets as my conscience would allow. You buy 10 tickets at a time, and the numbers increase sequentially from the first. I made sure to buy them at different intervals so I didn’t end up with a completely contiguous series of numbers (I don’t know if this helped but it made me feel smart.) &lt;/p&gt;
+&lt;p&gt;As you can see in the header image, I went and bought as many tickets as my conscience would allow. You buy 10 tickets at a time, and the numbers increase sequentially from the first. I made sure to buy them at different intervals so I didn’t end up with a completely contiguous series of numbers (I don’t know if this helped but it made me feel smart.)&lt;/p&gt;
 
 &lt;p&gt;Now, the way the raffle works is that an announcer will read out a number over the PA system (say - “56724!!”), and everyone will have to frantically check through their tickets for the number and, if lucky, present the winning ticket. If you take too long, or the announcer doesn’t like you, a new number will be read out and you’ve lost your chance to claim a novelty stuffed dog or kitsch souvenir. If only there were some way I could automate this verification process… I could spend more time enjoying festive beverages and the Christmas atmosphere, rather than continually reading through the far too many sheets of paper I had.&lt;/p&gt;
 
 &lt;h2 id=&quot;ruboto-ruby-for-android&quot;&gt;Ruboto! Ruby for Android!&lt;/h2&gt;
 
-&lt;p&gt;Fortunately I get paid to make computer programs, and this kind of thing is totally possible (to the point of being almost trivial) so I was able to go for it. Sneaking outside to the smoking area (there’s no signal inside the building) I went out to search the Google Play store for mobile programming environments. &lt;/p&gt;
+&lt;p&gt;Fortunately I get paid to make computer programs, and this kind of thing is totally possible (to the point of being almost trivial) so I was able to go for it. Sneaking outside to the smoking area (there’s no signal inside the building) I went out to search the Google Play store for mobile programming environments.&lt;/p&gt;
 
 &lt;p&gt;I’ve previously experimented with these on device programming tools, but dismissed them due to their pretty impractical nature. Trying to do anything other than very basic alphanumeric text input on a smartphone is frustrating at the best of times, let alone anything with multiple brackets. But right now it seems like a prime use for such a thing, and after this experience I’m finding myself looking for other similar niche situations where I could be without access to a keyboard and need programming ability.&lt;/p&gt;
 
@@ -347,7 +351,7 @@ Tested on:
   &lt;span class=&quot;s2&quot;&gt;&amp;quot;noone has &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Very simple, but exactly what I needed. Short and concise. But even with this small scope I ran into a few issues whilst creating the above methods. First of all, what is the exact method called that you use to determine whether a specific number is included within a range? &lt;code&gt;include?&lt;/code&gt; or maybe &lt;code&gt;contains?&lt;/code&gt;??  &lt;/p&gt;
+&lt;p&gt;Very simple, but exactly what I needed. Short and concise. But even with this small scope I ran into a few issues whilst creating the above methods. First of all, what is the exact method called that you use to determine whether a specific number is included within a range? &lt;code&gt;include?&lt;/code&gt; or maybe &lt;code&gt;contains?&lt;/code&gt;??&lt;/p&gt;
 
 &lt;h3 id=&quot;some-stumbling&quot;&gt;Some Stumbling&lt;/h3&gt;
 
@@ -417,9 +421,9 @@ Tested on:
   </author>
   <content type="html">&lt;p&gt;Last weekend was the &lt;a href=&quot;http://ggjberlin.de/&quot;&gt;Berlin Global Game Jam 2014&lt;/a&gt;. I’d made it part of a new years resolution plan to get more involved and release some games / projects, and this represented the first step towards doing something.&lt;/p&gt;
 
-&lt;p&gt;My &lt;a href=&quot;http://globalgamejam.org/2014/games/damnhi&quot;&gt;awesome team&lt;/a&gt; and I worked all weekend making a twin stick style shooter in Unity. This was my first experience with Unity, and as such I spent most of the time watching tutorials and desparately deciphering the mysteries of Unity’s component / entity system. As such, I owe a lot to these guys for letting me hang around and break things. &lt;/p&gt;
+&lt;p&gt;My &lt;a href=&quot;http://globalgamejam.org/2014/games/damnhi&quot;&gt;awesome team&lt;/a&gt; and I worked all weekend making a twin stick style shooter in Unity. This was my first experience with Unity, and as such I spent most of the time watching tutorials and desparately deciphering the mysteries of Unity’s component / entity system. As such, I owe a lot to these guys for letting me hang around and break things.&lt;/p&gt;
 
-&lt;p&gt;Unity is pretty cool, and I’m going to make a point of exploring it further for prototyping and short term projects. &lt;/p&gt;
+&lt;p&gt;Unity is pretty cool, and I’m going to make a point of exploring it further for prototyping and short term projects.&lt;/p&gt;
 
 &lt;p&gt;I really liked the game that we made, it’s pretty fun to play - silly and frantic. As a bonus we came 3rd place in the public vote for Berlin, which is just super neat. It’s definitely inspired me to be more active.&lt;/p&gt;
 
@@ -451,21 +455,21 @@ Tested on:
 &lt;h2 id=&quot;skeleton-project&quot;&gt;Skeleton Project!&lt;/h2&gt;
 &lt;p&gt;The initial configuration is usually a pain for me, so I threw together an example project and some scripts to manage this. With this setup, I can clone a github repo, pass in some parameters to configure what is downloaded, and start hacking immediately :)&lt;/p&gt;
 
-&lt;p&gt;The project comes with everything I usually want in a basic project. That is - &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;bootstrap&lt;/a&gt;, &lt;a href=&quot;http://jquery.com/&quot;&gt;jQuery&lt;/a&gt;, &lt;a href=&quot;http://requirejs.org/&quot;&gt;RequireJS&lt;/a&gt; and &lt;a href=&quot;http://coffeescript.org/&quot;&gt;Coffeescript&lt;/a&gt;. This is of course pretty heavyweight for a minimal application, but I like that I can start fleshing out some ideas in as little time as possible. &lt;/p&gt;
+&lt;p&gt;The project comes with everything I usually want in a basic project. That is - &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;bootstrap&lt;/a&gt;, &lt;a href=&quot;http://jquery.com/&quot;&gt;jQuery&lt;/a&gt;, &lt;a href=&quot;http://requirejs.org/&quot;&gt;RequireJS&lt;/a&gt; and &lt;a href=&quot;http://coffeescript.org/&quot;&gt;Coffeescript&lt;/a&gt;. This is of course pretty heavyweight for a minimal application, but I like that I can start fleshing out some ideas in as little time as possible.&lt;/p&gt;
 
 &lt;h2 id=&quot;use-me&quot;&gt;Use Me&lt;/h2&gt;
 
 &lt;p&gt;To use the project, simply follow the handy dandy following instructions. I’m assuming that you have Python and Ruby installed, because I am writing this for myself and I know I do.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Clone the repo &lt;/li&gt;
+  &lt;li&gt;Clone the repo&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git clone https://github.com/rkachowski/coffeescript-skeleton.git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Choose a cool name for your new project&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;cd&lt;/code&gt; into the directory, and run the setup command with your cool name &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;cd&lt;/code&gt; into the directory, and run the setup command with your cool name&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;rake setup&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;COOL_NAME_HERE&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -511,7 +515,7 @@ Tested on:
 &lt;h2 id=&quot;the-bad&quot;&gt;The Bad&lt;/h2&gt;
 
 &lt;h3 id=&quot;wordpress-exporter--jekyll-import&quot;&gt;Wordpress Exporter / Jekyll Import&lt;/h3&gt;
-&lt;p&gt;Wordpress comes with a library of a bajillion plugins you can install to pimp out the features available to you. One of the defaults is an export to xml feature. I’d imagine this is pretty good for the average case, but I had a heavily customised theme that I perhaps too rashly purchased off of an internet marketplace. &lt;/p&gt;
+&lt;p&gt;Wordpress comes with a library of a bajillion plugins you can install to pimp out the features available to you. One of the defaults is an export to xml feature. I’d imagine this is pretty good for the average case, but I had a heavily customised theme that I perhaps too rashly purchased off of an internet marketplace.&lt;/p&gt;
 
 &lt;p&gt;Suffice it to say, jekyll’s default wordpress importer didn’t even try to change my posts. The formatting was all garbled and I had to manually edit each post to fit with the markdown syntax and change any previous gist embeds to use the cool jekyll version. Through fortune, I have not quite yet reached my maximum bloggin output (&lt;strong&gt;read:&lt;/strong&gt; I am chronically lazy ) and only had a few posts to deal with. This wasn’t too hard - most of it can be done with a combination of regex and vim.&lt;/p&gt;
 
@@ -520,9 +524,9 @@ Tested on:
 &lt;p&gt;One of the coolest things for me was having a deploy process setup with git. The ability to write and preview everything locally, and then publish with a simple &lt;code&gt;git push&lt;/code&gt; was something I really wanted to have with my blog setup. There’s even an example hook you can use from &lt;a href=&quot;http://jekyllrb.com/docs/deployment-methods/&quot;&gt;jekyll’s documentation&lt;/a&gt;. Unfortunately I stumbled across a few hurdles whilst setting this up.&lt;/p&gt;
 
 &lt;h4 id=&quot;rvm&quot;&gt;RVM&lt;/h4&gt;
-&lt;p&gt;If you want to use the awesome &lt;a href=&quot;https://rvm.io/&quot;&gt;RVM&lt;/a&gt; then you need to hit one of your shell’s startup files to load it in. For me this was &lt;code&gt;bash&lt;/code&gt;. The example hooks run with the &lt;code&gt;#!/bin/sh&lt;/code&gt; shebang - this is not &lt;code&gt;bash&lt;/code&gt;.  &lt;/p&gt;
+&lt;p&gt;If you want to use the awesome &lt;a href=&quot;https://rvm.io/&quot;&gt;RVM&lt;/a&gt; then you need to hit one of your shell’s startup files to load it in. For me this was &lt;code&gt;bash&lt;/code&gt;. The example hooks run with the &lt;code&gt;#!/bin/sh&lt;/code&gt; shebang - this is not &lt;code&gt;bash&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Solution:&lt;/strong&gt; Make sure you have &lt;code&gt;#!/bin/bash&lt;/code&gt; at the top of your hook. You may need to run &lt;code&gt;#!/bin/bash -l&lt;/code&gt; if all your setup is done in &lt;code&gt;.bash_profile&lt;/code&gt;.  &lt;/p&gt;
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Solution:&lt;/strong&gt; Make sure you have &lt;code&gt;#!/bin/bash&lt;/code&gt; at the top of your hook. You may need to run &lt;code&gt;#!/bin/bash -l&lt;/code&gt; if all your setup is done in &lt;code&gt;.bash_profile&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;file-permissions&quot;&gt;File Permissions&lt;/h3&gt;
 
@@ -553,13 +557,13 @@ locale: Cannot &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;LC_ALL to defau
 &lt;span class=&quot;nv&quot;&gt;LC_IDENTIFICATION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;en_US.UTF-8&amp;quot;&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;LC_ALL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Ahh, cool. My language isn’t set. Whatever. &lt;/p&gt;
+&lt;p&gt;Ahh, cool. My language isn’t set. Whatever.&lt;/p&gt;
 
-&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Solution:&lt;/strong&gt; &lt;code&gt;LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 export LC_CTYPE LANG&lt;/code&gt; - throw this in the top of the git hook  &lt;/p&gt;
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Solution:&lt;/strong&gt; &lt;code&gt;LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8 export LC_CTYPE LANG&lt;/code&gt; - throw this in the top of the git hook&lt;/p&gt;
 
 &lt;h2 id=&quot;and-then&quot;&gt;And then..&lt;/h2&gt;
 
-&lt;p&gt;Peaches! everything seems to work fine. The sweet is never as sweet without the sour. &lt;/p&gt;
+&lt;p&gt;Peaches! everything seems to work fine. The sweet is never as sweet without the sour.&lt;/p&gt;
 
 &lt;p&gt;The next thing to do was to setup a comment system with disqus, customise some header images and create a flattr account (heh). I look forward to overcoming my laziness and becoming the prolific and helpful tech blogger I know I never wanted to be.&lt;/p&gt;
 
@@ -603,17 +607,17 @@ locale: Cannot &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;LC_ALL to defau
   </author>
   <content type="html">&lt;h3 id=&quot;the-problem&quot;&gt;The Problem…&lt;/h3&gt;
 
-&lt;p&gt;When trying to optimise a coffeescript project with the latest r.js optimiser from the requirejs npm module I ran into the following error:  &lt;/p&gt;
+&lt;p&gt;When trying to optimise a coffeescript project with the latest r.js optimiser from the requirejs npm module I ran into the following error:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Cannot uglify file: /path/to/main.js. Skipping it. Error is: Unexpected character &amp;#39;&amp;#39; (line: 363, col: 3, pos: 15612)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;I downloaded the uglify-js package which r.js is using here to minify the script. Running it on the file in question in the output directory of the r.js build process gave me more information - specifically that uglify is dying on the character sequence &lt;strong&gt;ï»¿&lt;/strong&gt; - a utf-8 byte order mark.  &lt;/p&gt;
+&lt;p&gt;I downloaded the uglify-js package which r.js is using here to minify the script. Running it on the file in question in the output directory of the r.js build process gave me more information - specifically that uglify is dying on the character sequence &lt;strong&gt;ï»¿&lt;/strong&gt; - a utf-8 byte order mark.&lt;/p&gt;
 
-&lt;p&gt;It turns out these marks were being input by an incorrectly configured template in visual studio. After looking into it, it appears that the BOM isn’t necessary or even recommended in UTF-8 encoded files.  &lt;/p&gt;
+&lt;p&gt;It turns out these marks were being input by an incorrectly configured template in visual studio. After looking into it, it appears that the BOM isn’t necessary or even recommended in UTF-8 encoded files.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-fix&quot;&gt;The Fix…&lt;/h3&gt;
 
-&lt;p&gt;It follows that the quickest (and dirtiest) way is to simply strip these characters from files we wish to minify.  &lt;/p&gt;
+&lt;p&gt;It follows that the quickest (and dirtiest) way is to simply strip these characters from files we wish to minify.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;grep -lZr $&amp;#39;\357\273\277&amp;#39; . | xargs -0 -l sed -i -e $&amp;#39;s/\357\273\277//g&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
@@ -646,9 +650,9 @@ locale: Cannot &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;LC_ALL to defau
   &lt;/header&gt;
 &lt;div id=&quot;drawer&quot;&gt;
 &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#best-friends-together-at-last&quot;&gt;Best friends together at last!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#oh-no-save-me-requirejs&quot;&gt;Oh no save me, RequireJS!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#lets-go&quot;&gt;Let’s Go&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#best-friends-together-at-last&quot; id=&quot;markdown-toc-best-friends-together-at-last&quot;&gt;Best friends together at last!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#oh-no-save-me-requirejs&quot; id=&quot;markdown-toc-oh-no-save-me-requirejs&quot;&gt;Oh no save me, RequireJS!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#lets-go&quot; id=&quot;markdown-toc-lets-go&quot;&gt;Let’s Go&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
   &lt;/div&gt;
@@ -813,6 +817,8 @@ Our file layout on disk&lt;/p&gt;
 
 &lt;p&gt;after finding a way round the terrible deep cloning in ruby it was incredibly painless and very interesting. i like how the initial choice of cells influences whether you have a beautiful symmetrical oscillating pattern or a horrible cancerous mess, after 100 or so generations.&lt;/p&gt;
 
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/427880.js&quot;&gt; &lt;/script&gt;
 
 
@@ -839,6 +845,8 @@ Our file layout on disk&lt;/p&gt;
 
 &lt;p&gt;The object includes intersection methods and a crude draw method for debug purposes (you’ll need to supply your own spritebatch and a 1x1 texture2d to use it)&lt;/p&gt;
 
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
 &lt;script src=&quot;https://gist.github.com/324608.js&quot;&gt; &lt;/script&gt;
 
 

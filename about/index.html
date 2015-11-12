@@ -5,14 +5,14 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Who is this guy?! &#8211; Donald Hutchison</title>
+<title>Hey! How's it going? &#8211; Donald Hutchison</title>
 
 
 
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="Who is this guy?!">
+<meta name="twitter:title" content="Hey! How's it going?">
 
 <meta name="twitter:site" content="@rev_kachowski">
 <meta name="twitter:creator" content="@rev_kachowski">
@@ -23,7 +23,7 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Who is this guy?!">
+<meta property="og:title" content="Hey! How's it going?">
 
 <meta property="og:url" content="/about/">
 <meta property="og:site_name" content="Donald Hutchison">
@@ -97,7 +97,7 @@
 		    
 		        
 		    
-		    <li><a href="/blog/" >Blog</a></li>
+		    <li><a href="/projects/" >Projects</a></li>
 		  
         <li class="dosearch"><span><i class="fa fa-search"></i> Search</span></li>
 	    </ul>
@@ -128,10 +128,10 @@
 
 <div id="main" role="main">
   <article class="entry">
-    <img src="/images/headers/header5.jpg" class="entry-feature-image" alt="Who is this guy?!" >
+    <img src="/images/headers/header5.jpg" class="entry-feature-image" alt="Hey! How's it going?" >
     <div class="entry-wrapper">
       <header class="entry-header">
-        <h1 class="entry-title">Who is this guy?!</h1>
+        <h1 class="entry-title">Hey! How's it going?</h1>
       </header>
       <div class="entry-content">
         <hr />
@@ -141,7 +141,7 @@
     <a href="/images/profile/hipster.jpg"><img src="/images/profile/hipster.jpg" alt="image" /></a>
 </figure>
 
-<p>Hi, my name is Donald Hutchison. Ever since I received a ZX Spectrum at the age of 4 I’ve been working with computers. </p>
+<p>Hi, my name is Donald Hutchison. Ever since I received a ZX Spectrum at the age of 4 I’ve been working with computers.</p>
 
 <p>I like working on cool things; challenges and new ideas are what really drive me. I spent a lot of my time either making <a href="http://rkachowski.github.io/cigarettebreak-out">silly games</a>, doing something new on <a href="https://www.coursera.org/user/i/e530823e2124f906495eb60aa8b4f163">Coursera</a> or fighting with overly complex electronics (ask me about home automation).</p>
 
@@ -157,13 +157,17 @@
 <hr />
 
 <h2 id="statistics">Statistics</h2>
-
 <ul>
-  <li>Male, 27 years old.</li>
+  <li>Male, <span class="age"></span> years old.</li>
   <li>Five foot Six (and counting).</li>
   <li>Blood Type: B+</li>
   <li>Star Sign: Leo</li>
-  <li>Spirit Animal: <a href="/images/lizard.jpg">Lizard</a></li>
+  <li>Spirit Animal: <a href="/images/lizard.jpg">Lizard</a>
+<script>
+  var age = new Date(Date.now() - Date.parse("July 27 1987")).getUTCFullYear() - 1970
+  var tag = document.getElementsByClassName("age")[0]
+  tag.textContent = age
+</script></li>
 </ul>
 
 <hr />
@@ -184,7 +188,7 @@
   <footer role="contentinfo" class="entry-wrapper">
     
 
-<span>&copy; 2014 Donald Hutchison. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/">So Simple Theme</a>.</span>
+<span>&copy; 2015 Donald Hutchison. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/">So Simple Theme</a>.</span>
 <div class="social-icons">
 	<a href="http://twitter.com/rev_kachowski" title="Donald Hutchison on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
 	

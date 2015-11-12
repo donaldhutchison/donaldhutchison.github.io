@@ -1,185 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  
   <url>
     <loc>/articles/compiling-c-with-rakefiles/</loc>
-    
     <lastmod>2014-10-19T19:46:40+02:00</lastmod>
-    
-    <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>/articles/how-to-write-bug-reports/</loc>
-    
     <lastmod>2014-02-17T00:00:00+01:00</lastmod>
-    
-    <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>/articles/ccnode-recursive-description/</loc>
-    
     <lastmod>2014-02-04T00:00:00+01:00</lastmod>
-    
-    <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>/articles/ruby-at-the-bar/</loc>
-    
     <lastmod>2014-02-02T00:00:00+01:00</lastmod>
-    
-    <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>/articles/global-game-jame2014/</loc>
-    
     <lastmod>2014-01-30T00:00:00+01:00</lastmod>
-    
-    <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>/articles/coffeescript-skeleton/</loc>
-    
     <lastmod>2014-01-10T00:00:00+01:00</lastmod>
-    
-    <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>/articles/installing-jekyll-oh-lordy/</loc>
-    
     <lastmod>2013-07-18T00:00:00+02:00</lastmod>
-    
-    <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>/blog/working-title-robot-go-home-gaiden/</loc>
-    
     <lastmod>2013-03-24T00:00:00+01:00</lastmod>
-    
-    <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>/articles/optimising-coffeescript-files-with-r-js-unexpected-character/</loc>
-    
     <lastmod>2012-06-11T00:00:00+02:00</lastmod>
-    
-    <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>/articles/coffeescript-requirejs-and-you/</loc>
-    
     <lastmod>2012-04-24T00:00:00+02:00</lastmod>
-    
-    <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>/blog/rise-from-your-grave/</loc>
-    
     <lastmod>2012-03-17T00:00:00+01:00</lastmod>
-    
-    <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>/articles/conways-game-of-life-in-ruby-gosu-chingu/</loc>
-    
     <lastmod>2010-06-06T00:00:00+02:00</lastmod>
-    
-    <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>/articles/2d-obb-collisions-in-xna/</loc>
-    
     <lastmod>2010-03-07T00:00:00+01:00</lastmod>
-    
-    <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>/blog/syobon-action-155-lives/</loc>
-    
     <lastmod>2010-01-06T00:00:00+01:00</lastmod>
-    
-    <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>/blog/bigjam-2009/</loc>
-    
     <lastmod>2009-08-10T00:00:00+02:00</lastmod>
-    
-    <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>/blog/cho-ren-sha-68k/</loc>
-    
     <lastmod>2009-06-17T00:00:00+02:00</lastmod>
-    
-    <priority>0.8</priority>
   </url>
-  
-  
   <url>
     <loc>/</loc>
-    <lastmod>2014-11-10T15:35:54+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
-  
   <url>
     <loc>/blog/</loc>
-    <lastmod>2014-11-10T15:35:54+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
-  
   <url>
     <loc>/articles/</loc>
-    <lastmod>2014-11-10T15:35:54+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
-  
   <url>
     <loc>/tags/</loc>
-    <lastmod>2014-11-10T15:35:54+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
-  
   <url>
     <loc>/about/</loc>
-    <lastmod>2014-11-10T15:35:54+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
-  
   <url>
     <loc>/theme-setup/</loc>
-    <lastmod>2014-11-10T15:35:54+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
-  
   <url>
     <loc>/projects/</loc>
-    <lastmod>2014-11-10T15:35:54+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
-  
-  
-  
 </urlset>

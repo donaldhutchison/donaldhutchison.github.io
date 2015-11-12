@@ -103,7 +103,7 @@
 		    
 		        
 		    
-		    <li><a href="/blog/" >Blog</a></li>
+		    <li><a href="/projects/" >Projects</a></li>
 		  
         <li class="dosearch"><span><i class="fa fa-search"></i> Search</span></li>
 	    </ul>
@@ -177,9 +177,9 @@
   <p>Rake is a Make-like program implemented in Ruby</p>
 </blockquote>
 
-<p><em>Rake</em> is Ruby’s version of the <em>Make</em> build system. Created in 2003 by the late Jim Weirich, it’s goal is to get away from the idiosyncratic build system syntax and express build rules in plain Ruby. According to <a href="https://en.wikipedia.org/wiki/Jim_Weirich#Rake">wikipedia</a>, it’s the most downloaded ruby gem of all time and has been bundled with OSX since 2011. </p>
+<p><em>Rake</em> is Ruby’s version of the <em>Make</em> build system. Created in 2003 by the late Jim Weirich, it’s goal is to get away from the idiosyncratic build system syntax and express build rules in plain Ruby. According to <a href="https://en.wikipedia.org/wiki/Jim_Weirich#Rake">wikipedia</a>, it’s the most downloaded ruby gem of all time and has been bundled with OSX since 2011.</p>
 
-<p>Rake has a diverse set of functions but in my experience it’s primarily used to drive a single command line interface for a ton of unrelated scripts and tools. By invoking your scripts from rake tasks you can create a single unified point of access for both developers and other tools to work with. This is cool for a variety of reasons, e.g. having a Continuous Integration server run the rake task directly gives a build system that is both under version control and available locally. But this is true of many build systems… Where <em>Rake</em> really shines is in it’s incredibly powerful <code>File</code>, <code>Rule</code> and <code>Task</code> functionality. </p>
+<p>Rake has a diverse set of functions but in my experience it’s primarily used to drive a single command line interface for a ton of unrelated scripts and tools. By invoking your scripts from rake tasks you can create a single unified point of access for both developers and other tools to work with. This is cool for a variety of reasons, e.g. having a Continuous Integration server run the rake task directly gives a build system that is both under version control and available locally. But this is true of many build systems… Where <em>Rake</em> really shines is in it’s incredibly powerful <code>File</code>, <code>Rule</code> and <code>Task</code> functionality.</p>
 
 <p>I was lucky enough to see Jim’s <a href="https://www.youtube.com/watch?v=KaEqZtulOus">Power Rake</a> presentation at the Scottish Ruby Conference in 2012 where he spoke at length about the awesomeness of the <code>pathmap</code> method and the <code>FileList</code> class. Why not use these tools for modern C development? Even though one of the <a href="https://github.com/jimweirich/rake/blob/de564de4e2f189e1b133e4adf05ab8fc820a044b/rake/doc/example/Rakefile1">first examples</a> ever provided was using Rake to compile a basic C program, it still lacks behind <em>Make</em>’s out of the box no-config compilation rules. Let’s see what it takes to get a <em>Rake</em> to walk like a <em>Make</em>.</p>
 
@@ -218,13 +218,13 @@ task is generated when rake is given an argument which matches an existing file 
     <span class="sb">`cc -c </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">source</span><span class="si">}</span><span class="sb"> -o </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="sb">`</span>
 <span class="k">end</span></code></pre></div>
 
-<p>The first line basically says “whenever I need a *.o file, I also need an existing .c file with the same name”. Now in our example - when we run <code>rake foo.o</code>, the foo.o will match against the .o section, and then following the rule rake will look for a corresponding <code>foo.c</code> file, find it, and finally execute the block. </p>
+<p>The first line basically says “whenever I need a *.o file, I also need an existing .c file with the same name”. Now in our example - when we run <code>rake foo.o</code>, the foo.o will match against the .o section, and then following the rule rake will look for a corresponding <code>foo.c</code> file, find it, and finally execute the block.</p>
 
 <p>Rake passes a <a href="https://github.com/jimweirich/rake/blob/master/lib/rake/task.rb">Task</a> instance into the block, which is populated with a lot of information about the rule we just followed. From this task we take out the source (<code>foo.c</code>) and the output name (<code>foo.o</code>) and then pass them into the compiler via a shell invocation.</p>
 
 <h4 id="create-executable-from-c">Create Executable From .c</h4>
 
-<p>What we want to do here is solve the situation of <code>rake foo</code> and directly create an executable without the intermediate fluff hanging around. This can be done by matching the rule against a regular expression. </p>
+<p>What we want to do here is solve the situation of <code>rake foo</code> and directly create an executable without the intermediate fluff hanging around. This can be done by matching the rule against a regular expression.</p>
 
 <p>Rather awkwardly, we want something that matches against a string <em>without</em> a file extension. To specify that we match against any string would end up creating a circular dependency with the rule above. We can naively match a file extension with the expression <code>/\w*\.\w*/</code> (we’re not going to take multiple dots in filename into account), then we can <a href="http://zijab.blogspot.de/2008/09/finding-opposite-of-regular-expression.html">invert that pattern</a> and get the horrible looking <code>/^((?!\w*\.\w*).)*$/</code>which should match any single word without a file extension attached.</p>
 
@@ -252,6 +252,8 @@ task is generated when rake is given an argument which matches an existing file 
 
 <p>Now (after some minor tidying) we have a  very basic <em>Rakefile</em> like this which will let us compile just like we’re using <em>Make</em></p>
 
+<noscript><pre>400: Invalid request
+</pre></noscript>
 <script src="https://gist.github.com/be91c426b46725c20250.js"> </script>
 
 <h3 id="round-one---fight">Round One - Fight!</h3>
@@ -274,9 +276,9 @@ task is generated when rake is given an argument which matches an existing file 
 
 <h4 id="tasks">Tasks</h4>
 
-<p>Here’s where we start getting into the actual work of the build system. <em>Make</em>’s default task is simply the first declared in the Makefile, <em>Rake</em> has an explicit <code>:default</code> task that can be set to  any desired value. We can set dependencies to have the default task build everything, much like in Zed’s Makefile. </p>
+<p>Here’s where we start getting into the actual work of the build system. <em>Make</em>’s default task is simply the first declared in the Makefile, <em>Rake</em> has an explicit <code>:default</code> task that can be set to  any desired value. We can set dependencies to have the default task build everything, much like in Zed’s Makefile.</p>
 
-<p>The interesting part comes to when we encounter the programmatic tasks, like the <code>$(PROGRAMS)</code> task on <a href="https://github.com/rkachowski/c-the-hard-way/blob/master/liblcthw/Makefile#L22">line 22</a>. Here the <code>PROGRAMS</code> variable has been set to the contents of the <code>bin</code> directory, but with all suffixes removed - to indicate executable files that need to be created. This is already handled by the rules we made earlier, but the Makefile also modifies the <code>CFLAGS</code> variable to link against the entire built library. </p>
+<p>The interesting part comes to when we encounter the programmatic tasks, like the <code>$(PROGRAMS)</code> task on <a href="https://github.com/rkachowski/c-the-hard-way/blob/master/liblcthw/Makefile#L22">line 22</a>. Here the <code>PROGRAMS</code> variable has been set to the contents of the <code>bin</code> directory, but with all suffixes removed - to indicate executable files that need to be created. This is already handled by the rules we made earlier, but the Makefile also modifies the <code>CFLAGS</code> variable to link against the entire built library.</p>
 
 <p>Here we can see that <em>Make</em> has a pretty interesting feature where it exploits a the way it variables, and essentially changes the existing <code>CFLAGS</code> variable <em>within the scope of a certain task.</em> This means that <code>CFLAGS</code> refers to something different for each task, namely it has the built library appended to it for the <code>PROGRAMS</code> and <code>SO_TARGET</code> tasks.</p>
 
@@ -305,7 +307,7 @@ task is generated when rake is given an argument which matches an existing file 
 
 <h3 id="conclusion">Conclusion!</h3>
 
-<p>Awesome! We can now build and link our library using nothing but <em>Rake</em>. Following the steps above, we now have a <a href="https://github.com/rkachowski/c-the-hard-way/blob/master/liblcthw/Rakefile">Rakefile that looks like this</a>, and can do everything our <em>Makefile</em> initially did. </p>
+<p>Awesome! We can now build and link our library using nothing but <em>Rake</em>. Following the steps above, we now have a <a href="https://github.com/rkachowski/c-the-hard-way/blob/master/liblcthw/Rakefile">Rakefile that looks like this</a>, and can do everything our <em>Makefile</em> initially did.</p>
 
 <p>Except uh… we have almost doubled the LOC… we’ve made awful compromises to one of the core classes of <em>Rake</em> itself, and we don’t nearly have the flexibility and control that <em>Make</em> gives us from the get go. It’s pretty clear from this that we are forcing <em>Rake</em> to do something that it’s not totally designed for. Not to mention the dependencies and portablity concerns we’re placing on having Ruby + Rake installed on every target build machine. Were we to take this further we’d ideally have a set of <code>Task</code> / <code>FileTask</code> subclasses to encapsulate any C specific options, and we’d have a set of rules that match <em>Make</em>’s impressive repertoire that we could painlessly import at the top.</p>
 
@@ -330,7 +332,7 @@ task is generated when rake is given an argument which matches an existing file 
   <footer role="contentinfo" class="entry-wrapper">
     
 
-<span>&copy; 2014 Donald Hutchison. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/">So Simple Theme</a>.</span>
+<span>&copy; 2015 Donald Hutchison. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/">So Simple Theme</a>.</span>
 <div class="social-icons">
 	<a href="http://twitter.com/rev_kachowski" title="Donald Hutchison on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
 	

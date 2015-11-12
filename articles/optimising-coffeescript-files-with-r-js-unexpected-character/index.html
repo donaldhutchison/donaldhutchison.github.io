@@ -103,7 +103,7 @@
 		    
 		        
 		    
-		    <li><a href="/blog/" >Blog</a></li>
+		    <li><a href="/projects/" >Projects</a></li>
 		  
         <li class="dosearch"><span><i class="fa fa-search"></i> Search</span></li>
 	    </ul>
@@ -158,17 +158,17 @@
       <div class="entry-content">
         <h3 id="the-problem">The Problem…</h3>
 
-<p>When trying to optimise a coffeescript project with the latest r.js optimiser from the requirejs npm module I ran into the following error:  </p>
+<p>When trying to optimise a coffeescript project with the latest r.js optimiser from the requirejs npm module I ran into the following error:</p>
 
 <div class="highlight"><pre><code class="language-text" data-lang="text">Cannot uglify file: /path/to/main.js. Skipping it. Error is: Unexpected character &#39;&#39; (line: 363, col: 3, pos: 15612)</code></pre></div>
 
-<p>I downloaded the uglify-js package which r.js is using here to minify the script. Running it on the file in question in the output directory of the r.js build process gave me more information - specifically that uglify is dying on the character sequence <strong>ï»¿</strong> - a utf-8 byte order mark.  </p>
+<p>I downloaded the uglify-js package which r.js is using here to minify the script. Running it on the file in question in the output directory of the r.js build process gave me more information - specifically that uglify is dying on the character sequence <strong>ï»¿</strong> - a utf-8 byte order mark.</p>
 
-<p>It turns out these marks were being input by an incorrectly configured template in visual studio. After looking into it, it appears that the BOM isn’t necessary or even recommended in UTF-8 encoded files.  </p>
+<p>It turns out these marks were being input by an incorrectly configured template in visual studio. After looking into it, it appears that the BOM isn’t necessary or even recommended in UTF-8 encoded files.</p>
 
 <h3 id="the-fix">The Fix…</h3>
 
-<p>It follows that the quickest (and dirtiest) way is to simply strip these characters from files we wish to minify.  </p>
+<p>It follows that the quickest (and dirtiest) way is to simply strip these characters from files we wish to minify.</p>
 
 <div class="highlight"><pre><code class="language-text" data-lang="text">grep -lZr $&#39;\357\273\277&#39; . | xargs -0 -l sed -i -e $&#39;s/\357\273\277//g&#39;</code></pre></div>
 
@@ -196,7 +196,7 @@
   <footer role="contentinfo" class="entry-wrapper">
     
 
-<span>&copy; 2014 Donald Hutchison. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/">So Simple Theme</a>.</span>
+<span>&copy; 2015 Donald Hutchison. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/">So Simple Theme</a>.</span>
 <div class="social-icons">
 	<a href="http://twitter.com/rev_kachowski" title="Donald Hutchison on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
 	
