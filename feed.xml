@@ -4,13 +4,56 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2015-11-12T22:17:11+01:00</updated>
+<updated>2016-03-28T21:27:45+02:00</updated>
 <id>/</id>
 <author>
   <name>Donald Hutchison</name>
   <uri>/</uri>
   <email>contact@donaldhutchison.info</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[AnkiRB - spaced repetition flashcards made in ruby]]></title>
+  <link rel="alternate" type="text/html" href="/anki-rb/" />
+  <id>/anki-rb</id>
+  <published>2016-03-28T21:26:45+02:00</published>
+  <updated>2016-03-28T21:26:45+02:00</updated>
+  <author>
+    <name>Donald Hutchison</name>
+    <uri></uri>
+    <email>contact@donaldhutchison.info</email>
+  </author>
+  <content type="html">&lt;p&gt;In the past few weeks I discovered &lt;a href=&quot;http://www.omniglot.com/&quot;&gt;Omniglot&lt;/a&gt; and &lt;a href=&quot;http://ankisrs.net/&quot;&gt;Anki&lt;/a&gt; and thought it’d be pretty cool to be able to create flashcards for the &lt;a href=&quot;http://www.omniglot.com/language/phrases/index.htm#lang&quot;&gt;useful phrases&lt;/a&gt; listing. Being able to say “this guy pays for everything” in Turkish, or “my hovercraft is full of eels” in Norwegian could be an incredibly useful life skill.&lt;/p&gt;
+
+&lt;p&gt;And so &lt;a href=&quot;https://github.com/rkachowski/anki-rb&quot;&gt;AnkiRB&lt;/a&gt; came into existence.&lt;/p&gt;
+
+&lt;p&gt;The library basically replicates what the application itself does when you create flashcards via the gui, except uses ruby’s sqlite package to create flashcards and bundle media files together.&lt;/p&gt;
+
+&lt;p&gt;With a combination of this and some jQuery, its pretty easy to grab all the phrases + sound files for a language and create flashcards for them.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;ankirb&amp;#39;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#create a deck&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;deck&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Anki&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Deck&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;FancyExampleDeck&amp;#39;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#create a basic card&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;card&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Anki&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Card&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:front&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;What is the french for cheese omelette?&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:back&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Omelette au fromage&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#add audio to the back&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;card&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;back&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;dexters_lab_omelette.wav&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#add card to the deck&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;deck&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_card&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;card&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#export to ~/Anki/Decks/FancyExampleDeck.apkg&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;Anki&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;apkg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;~/Anki/Decks&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;/anki-rb/&quot;&gt;AnkiRB - spaced repetition flashcards made in ruby&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;&quot;&gt;Donald Hutchison&lt;/a&gt; on March 28, 2016.&lt;/p&gt;</content>
+</entry>
 
 
   

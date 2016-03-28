@@ -20,6 +20,8 @@ var getSubtitle = function () {
         "I'm into the finer things, like, red wine and time machines",//a_rival
         "How can I describe it to you? The sly eagle hides its claws.",//ff9
         "awesome! nice! pretty sweet!",
+        "We can forgive a man for making a useful thing as long as he does not admire it.",// https://www.gutenberg.org/files/174/174-h/174-h.htm
+        "All art is quite useless.",// https://www.gutenberg.org/files/174/174-h/174-h.htm
         "Here I go, deep type flow, Jacque Cousteau could never get this low",//wu tang
         "a fledgling freelance professor, one who will die young and make no lasting impression."];//_why
 

@@ -1,6 +1,15 @@
 [
 	
 		{
+		  "title"      : "AnkiRB - spaced repetition flashcards made in ruby",
+		  "category"   : "",
+      "tags"       : "ruby, anki, learning, and lib",
+		  "url"        : "/anki-rb/",
+		  "date"       : "2016-03-28 21:26:45 +0200",
+		  "shortdate"  : "March 28, 2016"
+		} ,
+	
+		{
 		  "title"      : "Compiling C with Rakefiles",
 		  "category"   : "articles",
       "tags"       : "ruby, rake, and c",
