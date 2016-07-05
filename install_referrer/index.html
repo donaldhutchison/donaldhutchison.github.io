@@ -5,19 +5,15 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>AnkiRB - spaced repetition flashcards made in ruby &#8211; Donald Hutchison</title>
-<meta name="description" content="In the past few weeks I discovered Omniglot and Anki and thought it’d be pretty cool to be able to create flashcards for the useful phrases listing. Being able to say “this guy pays for everything” in Turkish, or “my hovercraft is full of eels” in Norwegian could be an incredibly useful life skill.
+<title>Install referrer testing &#8211; Donald Hutchison</title>
 
-">
-<meta name="keywords" content="ruby, anki, learning, lib">
+<meta name="keywords" content="android, adb, programming">
 
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="AnkiRB - spaced repetition flashcards made in ruby">
-<meta name="twitter:description" content="In the past few weeks I discovered Omniglot and Anki and thought it’d be pretty cool to be able to create flashcards for the useful phrases listing. Being able to say “this guy pays for everything” in Turkish, or “my hovercraft is full of eels” in Norwegian could be an incredibly useful life skill.
+<meta name="twitter:title" content="Install referrer testing">
 
-">
 <meta name="twitter:site" content="@rev_kachowski">
 <meta name="twitter:creator" content="@rev_kachowski">
 
@@ -27,18 +23,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="AnkiRB - spaced repetition flashcards made in ruby">
-<meta property="og:description" content="In the past few weeks I discovered Omniglot and Anki and thought it’d be pretty cool to be able to create flashcards for the useful phrases listing. Being able to say “this guy pays for everything” in Turkish, or “my hovercraft is full of eels” in Norwegian could be an incredibly useful life skill.
+<meta property="og:title" content="Install referrer testing">
 
-">
-<meta property="og:url" content="/anki-rb/">
+<meta property="og:url" content="/install_referrer/">
 <meta property="og:site_name" content="Donald Hutchison">
 
 
 
 
 
-<link rel="canonical" href="/anki-rb/">
+<link rel="canonical" href="/install_referrer/">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Donald Hutchison Feed">
 
 
@@ -138,9 +132,9 @@
     
     <div class="entry-wrapper">
       <header class="entry-header">
-        <span class="entry-tags"><a href="/tags/#ruby" title="Pages tagged ruby">ruby</a>&nbsp;&bull;&nbsp;<a href="/tags/#anki" title="Pages tagged anki">anki</a>&nbsp;&bull;&nbsp;<a href="/tags/#learning" title="Pages tagged learning">learning</a>&nbsp;&bull;&nbsp;<a href="/tags/#lib" title="Pages tagged lib">lib</a></span>
+        <span class="entry-tags"><a href="/tags/#android" title="Pages tagged android">android</a>&nbsp;&bull;&nbsp;<a href="/tags/#adb" title="Pages tagged adb">adb</a>&nbsp;&bull;&nbsp;<a href="/tags/#programming" title="Pages tagged programming">programming</a></span>
         
-          <h1 class="entry-title">AnkiRB - spaced repetition flashcards made in ruby</h1>
+          <h1 class="entry-title">Install referrer testing</h1>
         
       </header>
       <footer class="entry-meta">
@@ -150,37 +144,34 @@
           <img src="/images/portrait.png" class="bio-photo" alt="Donald Hutchison bio photo"></a>
         
         <span class="author vcard">By <span class="fn">Donald Hutchison</span></span>
-        <span class="entry-date date published"><time datetime="2016-03-28T21:26:45+02:00"><i class="fa fa-calendar-o"></i> March 28, 2016</time></span>
+        <span class="entry-date date published"><time datetime="2016-07-05T19:16:03+02:00"><i class="fa fa-calendar-o"></i> July 05, 2016</time></span>
         
         <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
         
         
       </footer>
       <div class="entry-content">
-        <p>In the past few weeks I discovered <a href="http://www.omniglot.com/">Omniglot</a> and <a href="http://ankisrs.net/">Anki</a> and thought it’d be pretty cool to be able to create flashcards for the <a href="http://www.omniglot.com/language/phrases/index.htm#lang">useful phrases</a> listing. Being able to say “this guy pays for everything” in Turkish, or “my hovercraft is full of eels” in Norwegian could be an incredibly useful life skill.</p>
+        <p>The install referrer is an intent on android, which is broadcast after the app install to give the app information about the reason it was installed. This is useful if you’re tracking marketing / paid installs and you want to tell between paid and organic installs.</p>
 
-<p>And so <a href="https://github.com/rkachowski/anki-rb">AnkiRB</a> came into existence.</p>
+<p>But testing this can be a huge pita, as you need to have your manifest setup to correctly add a listener for this intent, and you need to time the broadcast correctly.</p>
 
-<p>The library basically replicates what the application itself does when you create flashcards via the gui, except uses ruby’s sqlite package to create flashcards and bundle media files together.</p>
+<p>Due to how android applications are designed, there may be several components active at any point in time. If you have a reciever correctly configured for the <code>INSTALL_REFERRER</code> intent - i.e. you have the following section in your AndroidManifest</p>
 
-<p>With a combination of this and some jQuery, its pretty easy to grab all the phrases + sound files for a language and create flashcards for them.</p>
+<pre><code>&lt;receiver android:name="CLASSPATH TO YOUR RECEIVER" android:exported="true"&gt;
+    &lt;intent-filter&gt;
+        &lt;action android:name="com.android.vending.INSTALL_REFERRER" /&gt;
+    &lt;/intent-filter&gt;
+&lt;/receiver&gt;
+</code></pre>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;ankirb&#39;</span>
+<p>Then as soon as your application is on the system (after install) the component above will be invoked when an intent with the above action is sent.</p>
 
-<span class="c1">#create a deck</span>
-<span class="n">deck</span> <span class="o">=</span> <span class="no">Anki</span><span class="o">::</span><span class="no">Deck</span><span class="o">.</span><span class="n">new</span> <span class="s1">&#39;FancyExampleDeck&#39;</span>
+<p>To test this you can run</p>
 
-<span class="c1">#create a basic card</span>
-<span class="n">card</span> <span class="o">=</span> <span class="no">Anki</span><span class="o">::</span><span class="no">Card</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="ss">:front</span><span class="o">=&gt;</span><span class="s2">&quot;What is the french for cheese omelette?&quot;</span><span class="p">,</span> <span class="ss">:back</span><span class="o">=&gt;</span><span class="s2">&quot;Omelette au fromage&quot;</span><span class="p">)</span>
+<pre><code>adb shell am broadcast -a com.android.vending.INSTALL_REFERRER -n &lt;packagename&gt;/.&lt;java classname&gt; --es "referrer" "referrer=value&amp;stuff=url"
+</code></pre>
 
-<span class="c1">#add audio to the back</span>
-<span class="n">card</span><span class="o">.</span><span class="n">back</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;dexters_lab_omelette.wav&quot;</span>
-
-<span class="c1">#add card to the deck</span>
-<span class="n">deck</span><span class="o">.</span><span class="n">add_card</span> <span class="n">card</span>
-
-<span class="c1">#export to ~/Anki/Decks/FancyExampleDeck.apkg</span>
-<span class="no">Anki</span><span class="o">::</span><span class="n">apkg</span><span class="o">.</span><span class="n">export</span> <span class="n">deck</span><span class="p">,</span> <span class="s2">&quot;~/Anki/Decks&quot;</span></code></pre></div>
+<p>After the app has been installed (but before it is launched). The timing between install and launch isn’t as important - the information will be there on the first launch of the application.</p>
 
 
         <div id="disqus_thread"></div><!-- /#disqus_thread -->
@@ -188,10 +179,8 @@
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
-        <a href="/articles/compiling-c-with-rakefiles/" class="btn" title="Compiling C with Rakefiles">Previous</a>
+        <a href="/anki-rb/" class="btn" title="AnkiRB - spaced repetition flashcards made in ruby">Previous</a>
       
-      
-        <a href="/install_referrer/" class="btn" title="Install referrer testing">Next</a>
       
     </nav><!-- /.pagination -->
   </article>

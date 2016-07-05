@@ -4,13 +4,53 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-03-28T21:28:15+02:00</updated>
+<updated>2016-07-05T19:26:56+02:00</updated>
 <id>/</id>
 <author>
   <name>Donald Hutchison</name>
   <uri>/</uri>
   <email>contact@donaldhutchison.info</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Install referrer testing]]></title>
+  <link rel="alternate" type="text/html" href="/install_referrer/" />
+  <id>/install_referrer</id>
+  <published>2016-07-05T19:16:03+02:00</published>
+  <updated>2016-07-05T19:16:03+02:00</updated>
+  <author>
+    <name>Donald Hutchison</name>
+    <uri></uri>
+    <email>contact@donaldhutchison.info</email>
+  </author>
+  <content type="html">&lt;p&gt;The install referrer is an intent on android, which is broadcast after the app install to give the app information about the reason it was installed. This is useful if you’re tracking marketing / paid installs and you want to tell between paid and organic installs.&lt;/p&gt;
+
+&lt;p&gt;But testing this can be a huge pita, as you need to have your manifest setup to correctly add a listener for this intent, and you need to time the broadcast correctly.&lt;/p&gt;
+
+&lt;p&gt;Due to how android applications are designed, there may be several components active at any point in time. If you have a reciever correctly configured for the &lt;code&gt;INSTALL_REFERRER&lt;/code&gt; intent - i.e. you have the following section in your AndroidManifest&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;receiver android:name=&quot;CLASSPATH TO YOUR RECEIVER&quot; android:exported=&quot;true&quot;&amp;gt;
+    &amp;lt;intent-filter&amp;gt;
+        &amp;lt;action android:name=&quot;com.android.vending.INSTALL_REFERRER&quot; /&amp;gt;
+    &amp;lt;/intent-filter&amp;gt;
+&amp;lt;/receiver&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then as soon as your application is on the system (after install) the component above will be invoked when an intent with the above action is sent.&lt;/p&gt;
+
+&lt;p&gt;To test this you can run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;adb shell am broadcast -a com.android.vending.INSTALL_REFERRER -n &amp;lt;packagename&amp;gt;/.&amp;lt;java classname&amp;gt; --es &quot;referrer&quot; &quot;referrer=value&amp;amp;stuff=url&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After the app has been installed (but before it is launched). The timing between install and launch isn’t as important - the information will be there on the first launch of the application.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;/install_referrer/&quot;&gt;Install referrer testing&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;&quot;&gt;Donald Hutchison&lt;/a&gt; on July 05, 2016.&lt;/p&gt;</content>
+</entry>
 
 
   
