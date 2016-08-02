@@ -4,13 +4,101 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-07-05T19:26:56+02:00</updated>
+<updated>2016-08-02T17:42:17+02:00</updated>
 <id>/</id>
 <author>
   <name>Donald Hutchison</name>
   <uri>/</uri>
   <email>contact@donaldhutchison.info</email>
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[How to fight against the fact that you're going to turn 30]]></title>
+  <link rel="alternate" type="text/html" href="/approaching-30-what-to-do/" />
+  <id>/approaching-30-what-to-do</id>
+  <published>2016-07-29T17:03:46+02:00</published>
+  <updated>2016-07-29T17:03:46+02:00</updated>
+  <author>
+    <name>Donald Hutchison</name>
+    <uri></uri>
+    <email>contact@donaldhutchison.info</email>
+  </author>
+  <content type="html">&lt;p&gt;Turning 29 has made me realise that the task of getting onto the &lt;a href=&quot;www.forbes.com/30-under-30-2016/&quot;&gt;Forbes “30 under 30”&lt;/a&gt; list is now on hard mode. So I guess I’d better use this sinking feeling of fleeting youth to motivate me to finish some projects.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Additionally, when I was 18 I hired an assassin to murder me before I become 30, so that I would never live long enough to surrender my childish views. This makes everyday I do not get killed a thrilling occurrance and each passing moment seems precious and wonderful. I highly recommend this.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;how-to-ignore-the-inevitable&quot;&gt;How to ignore the inevitable&lt;/h2&gt;
+
+&lt;h3 id=&quot;learn-guitar-again&quot;&gt;Learn Guitar (again)&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/totalguitar.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I have a ton of Total Guitar magazines from around 2003. These have followed me as I moved from apartment to apartment and even across countries. They have remained untouched for many years.&lt;/p&gt;
+
+&lt;p&gt;By the time I turn 30 I will have owned these magazines for longer than I have not owned them. The idea that I have been carrying around these symbols of “I want to do this, but I’ll get round to it later” like a personal albatross of failure for more than half my life is distressing to say the least.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt; : Learn to play the songs that don’t suck (at least 5) and upload stupid cover versions to youtube&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;release-an-indie-game&quot;&gt;Release an indie game&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/hydrocarbon.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I have been involved in the indie gaming scene on and off for close to 8 years. &lt;a href=&quot;https://forums.tigsource.com/index.php?topic=45.msg66420#msg66420&quot;&gt;Shitposting on tigsource&lt;/a&gt; before that was even a thing.&lt;/p&gt;
+
+&lt;p&gt;There are a ton of projects that I’ve started and abandoned with an incredible power of abandonment. Actually finishing something would give me a great sense of personal achievement, and let me know it’s possible to actually complete tasks instead of letting them drop down the back of the couch over time.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: Get a game on the app store and convince at least one person to download it.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;run-better&quot;&gt;Run better&lt;/h3&gt;
+
+&lt;p&gt;In 2014 I decided to run a marathon because I wanted to prove that there’s nothing special about it (Also I found a link to &lt;a href=&quot;https://www.amazon.de/Non-Runners-Marathon-Trainer-David-Whitsett/dp/1570281823&quot;&gt;The Non Runner’s Marathon Trainer&lt;/a&gt; on hacker news). If you commit to a training plan and do it, it’s pretty much impossible to be unable to finish the marathon.&lt;/p&gt;
+
+&lt;p&gt;The training took 3 months and it was more than slightly involving. But at the end of it I was able to run the whole cursed 42.2km round the west end of Berlin.&lt;/p&gt;
+
+&lt;p&gt;It’s kind of a metaphor for something, I don’t know what. I guess drawing, programming, weightlifting, music and anything else are pretty similiar in that if you just spend a ton of time doing it, it’s impossible not to achieve some level of proficiency. There’s no real “oh you’re so talented you must have been born that way I could never do that blablabla” factor in these things. If you were locked in a room with nothing but a piano and a sofa for 40 years, you’d eventually become pretty good at something that resembles piano music.&lt;/p&gt;
+
+&lt;p&gt;Anyway, when running I was always aggressively slow - overly concerned about not being able to run the distance if I went too fast. Now I’d like to set the pretty modest goal of running 10k in less than an hour. It’s not outrageous but would require some kind of effort.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: 10k in an hour&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;electronics&quot;&gt;Electronics&lt;/h3&gt;
+
+&lt;p&gt;I studied Electronic and Electrical Engineering at university for a year before I switched to software, so I’ve always had a kind of dabbling in these things. However it was only quite recently that I finally discovered the world of arduinos and how small microchip programs open the way to interacting with the real world, with a minimal spaghetti mess of analog components and bad math (my fault).&lt;/p&gt;
+
+&lt;p&gt;There are a few things I want to create before I can consider this itch scratched.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;some kind of midi to cv converter&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/trash80/Arduinoboy&quot;&gt;the arduinoboy&lt;/a&gt; - (send midi signals to a gameboy)&lt;/li&gt;
+  &lt;li&gt;The classic &lt;a href=&quot;http://www.electrosmash.com/smokey-amp-analysis&quot;&gt;smokeyamp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;A device to detect when my mailbox is opened, and thereby launch my apartment into the IoT&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Goal: do all the above things and blog about it&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;misc&quot;&gt;Misc&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I’ve been working on some cool things for Unity test automation and scripting Android devices. I’d like to tidy these up and open source them so that the world can benefit from my terrible code.&lt;/li&gt;
+  &lt;li&gt;I have a ton of musical equipment, but I’ve been feeling too burnt out recently to do anything with it. I want to make at least one cheesy 80’s synthwave jam before I hit 30 and my life ends.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;/approaching-30-what-to-do/&quot;&gt;How to fight against the fact that you're going to turn 30&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;&quot;&gt;Donald Hutchison&lt;/a&gt; on July 29, 2016.&lt;/p&gt;</content>
+</entry>
 
 
   
@@ -586,11 +674,7 @@ Tested on:
     <uri></uri>
     <email>contact@donaldhutchison.info</email>
   </author>
-  <content type="html">&lt;blockquote&gt;
-  &lt;p&gt;(image from the awesome but short lived eponymous bbc series &lt;a href=&quot;http://www.imdb.com/title/tt0497298/&quot;&gt;Jekyll&lt;/a&gt; )&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;After getting sick of wordpress I decided to do the cool hipster thing and move my blog to &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. Both for the nerd credit and the super awesome minimal design (static site = no moving parts! awesome!). After reading about Josh Kaufman’s experience with Jekyll in his &lt;a href=&quot;http://first20hours.com/&quot;&gt;book&lt;/a&gt; it sounded like a pretty easy and maintainable platform to blog on.&lt;/p&gt;
+  <content type="html">&lt;p&gt;After getting sick of wordpress I decided to do the cool hipster thing and move my blog to &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;. Both for the nerd credit and the super awesome minimal design (static site = no moving parts! awesome!). After reading about Josh Kaufman’s experience with Jekyll in his &lt;a href=&quot;http://first20hours.com/&quot;&gt;book&lt;/a&gt; it sounded like a pretty easy and maintainable platform to blog on.&lt;/p&gt;
 
 &lt;h3 id=&quot;however&quot;&gt;However…&lt;/h3&gt;
 &lt;p&gt;On the way I encountered a few issues that almost took the chill out of a refreshing Thursday night in Berlin. Here I recount my issues for the sake of future ventures.&lt;/p&gt;
@@ -649,6 +733,10 @@ locale: Cannot &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;LC_ALL to defau
 &lt;p&gt;Peaches! everything seems to work fine. The sweet is never as sweet without the sour.&lt;/p&gt;
 
 &lt;p&gt;The next thing to do was to setup a comment system with disqus, customise some header images and create a flattr account (heh). I look forward to overcoming my laziness and becoming the prolific and helpful tech blogger I know I never wanted to be.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;(header image from the awesome but short lived eponymous bbc series &lt;a href=&quot;http://www.imdb.com/title/tt0497298/&quot;&gt;Jekyll&lt;/a&gt; )&lt;/p&gt;
+&lt;/blockquote&gt;
 
   &lt;p&gt;&lt;a href=&quot;/articles/installing-jekyll-oh-lordy/&quot;&gt;Jekyll Migration Woes&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;&quot;&gt;Donald Hutchison&lt;/a&gt; on July 18, 2013.&lt;/p&gt;</content>
 </entry>
