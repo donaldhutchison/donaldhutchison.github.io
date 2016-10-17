@@ -93,7 +93,17 @@
 		    
 		        
 		    
+		    <li><a href="/articles/" >Articles</a></li>
+		  
+		    
+		        
+		    
 		    <li><a href="/projects/" >Projects</a></li>
+		  
+		    
+		        
+		        
+		    <li><a href="https://github.com/rkachowski" target="_blank">Github</a></li>
 		  
 	    </ul>
 	</nav>
@@ -121,10 +131,33 @@
         <h1 class="entry-title">Projects</h1>
       </header>
       <div class="entry-content">
-        <h2 id="spritebuilder-osx">SpriteBuilder (OSX)</h2>
+        <p>A list of some projects I’ve created or otherwise been involved with, both professionally and for personal interest.</p>
 
-<p><a href="https://itunes.apple.com/us/app/spritebuilder/id784912885?mt=12"><img src="/images/macappstore.png" class="badge" /></a>
-<a href="https://github.com/spritebuilder/SpriteBuilder"><img src="/images/github.png" class="badge" /></a></p>
+<ul>
+  <li>
+    <p><a href="#ankirb">anki-rb (2016)</a></p>
+  </li>
+  <li><a href="#spritebuilder">SpriteBuilder / Cocos2D-ObjC (2015)</a></li>
+  <li><a href="#jellysplash">Jelly Splash (2013)</a></li>
+  <li><a href="#pocketvillage">Pocket Village (2014)</a></li>
+  <li><a href="#misc">Misc (&lt;2012)</a></li>
+</ul>
+
+<h2 id="a-namewtf-wooga-test-framework-wtf"><a name="wtf"> Wooga Test Framework (wtf)</a></h2>
+<hr />
+
+<h2 id="a-nameankirb-anki-rb"><a name="ankirb"> anki-rb</a></h2>
+
+<p>Anki-rb is a ruby gem designed to make it easier to create flashcards for the spaced repetition learning system <a href="http://ankisrs.net">anki</a>.</p>
+
+<p>Solutions in ruby already existed, but none that would output to the binary format that anki can consume (this means it was not possible to bundle media assets / audio with decks). Ultimately a hash is passed in which represents a card, these are then mapped into a normalised asset listing, thrown into an sqlite db and bundled with associated media files. The resultant file can be opened on the mobile or desktop anki client.</p>
+
+<p><a href="https://github.com/rkachowski/anki-rb">[Source]</a></p>
+
+<hr />
+
+<h2 id="a-namespritebuilderaspritebuilder-osx"><a name="spritebuilder"></a>SpriteBuilder (OSX)</h2>
+
 <figure class="third">
     <img src="/images/sb.jpeg" />
     <img src="/images/sb2.png" />
@@ -139,12 +172,14 @@ Open source and free.</p>
 
 <p>As one of the core team members I was responsible for working with the community, managing pull requests and helping guide the roadmap. I also designed the build system and moved the project to Circle CI.</p>
 
+<figure class="third">
+<a href="https://itunes.apple.com/us/app/spritebuilder/id784912885?mt=12"><img src="/images/macappstore.png" class="badge" /></a>
+</figure>
+<p><a href="https://github.com/spritebuilder/SpriteBuilder">[Source]</a></p>
+
 <hr />
 
-<h2 id="jelly-splash-ios--android">Jelly Splash (iOS / Android)</h2>
-
-<p><a href="https://itunes.apple.com/en/app/jelly-splash/id645949180?mt=8"><img src="/images/appstore.png" class="badge" /></a>
-<a href="https://play.google.com/store/apps/details?id=com.wooga.jelly_splash&amp;hl=en_GB"><img src="/images/googleplay.png" class="badge" /></a></p>
+<h2 id="a-namejellysplashajelly-splash-ios--android"><a name="jellysplash"></a>Jelly Splash (iOS / Android)</h2>
 
 <figure class="third">
     <a href="https://play.google.com/store/apps/details?id=com.wooga.jelly_splash&amp;hl=en_GB" target="_blank"><img src="/images/jellysplash2.jpg" /></a>
@@ -155,10 +190,13 @@ Open source and free.</p>
 
 <p>This project was an ambitious cross platform initiative. After developing for iOS, we discovered Apportable and began to port it to iOS. As part of the team responsible for the effort I’m proud to say that we were able to make this one of Wooga’s most successful games, and first big Android hit.</p>
 
+<figure class="third">
+<a href="https://itunes.apple.com/en/app/jelly-splash/id645949180?mt=8"><img src="/images/appstore.png" class="badge" /></a>
+<a href="https://play.google.com/store/apps/details?id=com.wooga.jelly_splash&amp;hl=en_GB"><img src="/images/googleplay.png" class="badge" /></a>
+</figure>
 <hr />
 
-<h3 id="pocket-village-ios">Pocket Village (iOS)</h3>
-<p><a href="https://itunes.apple.com/gb/app/pocket-village/id542131161?mt=8"><img src="/images/appstore.png" class="badge" /></a></p>
+<h2 id="a-namepocketvillageapocket-village-ios"><a name="pocketvillage"></a>Pocket Village (iOS)</h2>
 
 <figure class="third">
 <a href="https://itunes.apple.com/gb/app/pocket-village/id542131161?mt=8" target="_blank">
@@ -170,73 +208,15 @@ Open source and free.</p>
 
 <p>As one of the main engineers on this project, I helped develop this game from planning through to implementation. I developed some extensive tool support in Ruby, including a series of command line scripts to automate common tasks and a web application that allowed customer support to interact with the accounts of individual users.</p>
 
+<figure class="third">
+<a href="https://itunes.apple.com/gb/app/pocket-village/id542131161?mt=8"><img src="/images/appstore.png" class="badge" /></a>
+</figure>
 <hr />
 
-<h3 id="duck-hunter-ios">Duck Hunter (iOS)</h3>
-
-<figure class="third">
-<img src="/images/duck.jpg" />
-</figure>
-
-<p>Duck Hunter was an internal project at HuzuTech, used at trade shows to demonstrate connectivity between our social network product and various other platforms.</p>
-
-<p>Duck Hunter was a minigame based application, in the style of Point Blank or WarioWare. I developed a custom OAuth2 client, supporting user connectivity with a social network product we developed at HuzuTech. In addition I worked on a few of the minigames, including an accelerometer based duck herding game.</p>
-
-<hr />
-
-<h3 id="small-potatoes-avatar-builder-facebook">Small Potatoes Avatar Builder (Facebook)</h3>
-
-<p><a href="https://apps.facebook.com/smallpotatoes-avatar/" target="_blank"></a></p>
-<figure class="third">
-    <img src="/images/smallpotatoesav.png" />
-</figure>
-<p>&lt;/a&gt;
-This is an avatar builder for a children’s television program featuring singing potatoes (<a href="https://www.youtube.com/watch?v=npx2NK3Utrw">seriously, click here</a>). The app is available on facebook and lets you directly display your creations to your friends. <a href="https://apps.facebook.com/smallpotatoes-avatar/">link</a></p>
-
-<p>This app was written primarily using the canvas api to composite it’s images. This was at a time when using Flash on iOS platforms was a big concern, so we developed an alternative based on HTML5 canvas and coffeescript.</p>
-
-<hr />
-
-<h3 id="horrible-histories-virtual-world-flash">Horrible Histories Virtual World (Flash)</h3>
-
-<figure class="third">
-<img src="/images/hh.jpg" />
-</figure>
-
-<p>The Horrible Histories Virtual World project was a Flash based MMO to tie in with the well known UK children’s book series.</p>
-
-<p>This was a full stack project, as we developed the entire client / server and infrastructure ourselves. I was involved in all aspects of development, including creating server plugins and shipping client features. We were able to deliver an incredibly ambitious project due to our focus on code quality and testability.</p>
-
-<p><strong>Tech</strong></p>
-
+<h2 id="a-namemiscamisc"><a name="misc"></a>Misc</h2>
 <ul>
-  <li>AS3</li>
-  <li>Python</li>
-  <li>Amazon Web Services</li>
+  <li>In 2009 I worked on <a href="https://en.wikipedia.org/wiki/Red_Dead_Redemption">Red Dead Redemption</a> and <a href="https://en.wikipedia.org/wiki/Grand_Theft_Auto_IV">Grand Theft Auto 4</a> as a QA Tester for Rockstar North</li>
 </ul>
-
-<hr />
-
-<h3 id="red-dead-redemption-xbox360ps3">Red Dead Redemption (Xbox360/PS3)</h3>
-
-<figure class="third">
-<a href="/images/rdr-credits.jpg">
-<img src="/images/rdr.png" />
-</a>
-</figure>
-
-<p>Red Dead Redemption was the second project I worked on as QA at Rockstar North . It was released for the Xbox 360 and PS3 in May 2010 and is widely regarded as the best horse riding / lasso simulation game.</p>
-
-<hr />
-
-<h3 id="the-ballad-of-gay-tony-xbox360ps3">The Ballad of Gay Tony (Xbox360/PS3)</h3>
-
-<figure class="third">
-<a href="/images/gaytony-credits.jpg">
-<img src="/images/gaytony.jpg" />
-</a>
-</figure>
-<p>This was the first game I worked on in my professional career. It was a quick introduction to the world of software development and quality assurance. It’s cool to be able to write “Gay Tony” on my CV.</p>
 
 
       </div><!-- /.entry-content -->
@@ -253,12 +233,12 @@ This is an avatar builder for a children’s television program featuring singin
 	<a href="https://twitter.com/rev_kachowski" title="Donald Hutchison on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
 	
 	
-	<a href="https://linkedin.com/in/https://www.linkedin.com/pub/donald-hutchison/22/a70/16a" title="Donald Hutchison on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	<a href="https://linkedin.com/in/donald-hutchison-16aa7022" title="Donald Hutchison on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
 	<a href="https://careers.stackoverflow.com/donaldhutchison" title="Donald Hutchison on StackExchange" target="_blank"><i class="fa fa-stack-exchange fa-2x"></i></a>
 	
 	
 	<a href="https://github.com/rkachowski" title="Donald Hutchison on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
-	
+	<a href="http://rkachowski.tumblr.com" title="Donald Hutchison on Tumblr" target="_blank"><i class="fa fa-tumblr-square fa-2x"></i></a>
   
 	
   <a href="/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
