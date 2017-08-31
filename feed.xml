@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="/feed.xml" />
 <link rel="alternate" type="text/html" href="" />
-<updated>2016-10-17T20:25:50+02:00</updated>
+<updated>2017-08-31T16:21:47+02:00</updated>
 <id>/</id>
 <author>
   <name>Donald Hutchison</name>
@@ -16,88 +16,208 @@
   
 
 <entry>
-  <title type="html"><![CDATA[How to fight against the fact that you're going to turn 30]]></title>
-  <link rel="alternate" type="text/html" href="/approaching-30-what-to-do/" />
-  <id>/approaching-30-what-to-do</id>
-  <published>2016-07-29T17:03:46+02:00</published>
-  <updated>2016-07-29T17:03:46+02:00</updated>
+  <title type="html"><![CDATA[Kioptrix 1 for Noobs]]></title>
+  <link rel="alternate" type="text/html" href="/kioptrix-1-for-noobs/" />
+  <id>/kioptrix-1-for-noobs</id>
+  <published>2017-02-03T12:45:12+01:00</published>
+  <updated>2017-02-03T12:45:12+01:00</updated>
   <author>
     <name>Donald Hutchison</name>
     <uri></uri>
     <email>contact@donaldhutchison.info</email>
   </author>
-  <content type="html">&lt;p&gt;Turning 29 has made me realise that the task of getting onto the &lt;a href=&quot;www.forbes.com/30-under-30-2016/&quot;&gt;Forbes “30 under 30”&lt;/a&gt; list is now on hard mode. So I guess I’d better use this sinking feeling of fleeting youth to motivate me to finish some projects.&lt;/p&gt;
+  <content type="html">&lt;p&gt;How to setup??!&lt;/p&gt;
+
+&lt;p&gt;finding the address would normally be the first step. but you can’t expect to find it at all if the networking isn’t setup correctly!&lt;/p&gt;
+
+&lt;p&gt;kioptrix vm 
+* Host-Only
+  * can only be routed to from this computer
+  * uses vmnet1&lt;/p&gt;
+
+&lt;p&gt;kali vm
+* Bridged
+  * uses host computer’s networking stuff
+  * because of this it should be able to route kioptrix&lt;/p&gt;
+
+&lt;p&gt;how to check?&lt;/p&gt;
+
+&lt;p&gt;nmap command&lt;/p&gt;
+
+&lt;p&gt;luckily it always seems to assign *.128 as the first ip&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/kioptrix-1-for-noobs/&quot;&gt;Kioptrix 1 for Noobs&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;&quot;&gt;Donald Hutchison&lt;/a&gt; on February 03, 2017.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Pentesting for Developers - OSCP Review]]></title>
+  <link rel="alternate" type="text/html" href="/pentesting-for-developers-oscp-review/" />
+  <id>/pentesting-for-developers-oscp-review</id>
+  <published>2017-02-01T10:06:16+01:00</published>
+  <updated>2017-02-01T10:06:16+01:00</updated>
+  <author>
+    <name>Donald Hutchison</name>
+    <uri></uri>
+    <email>contact@donaldhutchison.info</email>
+  </author>
+  <content type="html">&lt;p&gt;what it is&lt;/p&gt;
+
+&lt;p&gt;sounds like a challenge&lt;/p&gt;
+
+&lt;p&gt;improving process&lt;/p&gt;
+
+&lt;p&gt;see from a different point of view&lt;/p&gt;
+
+&lt;p&gt;feelings on oscp&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Additionally, when I was 18 I hired an assassin to murder me before I become 30, so that I would never live long enough to surrender my childish views. This makes everyday I do not get killed a thrilling occurrance and each passing moment seems precious and wonderful. I highly recommend this.&lt;/p&gt;
+  &lt;p&gt;metasploit architecture&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;how-to-ignore-the-inevitable&quot;&gt;How to ignore the inevitable&lt;/h2&gt;
+&lt;p&gt;things to do when on the course&lt;/p&gt;
 
-&lt;h3 id=&quot;learn-guitar-again&quot;&gt;Learn Guitar (again)&lt;/h3&gt;
+&lt;p&gt;my experience&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/totalguitar.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;things i achieved&lt;/p&gt;
 
-&lt;p&gt;I have a ton of Total Guitar magazines from around 2003. These have followed me as I moved from apartment to apartment and even across countries. They have remained untouched for many years.&lt;/p&gt;
-
-&lt;p&gt;By the time I turn 30 I will have owned these magazines for longer than I have not owned them. The idea that I have been carrying around these symbols of “I want to do this, but I’ll get round to it later” like a personal albatross of failure for more than half my life is distressing to say the least.&lt;/p&gt;
+&lt;p&gt;points for devs&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt; : Learn to play the songs that don’t suck (at least 5) and upload stupid cover versions to youtube&lt;/p&gt;
+  &lt;p&gt;install and configure fail2ban, then see what it’s like from the otherside&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;release-an-indie-game&quot;&gt;Release an indie game&lt;/h3&gt;
+  &lt;p&gt;&lt;a href=&quot;/pentesting-for-developers-oscp-review/&quot;&gt;Pentesting for Developers - OSCP Review&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;&quot;&gt;Donald Hutchison&lt;/a&gt; on February 01, 2017.&lt;/p&gt;</content>
+</entry>
 
-&lt;p&gt;&lt;img src=&quot;/images/hydrocarbon.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;I have been involved in the indie gaming scene on and off for close to 8 years. &lt;a href=&quot;https://forums.tigsource.com/index.php?topic=45.msg66420#msg66420&quot;&gt;Shitposting on tigsource&lt;/a&gt; before that was even a thing.&lt;/p&gt;
+  
 
-&lt;p&gt;There are a ton of projects that I’ve started and abandoned with an incredible power of abandonment. Actually finishing something would give me a great sense of personal achievement, and let me know it’s possible to actually complete tasks instead of letting them drop down the back of the couch over time.&lt;/p&gt;
+<entry>
+  <title type="html"><![CDATA[Something Like Conky on OSX/MacOS]]></title>
+  <link rel="alternate" type="text/html" href="/something-like-conky-on-osx-macos/" />
+  <id>/something-like-conky-on-osx-macos</id>
+  <published>2017-01-16T13:20:14+01:00</published>
+  <updated>2017-01-16T13:20:14+01:00</updated>
+  <author>
+    <name>Donald Hutchison</name>
+    <uri></uri>
+    <email>contact@donaldhutchison.info</email>
+  </author>
+  <content type="html">&lt;p&gt;I’ve been using OSX as my main OS environment for a few years now, but I still miss the cool stat reporting that you would get from Conky on Linux systems. After looking around for a while, there doesn’t seem to be any kind of drop in replacement that would fit all my extensible desires. The closest thing I’ve found is GeekTool, but it needs some setup to get things working. Let’s try and do it.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: Get a game on the app store and convince at least one person to download it.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h3 id=&quot;installation&quot;&gt;Installation&lt;/h3&gt;
 
-&lt;h3 id=&quot;run-better&quot;&gt;Run better&lt;/h3&gt;
+&lt;p&gt;This is pretty easy as it seems to be available via Homebrew, we can get this via &lt;code&gt;brew install Caskroom/cask/geektool&lt;/code&gt;. It’s then setup in your Applications folder to be run as you want.&lt;/p&gt;
 
-&lt;p&gt;In 2014 I decided to run a marathon because I wanted to prove that there’s nothing special about it (Also I found a link to &lt;a href=&quot;https://www.amazon.de/Non-Runners-Marathon-Trainer-David-Whitsett/dp/1570281823&quot;&gt;The Non Runner’s Marathon Trainer&lt;/a&gt; on hacker news). If you commit to a training plan and do it, it’s pretty much impossible to be unable to finish the marathon.&lt;/p&gt;
+&lt;h3 id=&quot;process-stats&quot;&gt;Process Stats&lt;/h3&gt;
 
-&lt;p&gt;The training took 3 months and it was more than slightly involving. But at the end of it I was able to run the whole cursed 42.2km round the west end of Berlin.&lt;/p&gt;
+&lt;p&gt;The first thing I want is something that will show my why my goddamn computer has slowed down all of a sudden. Has a full backup just kicked in, or should I get round to closing one of those 300 chrome tabs with Flash applications running in them?&lt;/p&gt;
 
-&lt;p&gt;It’s kind of a metaphor for something, I don’t know what. I guess drawing, programming, weightlifting, music and anything else are pretty similiar in that if you just spend a ton of time doing it, it’s impossible not to achieve some level of proficiency. There’s no real “oh you’re so talented you must have been born that way I could never do that blablabla” factor in these things. If you were locked in a room with nothing but a piano and a sofa for 40 years, you’d eventually become pretty good at something that resembles piano music.&lt;/p&gt;
+&lt;p&gt;The command I usually use for getting this information is &lt;code&gt;top&lt;/code&gt; (or it’s flashier brother &lt;code&gt;htop&lt;/code&gt;). &lt;code&gt;top&lt;/code&gt; by default will run in an interactive mode and show you a ton of information. However, we just want to grab the current state at any one point in time and let GeekTool deal with periodically updating the information. After scouring the man page for &lt;code&gt;top&lt;/code&gt;, it looks like we can do that with the following command.&lt;/p&gt;
 
-&lt;p&gt;Anyway, when running I was always aggressively slow - overly concerned about not being able to run the distance if I went too fast. Now I’d like to set the pretty modest goal of running 10k in less than an hour. It’s not outrageous but would require some kind of effort.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;
+top -n 10 -l 2 -stats command,cpu,mem,user
+&lt;/code&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: 10k in an hour&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Here we’re saying 
+* &lt;code&gt;-n 10&lt;/code&gt; which means “give us the top 10 processes” 
+* &lt;code&gt;-l 2&lt;/code&gt; which means “give us two updates” (this is required as the program needs more than one sample to get data from) 
+* &lt;code&gt;-c e&lt;/code&gt; Use absolute measurements
+* &lt;code&gt;-o cpu&lt;/code&gt; Order by cpu
+* &lt;code&gt;-stats command,cpu,mem,user&lt;/code&gt; show us only these stats.&lt;/p&gt;
 
-&lt;h3 id=&quot;electronics&quot;&gt;Electronics&lt;/h3&gt;
+&lt;p&gt;This gives us the following output&lt;/p&gt;
 
-&lt;p&gt;I studied Electronic and Electrical Engineering at university for a year before I switched to software, so I’ve always had a kind of dabbling in these things. However it was only quite recently that I finally discovered the world of arduinos and how small microchip programs open the way to interacting with the real world, with a minimal spaghetti mess of analog components and bad math (my fault).&lt;/p&gt;
+&lt;p&gt;```
+Processes: 259 total, 2 running, 15 stuck, 242 sleeping, 1447 threads
+2017/01/16 13:37:45
+Load Avg: 1.02, 0.90, 0.97
+CPU usage: 5.23% user, 4.11% sys, 90.64% idle
+SharedLibs: 188M resident, 23M data, 24M linkedit.
+MemRegions: 46310 total, 3644M resident, 131M private, 913M shared.
+PhysMem: 6419M used (1213M wired), 1764M unused.
+VM: 717G vsize, 535M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 170355/101M in, 147108/34M out.
+Disks: 297331/5523M read, 54410/1481M written.&lt;/p&gt;
 
-&lt;p&gt;There are a few things I want to create before I can consider this itch scratched.&lt;/p&gt;
+&lt;p&gt;COMMAND          %CPU MEM    USER
+top              0.0  1564K+ root
+Google Chrome He 0.0  38M+   donaldhutchison
+com.apple.iCloud 0.0  2416K+ donaldhutchison
+mdworker         0.0  8620K+ donaldhutchison
+mdworker         0.0  10M+   donaldhutchison
+mdworker         0.0  9308K+ donaldhutchison
+mdworker         0.0  3748K+ donaldhutchison
+bash             0.0  8140K+ donaldhutchison
+login            0.0  1296K+ root
+iTerm2           0.0  2660K+ donaldhutchison
+Processes: 259 total, 2 running, 15 stuck, 242 sleeping, 1443 threads
+2017/01/16 13:37:46
+Load Avg: 1.02, 0.90, 0.97
+CPU usage: 5.23% user, 4.11% sys, 90.64% idle
+SharedLibs: 188M resident, 23M data, 24M linkedit.
+MemRegions: 46310 total, 3644M resident, 131M private, 913M shared.
+PhysMem: 6419M used (1213M wired), 1765M unused.
+VM: 717G vsize, 535M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 170463/101M in, 147196/34M out.
+Disks: 297331/5523M read, 54411/1481M written.&lt;/p&gt;
+
+&lt;p&gt;COMMAND          %CPU MEM    USER
+top              7.3  1616K+ root
+kernel_task      4.7  900M+  root
+Google Chrome He 3.4  169M+  donaldhutchison
+iTerm2           3.1  69M+   donaldhutchison
+Google Chrome    1.8  160M   donaldhutchison
+WindowServer     1.4  95M+   _windowserver
+Google Chrome He 1.3  154M+  donaldhutchison
+CoolProgramTh    0.5  55M    donaldhutchison
+nwjs Helper      0.4  46M-   donaldhutchison
+smcFanControl    0.3  9608K  donaldhutchison
+```&lt;/p&gt;
+
+&lt;p&gt;Cool, we have what we want, but there’s also a lot of other crap in there. Now we need to trim out what we would like to display. Since the amount of lines output from this command should be constant, we can use a constant value to reference what we want to take out - in this case we’ll use the line 34 to mark where the output starts. Using &lt;code&gt;sed&lt;/code&gt; we can do this quite easily&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sed -n &#39;34,/\Z/p&#39;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This means&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;some kind of midi to cv converter&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/trash80/Arduinoboy&quot;&gt;the arduinoboy&lt;/a&gt; - (send midi signals to a gameboy)&lt;/li&gt;
-  &lt;li&gt;The classic &lt;a href=&quot;http://www.electrosmash.com/smokey-amp-analysis&quot;&gt;smokeyamp&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;A device to detect when my mailbox is opened, and thereby launch my apartment into the IoT&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;-n&lt;/code&gt; Only output lines that match&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;34,/\Z/p&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code&gt;34&lt;/code&gt; Our pattern space starts at line 34 (The start of the second “COMMAND” in the output)&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;,&lt;/code&gt; “here comes the next part”&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;/\Z/p&lt;/code&gt; we want to run &lt;code&gt;sed&lt;/code&gt;’s ‘p’ function (print) and we pass it the regex &lt;code&gt;/\Z/&lt;/code&gt; which means “to the end of the file”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Goal: do all the above things and blog about it&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Putting this together with a pipe, we get&lt;/p&gt;
 
-&lt;h3 id=&quot;misc&quot;&gt;Misc&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;top -c e -o cpu -l 2 -n 10 -stats command,cpu,mem,user | sed -n &#39;34,/\Z/p&#39;&lt;/code&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;I’ve been working on some cool things for Unity test automation and scripting Android devices. I’d like to tidy these up and open source them so that the world can benefit from my terrible code.&lt;/li&gt;
-  &lt;li&gt;I have a ton of musical equipment, but I’ve been feeling too burnt out recently to do anything with it. I want to make at least one cheesy 80’s synthwave jam before I hit 30 and my life ends.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;And our output looks like&lt;/p&gt;
 
+&lt;p&gt;&lt;code&gt;
+COMMAND          %CPU MEM    USER
+Google Chrome    12.1 162M+  donaldhutchison
+top              7.0  1592K+ root
+kernel_task      4.3  920M   root
+Google Chrome He 3.5  185M+  donaldhutchison
+iTerm2           1.9  72M    donaldhutchison
+launchservicesd  1.8  6296K+ root
+Quicksilver      1.6  28M+   donaldhutchison
+Google Chrome He 1.2  144M+  donaldhutchison
+WindowServer     1.1  106M-  _windowserver
+GeekTool Helper  0.8  56M-   donaldhutchison
+&lt;/code&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;/approaching-30-what-to-do/&quot;&gt;How to fight against the fact that you're going to turn 30&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;&quot;&gt;Donald Hutchison&lt;/a&gt; on July 29, 2016.&lt;/p&gt;</content>
+&lt;p&gt;Cool, now we can throw this into GeekTool and get some process information. Here i’ve set it to update every 5 seconds, but we could screw around with these values&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/something-like-conky-on-osx-macos/&quot;&gt;Something Like Conky on OSX/MacOS&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;&quot;&gt;Donald Hutchison&lt;/a&gt; on January 16, 2017.&lt;/p&gt;</content>
 </entry>
 
 
@@ -1061,25 +1181,6 @@ Our file layout on disk&lt;/p&gt;
   <content type="html">&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;a onblur=&quot;try {parent.deselectBloggerImageGracefully();} catch(e) {}&quot; href=&quot;http://4.bp.blogspot.com/_LQqiRvv_0aI/Sn_-jkDA-gI/AAAAAAAAASI/efeVtQqVTyQ/s1600-h/DSC_0324.JPG&quot;&gt;&lt;img style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 455px; height: 304px;&quot; src=&quot;http://4.bp.blogspot.com/_LQqiRvv_0aI/Sn_-jkDA-gI/AAAAAAAAASI/efeVtQqVTyQ/s400/DSC_0324.JPG&quot; alt=&quot;&quot; id=&quot;BLOGGER_PHOTO_ID_5368289167774120450&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;span style=&quot;font-size:78%;&quot;&gt;photo by sir alex may&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;br /&gt;Berlin was incredible. I made 3 terrible games, each in their own 3 hour segments. I also met some very cool people and learnt a lot about games dev.&lt;br /&gt;&lt;br /&gt;Most importantly, I think I&#39;ve unstuck all that was keeping me back and blocking my ideas. I did so much more in one of those 3 hour periods than I&#39;ve probably done all summer. Can&#39;t wait for next year to roll around.&lt;br /&gt;&lt;br /&gt;&lt;div style=&quot;text-align: center; font-style: italic;&quot;&gt;bigjam stats:&lt;br /&gt;lines of ruby code : &gt;2000&lt;br /&gt;hangovers: 3&lt;br /&gt;coffees: 13&lt;br /&gt;hours of sleep: negligible&lt;br /&gt;awesomeness: very much so&lt;br /&gt;&lt;/div&gt;
 
   &lt;p&gt;&lt;a href=&quot;/blog/bigjam-2009/&quot;&gt;BIGJam 2009&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;&quot;&gt;Donald Hutchison&lt;/a&gt; on August 10, 2009.&lt;/p&gt;</content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Cho Ren Sha 68k]]></title>
-  <link rel="alternate" type="text/html" href="/blog/cho-ren-sha-68k/" />
-  <id>/blog/cho-ren-sha-68k</id>
-  <published>2009-06-17T00:00:00+02:00</published>
-  <updated>2009-06-17T00:00:00+02:00</updated>
-  <author>
-    <name>Donald Hutchison</name>
-    <uri></uri>
-    <email>contact@donaldhutchison.info</email>
-  </author>
-  <content type="html">&gt;&lt;a onblur=&quot;try {parent.deselectBloggerImageGracefully();} catch(e) {}&quot; href=&quot;http://4.bp.blogspot.com/_LQqiRvv_0aI/SjkJiKicj-I/AAAAAAAAAFY/0nx0QI4XouA/s1600-h/pic.png&quot;&gt;&lt;img style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 299px;&quot; src=&quot;http://4.bp.blogspot.com/_LQqiRvv_0aI/SjkJiKicj-I/AAAAAAAAAFY/0nx0QI4XouA/s400/pic.png&quot; alt=&quot;&quot; id=&quot;BLOGGER_PHOTO_ID_5348316515028209634&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;a onblur=&quot;try {parent.deselectBloggerImageGracefully();} catch(e) {}&quot; href=&quot;http://db.tigsource.com/screenshot/image/492/medium/chorensha01.png?1229563406&quot;&gt;&lt;img style=&quot;margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 300px;&quot; src=&quot;http://db.tigsource.com/screenshot/image/492/medium/chorensha01.png?1229563406&quot; alt=&quot;&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_0&quot;&gt;&lt;br /&gt;Cho&lt;/span&gt; &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_1&quot;&gt;Ren&lt;/span&gt; &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_2&quot;&gt;Sha&lt;/span&gt; 68k (not actually 68&lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_3&quot;&gt;kB&lt;/span&gt;) is your generic vertical &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_4&quot;&gt;shmup&lt;/span&gt;. 16-bit niceties from an obscure &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_5&quot;&gt;japanese&lt;/span&gt; computer and a jarring &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_6&quot;&gt;bleepy&lt;/span&gt; soundtrack meet up over coffee to discuss how much they hate you.&lt;br /&gt;&lt;br /&gt;As usual, you pilot your angular craft like soap in a fat man&#39;s bathtub - squirting from side to side whilst deftly avoiding the overwhelming mass that threatens to crush your liberation and &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_7&quot;&gt;independance&lt;/span&gt;. The familiar arrow keys + Z and X controls pose no problems for people who know what&#39;s happening. The lack of auto-fire and unusual fanning motion of your default weapon means the player has to tap out a constant beat in order to hit what&#39;s directly in front.&lt;br /&gt;&lt;br /&gt;The difficulty isn&#39;t too soul crushing. The bullet patterns never force you into pixel-perfect dance routines, nor does it require the amphetamine riddled &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_8&quot;&gt;twitchyness&lt;/span&gt; that defines so many of the genre. In fact, this game is pretty &lt;span class=&quot;blsp-spelling-corrected&quot; id=&quot;SPELLING_ERROR_9&quot;&gt;accessible&lt;/span&gt; as far as vertical &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_10&quot;&gt;shmups&lt;/span&gt; go.&lt;br /&gt;&lt;br /&gt;The graphics quickly get repetitive and the backgrounds remains constant throughout play. The game never offers anything to stand out from others in it&#39;s genre and provides nothing more to improve it&#39;s replay value.&lt;br /&gt;&lt;br /&gt;&lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_11&quot;&gt;Cho&lt;/span&gt; &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_12&quot;&gt;Ren&lt;/span&gt; &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_13&quot;&gt;Sha&lt;/span&gt; 68k runs fine on Vista, with some jarring sound issues sporadically affecting the soundtrack.&lt;br /&gt;&lt;br /&gt;&lt;a href=&quot;http://db.tigsource.com/games/cho-ren-sha-68k&quot;&gt;(link)&lt;/a&gt;
-
-  &lt;p&gt;&lt;a href=&quot;/blog/cho-ren-sha-68k/&quot;&gt;Cho Ren Sha 68k&lt;/a&gt; was originally published by Donald Hutchison at &lt;a href=&quot;&quot;&gt;Donald Hutchison&lt;/a&gt; on June 17, 2009.&lt;/p&gt;</content>
 </entry>
 
 </feed>

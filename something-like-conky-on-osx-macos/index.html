@@ -5,21 +5,15 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>BIGJam 2009 &#8211; Donald Hutchison</title>
-<meta name="description" content=">photo by sir alex mayBerlin was incredible. I made 3 terrible games, each in their own 3 hour segments. I also met some very cool people and learnt a lot about games dev.Most importantly, I think I've unstuck all that was keeping me back and blocking my ideas. I did so much more in one of those 3 hour periods than I've probably done all summer. Can't wait for next year to roll around.bigjam stats:lines of ruby code : >2000hangovers: 3coffees: 13hours of sleep: negligibleawesomeness: very much so
+<title>Something Like Conky on OSX/MacOS &#8211; Donald Hutchison</title>
 
-
-">
-<meta name="keywords" content="bigjam, games, meetup">
+<meta name="keywords" content="">
 
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="BIGJam 2009">
-<meta name="twitter:description" content=">photo by sir alex mayBerlin was incredible. I made 3 terrible games, each in their own 3 hour segments. I also met some very cool people and learnt a lot about games dev.Most importantly, I think I've unstuck all that was keeping me back and blocking my ideas. I did so much more in one of those 3 hour periods than I've probably done all summer. Can't wait for next year to roll around.bigjam stats:lines of ruby code : >2000hangovers: 3coffees: 13hours of sleep: negligibleawesomeness: very much so
+<meta name="twitter:title" content="Something Like Conky on OSX/MacOS">
 
-
-">
 <meta name="twitter:site" content="@rev_kachowski">
 <meta name="twitter:creator" content="@rev_kachowski">
 
@@ -29,19 +23,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="BIGJam 2009">
-<meta property="og:description" content=">photo by sir alex mayBerlin was incredible. I made 3 terrible games, each in their own 3 hour segments. I also met some very cool people and learnt a lot about games dev.Most importantly, I think I've unstuck all that was keeping me back and blocking my ideas. I did so much more in one of those 3 hour periods than I've probably done all summer. Can't wait for next year to roll around.bigjam stats:lines of ruby code : >2000hangovers: 3coffees: 13hours of sleep: negligibleawesomeness: very much so
+<meta property="og:title" content="Something Like Conky on OSX/MacOS">
 
-
-">
-<meta property="og:url" content="/blog/bigjam-2009/">
+<meta property="og:url" content="/something-like-conky-on-osx-macos/">
 <meta property="og:site_name" content="Donald Hutchison">
 
 
 
 
 
-<link rel="canonical" href="/blog/bigjam-2009/">
+<link rel="canonical" href="/something-like-conky-on-osx-macos/">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Donald Hutchison Feed">
 
 <!-- https://t.co/dKP3o1e -->
@@ -139,10 +130,10 @@
     <div class="entry-wrapper">
       <header class="entry-header">
         <ul class="entry-tags">
-          <li><a href="/tags/#bigjam" title="Pages tagged bigjam">bigjam</a></li><li><a href="/tags/#games" title="Pages tagged games">games</a></li><li><a href="/tags/#meetup" title="Pages tagged meetup">meetup</a></li>
+          
         </ul>
         
-          <h1 class="entry-title">BIGJam 2009</h1>
+          <h1 class="entry-title">Something Like Conky on OSX/MacOS</h1>
         
       </header>
       <footer class="entry-meta">
@@ -152,24 +143,133 @@
           <img src="/images/portrait.jpg" class="bio-photo" alt="Donald Hutchison bio photo"></a>
         
         <span class="author vcard">By <span class="fn">Donald Hutchison</span></span>
-        <span class="entry-date date published"><time datetime="2009-08-10T00:00:00+02:00"><i class="fa fa-calendar-o"></i> August 10, 2009</time></span>
+        <span class="entry-date date published"><time datetime="2017-01-16T13:20:14+01:00"><i class="fa fa-calendar-o"></i> January 16, 2017</time></span>
         
         
         
         
       </footer>
       <div class="entry-content">
-        ><div style="text-align: center;"><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_LQqiRvv_0aI/Sn_-jkDA-gI/AAAAAAAAASI/efeVtQqVTyQ/s1600-h/DSC_0324.JPG"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 455px; height: 304px;" src="http://4.bp.blogspot.com/_LQqiRvv_0aI/Sn_-jkDA-gI/AAAAAAAAASI/efeVtQqVTyQ/s400/DSC_0324.JPG" alt="" id="BLOGGER_PHOTO_ID_5368289167774120450" border="0" /></a><span style="font-size:78%;">photo by sir alex may<br /></span></div><br />Berlin was incredible. I made 3 terrible games, each in their own 3 hour segments. I also met some very cool people and learnt a lot about games dev.<br /><br />Most importantly, I think I've unstuck all that was keeping me back and blocking my ideas. I did so much more in one of those 3 hour periods than I've probably done all summer. Can't wait for next year to roll around.<br /><br /><div style="text-align: center; font-style: italic;">bigjam stats:<br />lines of ruby code : >2000<br />hangovers: 3<br />coffees: 13<br />hours of sleep: negligible<br />awesomeness: very much so<br /></div>
+        <p>I’ve been using OSX as my main OS environment for a few years now, but I still miss the cool stat reporting that you would get from Conky on Linux systems. After looking around for a while, there doesn’t seem to be any kind of drop in replacement that would fit all my extensible desires. The closest thing I’ve found is GeekTool, but it needs some setup to get things working. Let’s try and do it.</p>
+
+<h3 id="installation">Installation</h3>
+
+<p>This is pretty easy as it seems to be available via Homebrew, we can get this via <code>brew install Caskroom/cask/geektool</code>. It’s then setup in your Applications folder to be run as you want.</p>
+
+<h3 id="process-stats">Process Stats</h3>
+
+<p>The first thing I want is something that will show my why my goddamn computer has slowed down all of a sudden. Has a full backup just kicked in, or should I get round to closing one of those 300 chrome tabs with Flash applications running in them?</p>
+
+<p>The command I usually use for getting this information is <code>top</code> (or it’s flashier brother <code>htop</code>). <code>top</code> by default will run in an interactive mode and show you a ton of information. However, we just want to grab the current state at any one point in time and let GeekTool deal with periodically updating the information. After scouring the man page for <code>top</code>, it looks like we can do that with the following command.</p>
+
+<p><code>
+top -n 10 -l 2 -stats command,cpu,mem,user
+</code></p>
+
+<p>Here we’re saying 
+* <code>-n 10</code> which means “give us the top 10 processes” 
+* <code>-l 2</code> which means “give us two updates” (this is required as the program needs more than one sample to get data from) 
+* <code>-c e</code> Use absolute measurements
+* <code>-o cpu</code> Order by cpu
+* <code>-stats command,cpu,mem,user</code> show us only these stats.</p>
+
+<p>This gives us the following output</p>
+
+<p>```
+Processes: 259 total, 2 running, 15 stuck, 242 sleeping, 1447 threads
+2017/01/16 13:37:45
+Load Avg: 1.02, 0.90, 0.97
+CPU usage: 5.23% user, 4.11% sys, 90.64% idle
+SharedLibs: 188M resident, 23M data, 24M linkedit.
+MemRegions: 46310 total, 3644M resident, 131M private, 913M shared.
+PhysMem: 6419M used (1213M wired), 1764M unused.
+VM: 717G vsize, 535M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 170355/101M in, 147108/34M out.
+Disks: 297331/5523M read, 54410/1481M written.</p>
+
+<p>COMMAND          %CPU MEM    USER
+top              0.0  1564K+ root
+Google Chrome He 0.0  38M+   donaldhutchison
+com.apple.iCloud 0.0  2416K+ donaldhutchison
+mdworker         0.0  8620K+ donaldhutchison
+mdworker         0.0  10M+   donaldhutchison
+mdworker         0.0  9308K+ donaldhutchison
+mdworker         0.0  3748K+ donaldhutchison
+bash             0.0  8140K+ donaldhutchison
+login            0.0  1296K+ root
+iTerm2           0.0  2660K+ donaldhutchison
+Processes: 259 total, 2 running, 15 stuck, 242 sleeping, 1443 threads
+2017/01/16 13:37:46
+Load Avg: 1.02, 0.90, 0.97
+CPU usage: 5.23% user, 4.11% sys, 90.64% idle
+SharedLibs: 188M resident, 23M data, 24M linkedit.
+MemRegions: 46310 total, 3644M resident, 131M private, 913M shared.
+PhysMem: 6419M used (1213M wired), 1765M unused.
+VM: 717G vsize, 535M framework vsize, 0(0) swapins, 0(0) swapouts.
+Networks: packets: 170463/101M in, 147196/34M out.
+Disks: 297331/5523M read, 54411/1481M written.</p>
+
+<p>COMMAND          %CPU MEM    USER
+top              7.3  1616K+ root
+kernel_task      4.7  900M+  root
+Google Chrome He 3.4  169M+  donaldhutchison
+iTerm2           3.1  69M+   donaldhutchison
+Google Chrome    1.8  160M   donaldhutchison
+WindowServer     1.4  95M+   _windowserver
+Google Chrome He 1.3  154M+  donaldhutchison
+CoolProgramTh    0.5  55M    donaldhutchison
+nwjs Helper      0.4  46M-   donaldhutchison
+smcFanControl    0.3  9608K  donaldhutchison
+```</p>
+
+<p>Cool, we have what we want, but there’s also a lot of other crap in there. Now we need to trim out what we would like to display. Since the amount of lines output from this command should be constant, we can use a constant value to reference what we want to take out - in this case we’ll use the line 34 to mark where the output starts. Using <code>sed</code> we can do this quite easily</p>
+
+<p><code>sed -n '34,/\Z/p'</code></p>
+
+<p>This means</p>
+
+<ul>
+  <li><code>-n</code> Only output lines that match</li>
+  <li><code>34,/\Z/p</code>
+    <ul>
+      <li><code>34</code> Our pattern space starts at line 34 (The start of the second “COMMAND” in the output)</li>
+      <li><code>,</code> “here comes the next part”</li>
+      <li><code>/\Z/p</code> we want to run <code>sed</code>’s ‘p’ function (print) and we pass it the regex <code>/\Z/</code> which means “to the end of the file”</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Putting this together with a pipe, we get</p>
+
+<p><code>top -c e -o cpu -l 2 -n 10 -stats command,cpu,mem,user | sed -n '34,/\Z/p'</code></p>
+
+<p>And our output looks like</p>
+
+<p><code>
+COMMAND          %CPU MEM    USER
+Google Chrome    12.1 162M+  donaldhutchison
+top              7.0  1592K+ root
+kernel_task      4.3  920M   root
+Google Chrome He 3.5  185M+  donaldhutchison
+iTerm2           1.9  72M    donaldhutchison
+launchservicesd  1.8  6296K+ root
+Quicksilver      1.6  28M+   donaldhutchison
+Google Chrome He 1.2  144M+  donaldhutchison
+WindowServer     1.1  106M-  _windowserver
+GeekTool Helper  0.8  56M-   donaldhutchison
+</code></p>
+
+<p>Cool, now we can throw this into GeekTool and get some process information. Here i’ve set it to update every 5 seconds, but we could screw around with these values</p>
 
         
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
-        <a href="/blog/cho-ren-sha-68k/" class="btn" title="Cho Ren Sha 68k">Previous</a>
+        <a href="/install_referrer/" class="btn" title="Install referrer testing">Previous</a>
       
       
-        <a href="/blog/syobon-action-155-lives/" class="btn" title="syobon action">Next</a>
+        <a href="/pentesting-for-developers-oscp-review/" class="btn" title="Pentesting for Developers - OSCP Review">Next</a>
       
     </nav><!-- /.pagination -->
   </article>

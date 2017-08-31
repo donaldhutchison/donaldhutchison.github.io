@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/approaching-30-what-to-do/</loc>
-    <lastmod>2016-07-29T17:03:46+02:00</lastmod>
+    <loc>/kioptrix-1-for-noobs/</loc>
+    <lastmod>2017-02-03T12:45:12+01:00</lastmod>
+  </url>
+  <url>
+    <loc>/pentesting-for-developers-oscp-review/</loc>
+    <lastmod>2017-02-01T10:06:16+01:00</lastmod>
+  </url>
+  <url>
+    <loc>/something-like-conky-on-osx-macos/</loc>
+    <lastmod>2017-01-16T13:20:14+01:00</lastmod>
   </url>
   <url>
     <loc>/install_referrer/</loc>
