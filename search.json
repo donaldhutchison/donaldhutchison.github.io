@@ -1,33 +1,6 @@
 [
 	
 		{
-		  "title"      : "Kioptrix 1 for Noobs",
-		  "category"   : "",
-      "tags"       : "",
-		  "url"        : "/kioptrix-1-for-noobs/",
-		  "date"       : "2017-02-03 12:45:12 +0100",
-		  "shortdate"  : "February 03, 2017"
-		} ,
-	
-		{
-		  "title"      : "Pentesting for Developers - OSCP Review",
-		  "category"   : "",
-      "tags"       : "",
-		  "url"        : "/pentesting-for-developers-oscp-review/",
-		  "date"       : "2017-02-01 10:06:16 +0100",
-		  "shortdate"  : "February 01, 2017"
-		} ,
-	
-		{
-		  "title"      : "Something Like Conky on OSX/MacOS",
-		  "category"   : "",
-      "tags"       : "",
-		  "url"        : "/something-like-conky-on-osx-macos/",
-		  "date"       : "2017-01-16 13:20:14 +0100",
-		  "shortdate"  : "January 16, 2017"
-		} ,
-	
-		{
 		  "title"      : "Install referrer testing",
 		  "category"   : "",
       "tags"       : "android, adb, and programming",
