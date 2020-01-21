@@ -1,0 +1,43 @@
+version: 2.1
+executors:
+  basic:
+    docker:
+    - image:  circleci/golang:1.13
+
+jobs:
+  update:
+    executor: basic
+    steps:
+      - checkout
+      - run:
+          name: "Fetch latest release asset"
+          command: |
+              URL=$(curl --silent "https://api.github.com/repos/rkachowski/donaldhutchison.info/releases/latest?access_token=$GITHUB_TOKEN" | grep '"url":' | grep 'releases/assets' | sed -E 's/.*"([^"]+)".*/\1/')
+              curl -s -K -v -H "Accept: application/octet-stream" $URL?access_token=$GITHUB_TOKEN -o /tmp/release.tar.gz
+      - run:
+          name: "Unzip"
+          command: tar -xzf /tmp/release.tar.gz .
+
+      - persist_to_workspace:
+          root: /home/circleci/project
+          paths: '*'
+  commit:
+    executor: basic
+    steps:
+      - attach_workspace:
+          at: /home/circleci/project
+      - run:
+          name: "Commit me and then push yeah"
+          command: |
+              URL=$(curl --silent "https://api.github.com/repos/rkachowski/donaldhutchison.info/releases/latest?access_token=$GITHUB_TOKEN" | grep '"url":' | grep 'releases/assets' | sed -E 's/.*"([^"]+)".*/\1/')
+              curl -s -K -v -H "Accept: application/octet-stream" $URL?access_token=$GITHUB_TOKEN -o /tmp/release.tar.gz
+
+
+workflows:
+  version: 2
+  deploy:
+    jobs:
+    - update
+    - commit:
+        requires:
+        - update
