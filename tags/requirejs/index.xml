@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>requirejs on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/requirejs/</link>
+    <description>Recent content in requirejs on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Jan 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/requirejs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coffeescript &#43; RequireJS Skeleton Project</title>
+      <link>https://donaldhutchison.info/blog/2014-01-10-coffeescript-skeleton/</link>
+      <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2014-01-10-coffeescript-skeleton/</guid>
+      <description>After being introduced to the awesome pixi.js framework by a colleague, I decided to update an old project of mine to make screwing around with it a little easier. This skeleton project comes with everything you need to run a pretty decent setup, and all at the cost of only two command line options.
+Skeleton Project! The initial configuration is usually a pain for me, so I threw together an example project and some scripts to manage this.</description>
+    </item>
+    
+    <item>
+      <title>Coffeescript RequireJS and You!</title>
+      <link>https://donaldhutchison.info/blog/2012-04-24-coffeescript-requirejs-and-you/</link>
+      <pubDate>Tue, 24 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2012-04-24-coffeescript-requirejs-and-you/</guid>
+      <description>Contents  * Auto generated table of contents {:toc}   Best friends together at last! So you want to create a javascript application with some kind of non trivial complexity, but separating the functionality out into different script files gets hairy. You need to forward declare certain functions before you execute certain functions, and things need to be loaded before they can be displayed. Then when you add CoffeeScript into the mix you&#39;ve got a whole new set of problems.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>coffee-script on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/coffee-script/</link>
+    <description>Recent content in coffee-script on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Jun 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/coffee-script/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Optimising CoffeeScript files with r.js - &#34;Unexpected Character&#34;</title>
+      <link>https://donaldhutchison.info/blog/2012-06-11-optimising-coffeescript-files-with-r-js-unexpected-character/</link>
+      <pubDate>Mon, 11 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2012-06-11-optimising-coffeescript-files-with-r-js-unexpected-character/</guid>
+      <description>The Problem&amp;hellip; When trying to optimise a coffeescript project with the latest r.js optimiser from the requirejs npm module I ran into the following error:
+Cannot uglify file: /path/to/main.js. Skipping it. Error is: Unexpected character &amp;#39;&amp;#39; (line: 363, col: 3, pos: 15612) I downloaded the uglify-js package which r.js is using here to minify the script. Running it on the file in question in the output directory of the r.js build process gave me more information - specifically that uglify is dying on the character sequence ï»¿ - a utf-8 byte order mark.</description>
+    </item>
+    
+  </channel>
+</rss>

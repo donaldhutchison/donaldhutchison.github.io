@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C# on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/c#/</link>
+    <description>Recent content in C# on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Mar 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/c#/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2D OBB Collisions in XNA</title>
+      <link>https://donaldhutchison.info/blog/2010-03-07-2d-obb-collisions-in-xna/</link>
+      <pubDate>Sun, 07 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2010-03-07-2d-obb-collisions-in-xna/</guid>
+      <description>OBBs (Oriented Bounding Boxes) allow for a greater degree of accuracy than their axis aligned counterparts in the field of collision detection. It turns out this is a lot simpler to implement in 2D than 3D.
+Here&#39;s my own take on it, which I hope to put to heavy use in an ongoing project. The OBB is modelled by an orientation matrix (in the form of two Vector2&#39;s because the Matrix type seems to suck), an origin and a Vector2 representing the +ve half widths in the x and y axis.</description>
+    </item>
+    
+  </channel>
+</rss>

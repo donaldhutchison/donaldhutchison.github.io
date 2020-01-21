@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Donald Hutchison! Software Development!</title>
+  <meta property="og:title" content="Donald Hutchison! Software Development!" />
+  <meta property="og:image" content="https://donaldhutchison.info/img/me.jpeg" />
+  <meta name="description" content="Full Stack &#43; DevOps &#43; Mobile Engineer">
+  <meta property="og:description" content="Full Stack &#43; DevOps &#43; Mobile Engineer" />
+  <meta name="author" content="Donald Hutchison">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+  
+  <link href="https://donaldhutchison.info/css/resume.css" rel="stylesheet">
+  <link href="https://donaldhutchison.info/css/tweaks.css" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.62.2" />
+  
+   
+  
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Donald Hutchison</span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/me.jpeg" alt="">
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+      </li>
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#skills">Skills</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#projects">Projects</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#open">Open Source</a>
+          </li>
+      
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#blog">Blog</a>
+          </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid p-0">
+    
+<nav aria-label="breadcrumb">
+  <ol  class="breadcrumb">
+    
+
+
+
+
+
+<li class="breadcrumb-item">
+  <a href="https://donaldhutchison.info/"></a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="https://donaldhutchison.info/blog/">Blogs</a>
+</li>
+
+
+<li class="breadcrumb-item active">
+  <a href="https://donaldhutchison.info/blog/2010-03-07-2d-obb-collisions-in-xna/">2D OBB Collisions in XNA</a>
+</li>
+
+  </ol>
+</nav>
+
+
+
+
+<section class="resume-section p-3 p-lg-5 d-flex d-column">
+  <div class="my-auto">
+    <h2 ><span class="text-primary">2D OBB Collisions in XNA</span></h2>
+    <div class="text-primary">March 7, 2010</div>
+    </br>
+    <p>OBBs (Oriented Bounding Boxes) allow for a greater degree of accuracy than their axis aligned counterparts in the field of collision detection. It turns out this is a <i>lot </i>simpler to implement in 2D than 3D.</p>
+<p>Here's my own take on it, which I hope to put to heavy use in an ongoing project. The OBB is modelled by an orientation matrix (in the form of two Vector2's because the Matrix type seems to suck), an origin and a Vector2 representing the +ve half widths in the x and y axis.</p>
+<p>The object includes intersection methods and a crude draw method for debug purposes (you'll need to supply your own spritebatch and a 1x1 texture2d to use it)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">using</span> System;
+<span style="color:#66d9ef">using</span> System.Collections.Generic;
+<span style="color:#66d9ef">using</span> System.Linq;
+<span style="color:#66d9ef">using</span> System.Text;
+<span style="color:#66d9ef">using</span> Microsoft.Xna.Framework;
+<span style="color:#66d9ef">using</span> Microsoft.Xna.Framework.Graphics;
+<span style="color:#66d9ef">using</span> Extensions;
+
+<span style="color:#66d9ef">namespace</span> OBBTest
+{
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">OBB</span>
+    {
+        <span style="color:#75715e">#region members and properties
+</span><span style="color:#75715e"></span>        Vector2 _origin;<span style="color:#75715e">//centre point of the OBB
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">public</span> Vector2 Origin
+        {
+            <span style="color:#66d9ef">get</span> { <span style="color:#66d9ef">return</span> _origin; }
+            <span style="color:#66d9ef">set</span> { _origin = <span style="color:#66d9ef">value</span>; }
+        }
+        Vector2[] _axis;<span style="color:#75715e">//2d orientation matrix
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">public</span> Vector2[] Axis
+        {
+            <span style="color:#66d9ef">get</span> { <span style="color:#66d9ef">return</span> _axis; }
+        }
+        Vector2 _halfWidths;<span style="color:#75715e">//the +ve extents along each axis
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">public</span> Vector2 HalfWidths
+        {
+            <span style="color:#66d9ef">get</span> { <span style="color:#66d9ef">return</span> _halfWidths; }
+            <span style="color:#66d9ef">set</span> { _halfWidths = <span style="color:#66d9ef">value</span>; }
+        }
+        <span style="color:#66d9ef">float</span> _angleInRadians;<span style="color:#75715e">//used for drawing a visuaisation of the OBB
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">float</span> AngleInRadians
+        {
+            <span style="color:#66d9ef">get</span> { <span style="color:#66d9ef">return</span> _angleInRadians; }
+            <span style="color:#66d9ef">set</span>
+            {
+                <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">value</span> &lt; Math.PI &amp;&amp; <span style="color:#66d9ef">value</span> &gt; -Math.PI) <span style="color:#75715e">//in the range [-PI..PI]
+</span><span style="color:#75715e"></span>                    UpdateAxis(<span style="color:#66d9ef">value</span>);
+                <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">value</span> &gt;= Math.PI)
+                    UpdateAxis((<span style="color:#66d9ef">float</span>)(Math.Abs((<span style="color:#66d9ef">value</span> % Math.PI * <span style="color:#ae81ff">2</span>)) - Math.PI));
+                <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">value</span> &lt;= -Math.PI)
+                    UpdateAxis((<span style="color:#66d9ef">float</span>)(Math.Abs((<span style="color:#66d9ef">value</span> % Math.PI * <span style="color:#ae81ff">2</span>)) + Math.PI));
+            }
+        }
+
+        <span style="color:#66d9ef">public</span> Color DebugColor = Color.White;
+        <span style="color:#75715e">//an epsilon value to counter floating point errors in a parallel situation
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">float</span> EPSILON = <span style="color:#ae81ff">0.00001f</span>; 
+        <span style="color:#75715e">#endregion
+</span><span style="color:#75715e"></span>
+        <span style="color:#75715e">/// &lt;summary&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// Creates an oriented bounding box for collision detection
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;/summary&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;param name=&#34;Origin&#34;&gt;The center of the box&lt;/param&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;param name=&#34;AngleInRadians&#34;&gt;The rotation of the box in the xy plane&lt;/param&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;param name=&#34;HalfWidths&#34;&gt;The half extents of the box in it&#39;s X and Y axis&lt;/param&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">public</span> OBB(Vector2 Origin, <span style="color:#66d9ef">float</span> AngleInRadians, Vector2 HalfWidths)
+        {
+            _origin = Origin;
+            _angleInRadians = AngleInRadians;
+            _halfWidths = HalfWidths;
+
+            _axis = <span style="color:#66d9ef">new</span> Vector2[<span style="color:#ae81ff">2</span>];
+            _axis[<span style="color:#ae81ff">0</span>] = <span style="color:#66d9ef">new</span> Vector2();
+            _axis[<span style="color:#ae81ff">1</span>] = <span style="color:#66d9ef">new</span> Vector2();
+
+            UpdateAxis(AngleInRadians);
+        }
+
+        <span style="color:#75715e">/// &lt;summary&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// Returns whether this OBB is intersecting a second
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;/summary&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;param name=&#34;OtherOBB&#34;&gt;&lt;/param&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;returns&gt;&lt;/returns&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">bool</span> Intersects(OBB OtherOBB)
+        {
+            <span style="color:#66d9ef">return</span> OBB.Intersects(<span style="color:#66d9ef">this</span>, OtherOBB);
+        }
+
+        <span style="color:#75715e">/// &lt;summary&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// Finds where we would draw our debug texture without rotation.
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;/summary&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;returns&gt;A rectangle corresponging to the unrotated position of the AABB&lt;/returns&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">private</span> Rectangle GetDestinationRect()
+        {
+            <span style="color:#66d9ef">int</span> x = (<span style="color:#66d9ef">int</span>)( _origin.X );
+            <span style="color:#66d9ef">int</span> y = (<span style="color:#66d9ef">int</span>)(_origin.Y );
+            <span style="color:#66d9ef">int</span> width = (<span style="color:#66d9ef">int</span>)(_halfWidths.X*<span style="color:#ae81ff">2</span>);
+            <span style="color:#66d9ef">int</span> height = (<span style="color:#66d9ef">int</span>)(_halfWidths.Y*<span style="color:#ae81ff">2</span>);
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Rectangle(x, y, width, height);
+        }
+
+        <span style="color:#75715e">/// &lt;summary&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// Updates the orientation of the OBB
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;/summary&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;param name=&#34;AngleInRadians&#34;&gt;The new rotation in radians&lt;/param&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> UpdateAxis(<span style="color:#66d9ef">float</span> AngleInRadians)
+        {
+            <span style="color:#75715e">//Standard rotation matrix equation
+</span><span style="color:#75715e"></span>            _axis[<span style="color:#ae81ff">0</span>].X = (<span style="color:#66d9ef">float</span>) Math.Cos(AngleInRadians);
+            _axis[<span style="color:#ae81ff">0</span>].Y = (<span style="color:#66d9ef">float</span>)Math.Sin(AngleInRadians);
+            _axis[<span style="color:#ae81ff">1</span>].Y = (<span style="color:#66d9ef">float</span>)Math.Cos(AngleInRadians);
+            _axis[<span style="color:#ae81ff">1</span>].X = -(<span style="color:#66d9ef">float</span>)Math.Sin(AngleInRadians);
+
+            _angleInRadians = AngleInRadians;
+        }
+
+        <span style="color:#75715e">/// &lt;summary&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// Prints the properties of the OBB to the console
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;/summary&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> Print()
+        {
+            Console.WriteLine(<span style="color:#e6db74">&#34;origin : &#34;</span>+_origin+<span style="color:#e6db74">&#34;\nAngle : &#34;</span>+_angleInRadians+
+            <span style="color:#e6db74">&#34;\nX Axis : &#34;</span>+_axis[<span style="color:#ae81ff">0</span>]+<span style="color:#e6db74">&#34;\nY Axis : &#34;</span>+_axis[<span style="color:#ae81ff">1</span>]);
+        }
+
+        <span style="color:#75715e">/// &lt;summary&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// Draws a visualisation of the OBB, useful for debug purposes
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;/summary&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;param name=&#34;sb&#34;&gt;The spritebatch instance to draw with&lt;/param&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;param name=&#34;NullTexture&#34;&gt;A reference to a 1x1 texture which will be draw over the OBB&lt;/param&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> Draw(Texture2D NullTexture,SpriteBatch sb)
+        {
+            <span style="color:#75715e">//OBB&#39;s are only ever going to be drawn in debug mode
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//so performance from repeated Begin() End() calls is acceptable
+</span><span style="color:#75715e"></span>
+            sb.Begin();
+            
+            Vector2 g = _halfWidths;
+            g.Normalize();
+            sb.Draw(NullTexture, GetDestinationRect(), <span style="color:#66d9ef">null</span>, DebugColor,
+                _angleInRadians,
+                Vector2.One/<span style="color:#ae81ff">2</span>,<span style="color:#75715e">//the origin of the 1x1 texture i.e. (0.5f,0.5f)
+</span><span style="color:#75715e"></span>                SpriteEffects.None, <span style="color:#ae81ff">1f</span>);
+
+            sb.End();
+
+        }
+
+        <span style="color:#75715e">/// &lt;summary&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// Tests whether two OBBs intersect. Uses a separating axis implementation.
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;/summary&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;param name=&#34;First&#34;&gt;The first OBB&lt;/param&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;param name=&#34;Second&#34;&gt;The second OBB&lt;/param&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">/// &lt;returns&gt;&lt;/returns&gt;
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">bool</span> Intersects(OBB First, OBB Second)
+        {
+            <span style="color:#75715e">#region pre test calcs and declarations
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">float</span> rf, rs;
+            <span style="color:#66d9ef">float</span>[,] R = <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">float</span>[<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>];
+            <span style="color:#66d9ef">float</span>[,] AbsR = <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">float</span>[<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>];
+
+            <span style="color:#75715e">//compuet rotation matrix by expressing second in terms of first
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">//also create common sub expressions
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i = <span style="color:#ae81ff">0</span>; i &lt; <span style="color:#ae81ff">2</span>; i++)
+                <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> j = <span style="color:#ae81ff">0</span>; j &lt; <span style="color:#ae81ff">2</span>; j++)
+                {
+                    R[i, j] = Vector2.Dot(First.Axis[i], Second.Axis[j]);
+                    AbsR[i, j] = Math.Abs(R[i, j]) + EPSILON;
+                }
+
+            <span style="color:#75715e">//create translation vector
+</span><span style="color:#75715e"></span>            Vector2 translation = Second.Origin - First.Origin;
+
+            <span style="color:#75715e">//bring translation into First&#39;s local coordinate system
+</span><span style="color:#75715e"></span>            translation = <span style="color:#66d9ef">new</span> Vector2(Vector2.Dot(translation, First.Axis[<span style="color:#ae81ff">0</span>]),
+                Vector2.Dot(translation, First.Axis[<span style="color:#ae81ff">1</span>])); 
+            <span style="color:#75715e">#endregion
+</span><span style="color:#75715e"></span>
+           <span style="color:#75715e">//Test if axes FirstX or FirstY separate the OBBs
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i = <span style="color:#ae81ff">0</span>; i &lt; <span style="color:#ae81ff">2</span>; i++ )
+            {
+                rf = First.HalfWidths.Index(i);
+                rs = Second.HalfWidths.X * AbsR[i,<span style="color:#ae81ff">0</span>] + Second.HalfWidths.Y * AbsR[i,<span style="color:#ae81ff">1</span>];
+                
+                <span style="color:#66d9ef">if</span>(Math.Abs(translation.Index(i)) &gt; (rf + rs))
+                    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+            }
+
+            <span style="color:#75715e">//Test if axes SecondX or SecondY separate the OBBs
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i = <span style="color:#ae81ff">0</span>; i &lt; <span style="color:#ae81ff">2</span>; i++)
+            {
+                rf = First.HalfWidths.Index(<span style="color:#ae81ff">0</span>) * AbsR[<span style="color:#ae81ff">0</span>, i] + First.HalfWidths.Index(<span style="color:#ae81ff">1</span>) * AbsR[<span style="color:#ae81ff">1</span>, i];
+                rs = Second.HalfWidths.Index(i);
+
+                <span style="color:#66d9ef">if</span>(Math.Abs(translation.Index(<span style="color:#ae81ff">0</span>) * R[<span style="color:#ae81ff">0</span>,i] + translation.Index(<span style="color:#ae81ff">1</span>) * R[<span style="color:#ae81ff">1</span>,i]) &gt; (rf + rs))
+                    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+            }
+
+            <span style="color:#75715e">//no separating axis - OBBs must therefore be intersecting
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
+        }
+    }
+    
+}
+
+<span style="color:#66d9ef">namespace</span> Extensions
+{
+    <span style="color:#75715e">/// &lt;summary&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// Adds the ability to index a Vector2 for cheeky code saving
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">/// &lt;/summary&gt;
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Vector2Extensions</span>
+    {
+        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">float</span> Index(<span style="color:#66d9ef">this</span> Vector2 v, <span style="color:#66d9ef">int</span> i)
+        {
+             <span style="color:#66d9ef">switch</span>(i)
+            {
+                <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">0</span>:
+                    <span style="color:#66d9ef">return</span> v.X;
+                <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">1</span>:
+                    <span style="color:#66d9ef">return</span> v.Y;
+                <span style="color:#66d9ef">default</span>:
+                    <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> IndexOutOfRangeException();
+            }
+        }
+    }
+}   
+</code></pre></div>
+
+    
+    <ul class="tags">
+    
+      <li><a class="tag" href="/tags/collisions">collisions</a></li>
+    
+      <li><a class="tag" href="/tags/gamedev">gamedev</a></li>
+    
+      <li><a class="tag" href="/tags/programming">programming</a></li>
+    
+      <li><a class="tag" href="/tags/xna">xna</a></li>
+    
+      <li><a class="tag" href="/tags/c">C#</a></li>
+    
+</ul>
+
+  </div>
+</section>
+
+
+    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>
+    
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  
+  <script src="/js/resume.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=XX-123446-01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'XX-123446-01');
+  </script>
+  
+
+  
+</body>
+</html>

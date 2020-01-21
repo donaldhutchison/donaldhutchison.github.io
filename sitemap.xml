@@ -1,96 +1,405 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
-    <loc>/install_referrer/</loc>
-    <lastmod>2016-07-05T19:16:03+02:00</lastmod>
+    <loc>https://donaldhutchison.info/projects/creations/</loc>
+    <lastmod>2018-03-11T12:41:05-05:00</lastmod>
+    <priority>0.5</priority>
   </url>
+  
   <url>
-    <loc>/anki-rb/</loc>
-    <lastmod>2016-03-28T21:26:45+02:00</lastmod>
+    <loc>https://donaldhutchison.info/projects/contributions/</loc>
+    <priority>0.5</priority>
   </url>
+  
   <url>
-    <loc>/articles/compiling-c-with-rakefiles/</loc>
-    <lastmod>2014-10-19T19:46:40+02:00</lastmod>
+    <loc>https://donaldhutchison.info/projects/contributions/anki-rb/</loc>
+    <priority>0.8</priority>
   </url>
+  
   <url>
-    <loc>/articles/how-to-write-bug-reports/</loc>
-    <lastmod>2014-02-17T00:00:00+01:00</lastmod>
+    <loc>https://donaldhutchison.info/projects/contributions/cocos-2d/</loc>
+    <priority>0.7</priority>
   </url>
+  
   <url>
-    <loc>/articles/ccnode-recursive-description/</loc>
-    <lastmod>2014-02-04T00:00:00+01:00</lastmod>
+    <loc>https://donaldhutchison.info/</loc>
+    <lastmod>2020-01-15T18:56:13-05:00</lastmod>
+    <priority>1</priority>
   </url>
+  
   <url>
-    <loc>/articles/ruby-at-the-bar/</loc>
-    <lastmod>2014-02-02T00:00:00+01:00</lastmod>
+    <loc>https://donaldhutchison.info/tags/aws/</loc>
+    <lastmod>2018-03-11T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/articles/global-game-jame2014/</loc>
-    <lastmod>2014-01-30T00:00:00+01:00</lastmod>
+    <loc>https://donaldhutchison.info/tags/docker/</loc>
+    <lastmod>2018-03-11T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/articles/coffeescript-skeleton/</loc>
-    <lastmod>2014-01-10T00:00:00+01:00</lastmod>
+    <loc>https://donaldhutchison.info/tags/gis/</loc>
+    <lastmod>2018-03-11T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/articles/installing-jekyll-oh-lordy/</loc>
-    <lastmod>2013-07-18T00:00:00+02:00</lastmod>
+    <loc>https://donaldhutchison.info/tags/ios/</loc>
+    <lastmod>2018-03-11T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/blog/working-title-robot-go-home-gaiden/</loc>
-    <lastmod>2013-03-24T00:00:00+01:00</lastmod>
+    <loc>https://donaldhutchison.info/tags/kubernetes/</loc>
+    <lastmod>2018-03-11T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/articles/optimising-coffeescript-files-with-r-js-unexpected-character/</loc>
-    <lastmod>2012-06-11T00:00:00+02:00</lastmod>
+    <loc>https://donaldhutchison.info/projects/creations/marvelroad/</loc>
+    <lastmod>2018-03-11T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/articles/coffeescript-requirejs-and-you/</loc>
-    <lastmod>2012-04-24T00:00:00+02:00</lastmod>
+    <loc>https://donaldhutchison.info/tags/ruby/</loc>
+    <lastmod>2018-03-11T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/blog/rise-from-your-grave/</loc>
-    <lastmod>2012-03-17T00:00:00+01:00</lastmod>
+    <loc>https://donaldhutchison.info/tags/sinatra/</loc>
+    <lastmod>2018-03-11T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/articles/conways-game-of-life-in-ruby-gosu-chingu/</loc>
-    <lastmod>2010-06-06T00:00:00+02:00</lastmod>
+    <loc>https://donaldhutchison.info/tags/</loc>
+    <lastmod>2018-03-11T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/articles/2d-obb-collisions-in-xna/</loc>
-    <lastmod>2010-03-07T00:00:00+01:00</lastmod>
+    <loc>https://donaldhutchison.info/tags/android/</loc>
+    <lastmod>2018-02-11T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/blog/syobon-action-155-lives/</loc>
-    <lastmod>2010-01-06T00:00:00+01:00</lastmod>
+    <loc>https://donaldhutchison.info/tags/graphql/</loc>
+    <lastmod>2018-02-11T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/blog/bigjam-2009/</loc>
-    <lastmod>2009-08-10T00:00:00+02:00</lastmod>
+    <loc>https://donaldhutchison.info/projects/creations/kiekmo/</loc>
+    <lastmod>2018-02-11T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/blog/cho-ren-sha-68k/</loc>
-    <lastmod>2009-06-17T00:00:00+02:00</lastmod>
+    <loc>https://donaldhutchison.info/tags/kotlin/</loc>
+    <lastmod>2018-02-11T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/</loc>
+    <loc>https://donaldhutchison.info/tags/mobile/</loc>
+    <lastmod>2018-02-11T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/theme-setup/</loc>
+    <loc>https://donaldhutchison.info/tags/macos/</loc>
+    <lastmod>2018-01-12T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/about/</loc>
+    <loc>https://donaldhutchison.info/tags/objective-c/</loc>
+    <lastmod>2018-01-12T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/articles/</loc>
+    <loc>https://donaldhutchison.info/tags/open-source/</loc>
+    <lastmod>2018-01-12T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/projects/</loc>
+    <loc>https://donaldhutchison.info/projects/creations/sprite-builder/</loc>
+    <lastmod>2018-01-12T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/tags/</loc>
+    <loc>https://donaldhutchison.info/tags/tools/</loc>
+    <lastmod>2018-01-12T12:41:05-05:00</lastmod>
   </url>
+  
   <url>
-    <loc>/blog/</loc>
+    <loc>https://donaldhutchison.info/tags/ui-design/</loc>
+    <lastmod>2018-01-12T12:41:05-05:00</lastmod>
   </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/java/</loc>
+    <lastmod>2018-01-11T12:41:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/projects/creations/jelly-splash/</loc>
+    <lastmod>2018-01-11T12:41:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/kindle/</loc>
+    <lastmod>2018-01-11T12:41:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/adb/</loc>
+    <lastmod>2016-07-05T19:16:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/blog/</loc>
+    <lastmod>2016-07-05T19:16:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/blog/2016-07-05-install_referrer/</loc>
+    <lastmod>2016-07-05T19:16:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/programming/</loc>
+    <lastmod>2016-07-05T19:16:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/anki/</loc>
+    <lastmod>2016-03-28T21:26:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/blog/2016-03-28-anki-rb/</loc>
+    <lastmod>2016-03-28T21:26:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/learning/</loc>
+    <lastmod>2016-03-28T21:26:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/lib/</loc>
+    <lastmod>2016-03-28T21:26:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/c/</loc>
+    <lastmod>2014-10-19T19:46:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/blog/2014-10-19-compiling-c-with-rakefiles/</loc>
+    <lastmod>2014-10-19T19:46:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/rake/</loc>
+    <lastmod>2014-10-19T19:46:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/categories/articles/</loc>
+    <lastmod>2014-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/bugs/</loc>
+    <lastmod>2014-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/categories/</loc>
+    <lastmod>2014-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/blog/2014-02-17-how-to-write-bug-reports/</loc>
+    <lastmod>2014-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/qa/</loc>
+    <lastmod>2014-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/software/</loc>
+    <lastmod>2014-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/testing/</loc>
+    <lastmod>2014-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/blog/2014-02-04-ccnode-recursive-description/</loc>
+    <lastmod>2014-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/cocos2d/</loc>
+    <lastmod>2014-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/iphone/</loc>
+    <lastmod>2014-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/ruboto/</loc>
+    <lastmod>2014-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/blog/2014-02-02-ruby-at-the-bar/</loc>
+    <lastmod>2014-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/game-jam/</loc>
+    <lastmod>2014-01-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/ggj/</loc>
+    <lastmod>2014-01-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/blog/2014-01-30-global-game-jame2014/</loc>
+    <lastmod>2014-01-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/unity/</loc>
+    <lastmod>2014-01-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/coffeescript/</loc>
+    <lastmod>2014-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/blog/2014-01-10-coffeescript-skeleton/</loc>
+    <lastmod>2014-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/game-development/</loc>
+    <lastmod>2014-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/requirejs/</loc>
+    <lastmod>2014-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/web-development/</loc>
+    <lastmod>2014-01-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/blog/</loc>
+    <lastmod>2013-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/jekyll/</loc>
+    <lastmod>2013-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/blog/2013-07-18-installing-jekyll-oh-lordy/</loc>
+    <lastmod>2013-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/setup/</loc>
+    <lastmod>2013-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/coffee-script/</loc>
+    <lastmod>2012-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/development/</loc>
+    <lastmod>2012-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/blog/2012-06-11-optimising-coffeescript-files-with-r-js-unexpected-character/</loc>
+    <lastmod>2012-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/amd/</loc>
+    <lastmod>2012-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/blog/2012-04-24-coffeescript-requirejs-and-you/</loc>
+    <lastmod>2012-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/blog/2010-06-06-conways-game-of-life-in-ruby-gosu-chingu/</loc>
+    <lastmod>2010-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/gamedev/</loc>
+    <lastmod>2010-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/blog/2010-03-07-2d-obb-collisions-in-xna/</loc>
+    <lastmod>2010-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/c#/</loc>
+    <lastmod>2010-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/collisions/</loc>
+    <lastmod>2010-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/xna/</loc>
+    <lastmod>2010-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/projects/</loc>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/publications/</loc>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/ruby-gems/</loc>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/search/</loc>
+    <priority>0.1</priority>
+  </url>
+  
+  <url>
+    <loc>https://donaldhutchison.info/tags/sqlite/</loc>
+  </url>
+  
 </urlset>

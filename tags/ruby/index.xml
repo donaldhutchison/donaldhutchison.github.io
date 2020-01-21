@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ruby on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/ruby/</link>
+    <description>Recent content in ruby on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Mar 2018 12:41:05 -0500</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>anki-rb - A ruby gem to create Anki flashcards for spaced repetition learning.</title>
+      <link>https://donaldhutchison.info/projects/contributions/anki-rb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/projects/contributions/anki-rb/</guid>
+      <description>Anki is a flashcard app which uses a spaced repetition algorithm to help with memorising facts and committing items to memory.
+After realising there was no library which could create flashcard decks with integrated media (which is very useful for spoken phrases and pronounciation when learning languages), I created this gem.
+The gem provides a simple Ruby api to create flashcards and decks, as well as embed supported media formats (audio, images and video).</description>
+    </item>
+    
+    <item>
+      <title>Marvelroad (iOS)</title>
+      <link>https://donaldhutchison.info/projects/creations/marvelroad/</link>
+      <pubDate>Sun, 11 Mar 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/projects/creations/marvelroad/</guid>
+      <description>Marvelroad was an app designed around an MVP for Mercedes owners. The idea was to both host a curated selection of enjoyable driving routes, as well as generate new routes and content based on user preferences. The user would provide a list of desirable features, such as landmarks, speed limits, nice views and driving time, and then the app would calculate a driving route based on these choices.
+I was the sole developer for the backend of this app, and created a simple REST api which would provide the app with data and routes based on the user&#39;s choices.</description>
+    </item>
+    
+    <item>
+      <title>AnkiRB - spaced repetition flashcards made in ruby</title>
+      <link>https://donaldhutchison.info/blog/2016-03-28-anki-rb/</link>
+      <pubDate>Mon, 28 Mar 2016 21:26:45 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2016-03-28-anki-rb/</guid>
+      <description>In the past few weeks I discovered Omniglot and Anki and thought it&#39;d be pretty cool to be able to create flashcards for the useful phrases listing. Being able to say &amp;ldquo;this guy pays for everything&amp;rdquo; in Turkish, or &amp;ldquo;my hovercraft is full of eels&amp;rdquo; in Norwegian could be an incredibly useful life skill.
+And so AnkiRB came into existence.
+The library basically replicates what the application itself does when you create flashcards via the gui, except uses ruby&#39;s sqlite package to create flashcards and bundle media files together.</description>
+    </item>
+    
+    <item>
+      <title>Compiling C with Rakefiles</title>
+      <link>https://donaldhutchison.info/blog/2014-10-19-compiling-c-with-rakefiles/</link>
+      <pubDate>Sun, 19 Oct 2014 19:46:40 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2014-10-19-compiling-c-with-rakefiles/</guid>
+      <description>Make is solid. It&#39;s been around since before the internet and still one of the most important tools used today. As such - it&#39;s tried, proven, tested, and was used in some of the most successful projects out there.
+&amp;hellip;but what are the chances that something so old got it right the first time? What are the chances that good old Make is the be-all, end-all, perfect ultimate solution for every possible development project?</description>
+    </item>
+    
+    <item>
+      <title>Ruby Development in the Bar</title>
+      <link>https://donaldhutchison.info/blog/2014-02-02-ruby-at-the-bar/</link>
+      <pubDate>Sun, 02 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2014-02-02-ruby-at-the-bar/</guid>
+      <description>For reasons I won&#39;t get into, I found myself spending Christmas in Wick on the north east tip of Scotland. This being the second time it&#39;s occurred I was familiar with the quirks and isolation of this part of the world. One of the more upswinging things that happens is that every 26th December, there&#39;s a charity raffle in the local Seaforth Club. This is where you buy some tickets, drink, win prizes and drink some more.</description>
+    </item>
+    
+    <item>
+      <title>Jekyll Migration Woes</title>
+      <link>https://donaldhutchison.info/blog/2013-07-18-installing-jekyll-oh-lordy/</link>
+      <pubDate>Thu, 18 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2013-07-18-installing-jekyll-oh-lordy/</guid>
+      <description>After getting sick of wordpress I decided to do the cool hipster thing and move my blog to Jekyll. Both for the nerd credit and the super awesome minimal design (static site = no moving parts! awesome!). After reading about Josh Kaufman&#39;s experience with Jekyll in his book it sounded like a pretty easy and maintainable platform to blog on.
+However&amp;hellip; On the way I encountered a few issues that almost took the chill out of a refreshing Thursday night in Berlin.</description>
+    </item>
+    
+    <item>
+      <title>Conway&#39;s Game of Life in Ruby (gosu &#43; chingu)</title>
+      <link>https://donaldhutchison.info/blog/2010-06-06-conways-game-of-life-in-ruby-gosu-chingu/</link>
+      <pubDate>Sun, 06 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2010-06-06-conways-game-of-life-in-ruby-gosu-chingu/</guid>
+      <description>inspired by this awesome nds tracker and an old boingboing post, i decided to make an implementation of conway&#39;s game of life in ruby, using the gosu and chingu game development gems.
+after finding a way round the terrible deep cloning in ruby it was incredibly painless and very interesting. i like how the initial choice of cells influences whether you have a beautiful symmetrical oscillating pattern or a horrible cancerous mess, after 100 or so generations.</description>
+    </item>
+    
+  </channel>
+</rss>

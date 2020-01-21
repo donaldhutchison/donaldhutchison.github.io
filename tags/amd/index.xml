@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>amd on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/amd/</link>
+    <description>Recent content in amd on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Apr 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/amd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coffeescript RequireJS and You!</title>
+      <link>https://donaldhutchison.info/blog/2012-04-24-coffeescript-requirejs-and-you/</link>
+      <pubDate>Tue, 24 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2012-04-24-coffeescript-requirejs-and-you/</guid>
+      <description>Contents  * Auto generated table of contents {:toc}   Best friends together at last! So you want to create a javascript application with some kind of non trivial complexity, but separating the functionality out into different script files gets hairy. You need to forward declare certain functions before you execute certain functions, and things need to be loaded before they can be displayed. Then when you add CoffeeScript into the mix you&#39;ve got a whole new set of problems.</description>
+    </item>
+    
+  </channel>
+</rss>

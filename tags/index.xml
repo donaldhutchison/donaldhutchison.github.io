@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/</link>
+    <description>Recent content in Tags on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Mar 2018 12:41:05 -0500</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS</title>
+      <link>https://donaldhutchison.info/tags/aws/</link>
+      <pubDate>Sun, 11 Mar 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://donaldhutchison.info/tags/docker/</link>
+      <pubDate>Sun, 11 Mar 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GIS</title>
+      <link>https://donaldhutchison.info/tags/gis/</link>
+      <pubDate>Sun, 11 Mar 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/gis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iOS</title>
+      <link>https://donaldhutchison.info/tags/ios/</link>
+      <pubDate>Sun, 11 Mar 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://donaldhutchison.info/tags/kubernetes/</link>
+      <pubDate>Sun, 11 Mar 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ruby</title>
+      <link>https://donaldhutchison.info/tags/ruby/</link>
+      <pubDate>Sun, 11 Mar 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/ruby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sinatra</title>
+      <link>https://donaldhutchison.info/tags/sinatra/</link>
+      <pubDate>Sun, 11 Mar 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/sinatra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>https://donaldhutchison.info/tags/android/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GraphQL</title>
+      <link>https://donaldhutchison.info/tags/graphql/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/graphql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kotlin</title>
+      <link>https://donaldhutchison.info/tags/kotlin/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/kotlin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mobile</title>
+      <link>https://donaldhutchison.info/tags/mobile/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/mobile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MacOS</title>
+      <link>https://donaldhutchison.info/tags/macos/</link>
+      <pubDate>Fri, 12 Jan 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>objective-c</title>
+      <link>https://donaldhutchison.info/tags/objective-c/</link>
+      <pubDate>Fri, 12 Jan 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/objective-c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>https://donaldhutchison.info/tags/open-source/</link>
+      <pubDate>Fri, 12 Jan 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>https://donaldhutchison.info/tags/tools/</link>
+      <pubDate>Fri, 12 Jan 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UI Design</title>
+      <link>https://donaldhutchison.info/tags/ui-design/</link>
+      <pubDate>Fri, 12 Jan 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/ui-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://donaldhutchison.info/tags/java/</link>
+      <pubDate>Thu, 11 Jan 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kindle</title>
+      <link>https://donaldhutchison.info/tags/kindle/</link>
+      <pubDate>Thu, 11 Jan 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/kindle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>adb</title>
+      <link>https://donaldhutchison.info/tags/adb/</link>
+      <pubDate>Tue, 05 Jul 2016 19:16:03 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/adb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://donaldhutchison.info/tags/programming/</link>
+      <pubDate>Tue, 05 Jul 2016 19:16:03 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>anki</title>
+      <link>https://donaldhutchison.info/tags/anki/</link>
+      <pubDate>Mon, 28 Mar 2016 21:26:45 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/anki/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>learning</title>
+      <link>https://donaldhutchison.info/tags/learning/</link>
+      <pubDate>Mon, 28 Mar 2016 21:26:45 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lib</title>
+      <link>https://donaldhutchison.info/tags/lib/</link>
+      <pubDate>Mon, 28 Mar 2016 21:26:45 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/lib/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>c</title>
+      <link>https://donaldhutchison.info/tags/c/</link>
+      <pubDate>Sun, 19 Oct 2014 19:46:40 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rake</title>
+      <link>https://donaldhutchison.info/tags/rake/</link>
+      <pubDate>Sun, 19 Oct 2014 19:46:40 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/rake/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bugs</title>
+      <link>https://donaldhutchison.info/tags/bugs/</link>
+      <pubDate>Mon, 17 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/bugs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>qa</title>
+      <link>https://donaldhutchison.info/tags/qa/</link>
+      <pubDate>Mon, 17 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/qa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>https://donaldhutchison.info/tags/software/</link>
+      <pubDate>Mon, 17 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>testing</title>
+      <link>https://donaldhutchison.info/tags/testing/</link>
+      <pubDate>Mon, 17 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cocos2d</title>
+      <link>https://donaldhutchison.info/tags/cocos2d/</link>
+      <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/cocos2d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iPhone</title>
+      <link>https://donaldhutchison.info/tags/iphone/</link>
+      <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/iphone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ruboto</title>
+      <link>https://donaldhutchison.info/tags/ruboto/</link>
+      <pubDate>Sun, 02 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/ruboto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>game jam</title>
+      <link>https://donaldhutchison.info/tags/game-jam/</link>
+      <pubDate>Thu, 30 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/game-jam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ggj</title>
+      <link>https://donaldhutchison.info/tags/ggj/</link>
+      <pubDate>Thu, 30 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/ggj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unity</title>
+      <link>https://donaldhutchison.info/tags/unity/</link>
+      <pubDate>Thu, 30 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/unity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>coffeescript</title>
+      <link>https://donaldhutchison.info/tags/coffeescript/</link>
+      <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/coffeescript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>game development</title>
+      <link>https://donaldhutchison.info/tags/game-development/</link>
+      <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/game-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>requirejs</title>
+      <link>https://donaldhutchison.info/tags/requirejs/</link>
+      <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/requirejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web development</title>
+      <link>https://donaldhutchison.info/tags/web-development/</link>
+      <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/web-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://donaldhutchison.info/tags/blog/</link>
+      <pubDate>Thu, 18 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jekyll</title>
+      <link>https://donaldhutchison.info/tags/jekyll/</link>
+      <pubDate>Thu, 18 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/jekyll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>setup</title>
+      <link>https://donaldhutchison.info/tags/setup/</link>
+      <pubDate>Thu, 18 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/setup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>coffee-script</title>
+      <link>https://donaldhutchison.info/tags/coffee-script/</link>
+      <pubDate>Mon, 11 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/coffee-script/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>development</title>
+      <link>https://donaldhutchison.info/tags/development/</link>
+      <pubDate>Mon, 11 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>amd</title>
+      <link>https://donaldhutchison.info/tags/amd/</link>
+      <pubDate>Tue, 24 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/amd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gamedev</title>
+      <link>https://donaldhutchison.info/tags/gamedev/</link>
+      <pubDate>Sun, 06 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/gamedev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C#</title>
+      <link>https://donaldhutchison.info/tags/c#/</link>
+      <pubDate>Sun, 07 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/c#/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>collisions</title>
+      <link>https://donaldhutchison.info/tags/collisions/</link>
+      <pubDate>Sun, 07 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/collisions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xna</title>
+      <link>https://donaldhutchison.info/tags/xna/</link>
+      <pubDate>Sun, 07 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/xna/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ruby Gems</title>
+      <link>https://donaldhutchison.info/tags/ruby-gems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/ruby-gems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQLite</title>
+      <link>https://donaldhutchison.info/tags/sqlite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/sqlite/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

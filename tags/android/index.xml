@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>android on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/android/</link>
+    <description>Recent content in android on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Feb 2018 12:41:05 -0500</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kiekmo (Android)</title>
+      <link>https://donaldhutchison.info/projects/creations/kiekmo/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/projects/creations/kiekmo/</guid>
+      <description>Kiekmo was an Android app developed for Hamburg Sparkasse and designed to bring customers physically into the branch locations by offering a free item storage system (for use with online sales ala ebay). The customer would place an item within a locker provided at a Sparkasse branch and receive a lock code via the app. The customer would then provide the code to whoever purchased their item online and conveniently let the buyer access the item at will.</description>
+    </item>
+    
+    <item>
+      <title>Jelly Splash (Android &#43; iOS)</title>
+      <link>https://donaldhutchison.info/projects/creations/jelly-splash/</link>
+      <pubDate>Thu, 11 Jan 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/projects/creations/jelly-splash/</guid>
+      <description>Jelly Splash was a cross platform mobile game where the goal was to connect as many jellies as possible in order to beat the level and advance. Jelly Splash has had over 75 million players and was a huge success for Wooga.
+As part of the core team, I was involved in daily feature development and maintenance. I focused heavily on the Android side in this project and was personally responsible for porting the game to the Kindle Fire store, where it was heavily featured and relatively successful given the market size.</description>
+    </item>
+    
+    <item>
+      <title>Install referrer testing</title>
+      <link>https://donaldhutchison.info/blog/2016-07-05-install_referrer/</link>
+      <pubDate>Tue, 05 Jul 2016 19:16:03 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2016-07-05-install_referrer/</guid>
+      <description>Note: The broadcast referral functionality has been deprecated by Google Play and will be removed on March 2020. The new implementation involves connecting directly to the Play Store app - documentation is available at https://developer.android.com/google/play/installreferrer
+ The install referrer is an intent on android, which is broadcast after the app install to give the app information about the reason it was installed. This is useful if you&#39;re tracking marketing / paid installs and you want to tell between paid and organic installs.</description>
+    </item>
+    
+    <item>
+      <title>Ruby Development in the Bar</title>
+      <link>https://donaldhutchison.info/blog/2014-02-02-ruby-at-the-bar/</link>
+      <pubDate>Sun, 02 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2014-02-02-ruby-at-the-bar/</guid>
+      <description>For reasons I won&#39;t get into, I found myself spending Christmas in Wick on the north east tip of Scotland. This being the second time it&#39;s occurred I was familiar with the quirks and isolation of this part of the world. One of the more upswinging things that happens is that every 26th December, there&#39;s a charity raffle in the local Seaforth Club. This is where you buy some tickets, drink, win prizes and drink some more.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/</link>
+    <description>Recent content on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2020 18:56:13 -0500</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>anki-rb - A ruby gem to create Anki flashcards for spaced repetition learning.</title>
+      <link>https://donaldhutchison.info/projects/contributions/anki-rb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/projects/contributions/anki-rb/</guid>
+      <description>Anki is a flashcard app which uses a spaced repetition algorithm to help with memorising facts and committing items to memory.
+After realising there was no library which could create flashcard decks with integrated media (which is very useful for spoken phrases and pronounciation when learning languages), I created this gem.
+The gem provides a simple Ruby api to create flashcards and decks, as well as embed supported media formats (audio, images and video).</description>
+    </item>
+    
+    <item>
+      <title>Cocos2D-ObjC - Game Development Tookit for iOS</title>
+      <link>https://donaldhutchison.info/projects/contributions/cocos-2d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/projects/contributions/cocos-2d/</guid>
+      <description>The now defunct Cocos2D-ObjC project was a hugely successful games development library for developing iPhone games. Building on top of OpenGLES, it offered a more performant means of rendering graphics and manipulating visual objects than the UIKit based API offered by default. The scene graph API implemented in Cocos2D is now reflected in Apple&#39;s own SpriteKit framework.
+After using the library for several years in a few mobile game projects, I got a position working as a full time maintainer of the library, making contributions to the core library as well as it&#39;s companion UI building app SpriteBuilder (analogous to Interface Builder for UIKit).</description>
+    </item>
+    
+    <item>
+      <title>Marvelroad (iOS)</title>
+      <link>https://donaldhutchison.info/projects/creations/marvelroad/</link>
+      <pubDate>Sun, 11 Mar 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/projects/creations/marvelroad/</guid>
+      <description>Marvelroad was an app designed around an MVP for Mercedes owners. The idea was to both host a curated selection of enjoyable driving routes, as well as generate new routes and content based on user preferences. The user would provide a list of desirable features, such as landmarks, speed limits, nice views and driving time, and then the app would calculate a driving route based on these choices.
+I was the sole developer for the backend of this app, and created a simple REST api which would provide the app with data and routes based on the user&#39;s choices.</description>
+    </item>
+    
+    <item>
+      <title>Kiekmo (Android)</title>
+      <link>https://donaldhutchison.info/projects/creations/kiekmo/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/projects/creations/kiekmo/</guid>
+      <description>Kiekmo was an Android app developed for Hamburg Sparkasse and designed to bring customers physically into the branch locations by offering a free item storage system (for use with online sales ala ebay). The customer would place an item within a locker provided at a Sparkasse branch and receive a lock code via the app. The customer would then provide the code to whoever purchased their item online and conveniently let the buyer access the item at will.</description>
+    </item>
+    
+    <item>
+      <title>SpriteBuilder (MacOS)</title>
+      <link>https://donaldhutchison.info/projects/creations/sprite-builder/</link>
+      <pubDate>Fri, 12 Jan 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/projects/creations/sprite-builder/</guid>
+      <description>Whether you’re an expert developer or just getting started, SpriteBuilder will help you build top-quality games in a fraction of the time. Open source and free.o
+ SpriteBuilder is an IDE designed around Swift / Objective C games development with the Cocos2D framework. Using SpriteBuilder you can visually design games and applications through the editor and know they will look consistent on both iOS and Android.
+As one of the core team members I was responsible for working with the community, managing pull requests and helping guide the roadmap.</description>
+    </item>
+    
+    <item>
+      <title>Jelly Splash (Android &#43; iOS)</title>
+      <link>https://donaldhutchison.info/projects/creations/jelly-splash/</link>
+      <pubDate>Thu, 11 Jan 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/projects/creations/jelly-splash/</guid>
+      <description>Jelly Splash was a cross platform mobile game where the goal was to connect as many jellies as possible in order to beat the level and advance. Jelly Splash has had over 75 million players and was a huge success for Wooga.
+As part of the core team, I was involved in daily feature development and maintenance. I focused heavily on the Android side in this project and was personally responsible for porting the game to the Kindle Fire store, where it was heavily featured and relatively successful given the market size.</description>
+    </item>
+    
+    <item>
+      <title>Install referrer testing</title>
+      <link>https://donaldhutchison.info/blog/2016-07-05-install_referrer/</link>
+      <pubDate>Tue, 05 Jul 2016 19:16:03 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2016-07-05-install_referrer/</guid>
+      <description>Note: The broadcast referral functionality has been deprecated by Google Play and will be removed on March 2020. The new implementation involves connecting directly to the Play Store app - documentation is available at https://developer.android.com/google/play/installreferrer
+ The install referrer is an intent on android, which is broadcast after the app install to give the app information about the reason it was installed. This is useful if you&#39;re tracking marketing / paid installs and you want to tell between paid and organic installs.</description>
+    </item>
+    
+    <item>
+      <title>AnkiRB - spaced repetition flashcards made in ruby</title>
+      <link>https://donaldhutchison.info/blog/2016-03-28-anki-rb/</link>
+      <pubDate>Mon, 28 Mar 2016 21:26:45 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2016-03-28-anki-rb/</guid>
+      <description>In the past few weeks I discovered Omniglot and Anki and thought it&#39;d be pretty cool to be able to create flashcards for the useful phrases listing. Being able to say &amp;ldquo;this guy pays for everything&amp;rdquo; in Turkish, or &amp;ldquo;my hovercraft is full of eels&amp;rdquo; in Norwegian could be an incredibly useful life skill.
+And so AnkiRB came into existence.
+The library basically replicates what the application itself does when you create flashcards via the gui, except uses ruby&#39;s sqlite package to create flashcards and bundle media files together.</description>
+    </item>
+    
+    <item>
+      <title>Compiling C with Rakefiles</title>
+      <link>https://donaldhutchison.info/blog/2014-10-19-compiling-c-with-rakefiles/</link>
+      <pubDate>Sun, 19 Oct 2014 19:46:40 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2014-10-19-compiling-c-with-rakefiles/</guid>
+      <description>Make is solid. It&#39;s been around since before the internet and still one of the most important tools used today. As such - it&#39;s tried, proven, tested, and was used in some of the most successful projects out there.
+&amp;hellip;but what are the chances that something so old got it right the first time? What are the chances that good old Make is the be-all, end-all, perfect ultimate solution for every possible development project?</description>
+    </item>
+    
+    <item>
+      <title>How to write a bug report</title>
+      <link>https://donaldhutchison.info/blog/2014-02-17-how-to-write-bug-reports/</link>
+      <pubDate>Mon, 17 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2014-02-17-how-to-write-bug-reports/</guid>
+      <description>Note: This is a post I created for internal distribution when writing bug reports for mobile applications. I&#39;m sharing it here because I think it&#39;s useful for future situations.
+ What&#39;s a bug report Bug reports exist only to inform people about software defects. They are not for notes, for tracking work done or for planning. There are better systems for this. The best bug reports will have as much appropriate information as possible to help asses get kicked as fast and effectively as possible.</description>
+    </item>
+    
+    <item>
+      <title>CCNode Recursive Description</title>
+      <link>https://donaldhutchison.info/blog/2014-02-04-ccnode-recursive-description/</link>
+      <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2014-02-04-ccnode-recursive-description/</guid>
+      <description>recusiveDescription is a pretty cool method. It&#39;s on each UIView, and when called it gives you a quick and dirty description of the current view hierarchy relative to that view.
+Usually you&#39;d use this in the debugger, whilst on a breakpoint, to sanity check the positions and children of a view. This is a short gist that adds the same functionality to a CCNode subclass - the common subclass of most visual entities in a Cocos2d project.</description>
+    </item>
+    
+    <item>
+      <title>Ruby Development in the Bar</title>
+      <link>https://donaldhutchison.info/blog/2014-02-02-ruby-at-the-bar/</link>
+      <pubDate>Sun, 02 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2014-02-02-ruby-at-the-bar/</guid>
+      <description>For reasons I won&#39;t get into, I found myself spending Christmas in Wick on the north east tip of Scotland. This being the second time it&#39;s occurred I was familiar with the quirks and isolation of this part of the world. One of the more upswinging things that happens is that every 26th December, there&#39;s a charity raffle in the local Seaforth Club. This is where you buy some tickets, drink, win prizes and drink some more.</description>
+    </item>
+    
+    <item>
+      <title>Global Game Jam 2014</title>
+      <link>https://donaldhutchison.info/blog/2014-01-30-global-game-jame2014/</link>
+      <pubDate>Thu, 30 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2014-01-30-global-game-jame2014/</guid>
+      <description>Last weekend was the Berlin Global Game Jam 2014. I&#39;d made it part of a new years resolution plan to get more involved and release some games / projects, and this represented the first step towards doing something.
+My awesome team and I worked all weekend making a twin stick style shooter in Unity. This was my first experience with Unity, and as such I spent most of the time watching tutorials and desparately deciphering the mysteries of Unity&#39;s component / entity system.</description>
+    </item>
+    
+    <item>
+      <title>Coffeescript &#43; RequireJS Skeleton Project</title>
+      <link>https://donaldhutchison.info/blog/2014-01-10-coffeescript-skeleton/</link>
+      <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2014-01-10-coffeescript-skeleton/</guid>
+      <description>After being introduced to the awesome pixi.js framework by a colleague, I decided to update an old project of mine to make screwing around with it a little easier. This skeleton project comes with everything you need to run a pretty decent setup, and all at the cost of only two command line options.
+Skeleton Project! The initial configuration is usually a pain for me, so I threw together an example project and some scripts to manage this.</description>
+    </item>
+    
+    <item>
+      <title>Jekyll Migration Woes</title>
+      <link>https://donaldhutchison.info/blog/2013-07-18-installing-jekyll-oh-lordy/</link>
+      <pubDate>Thu, 18 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2013-07-18-installing-jekyll-oh-lordy/</guid>
+      <description>After getting sick of wordpress I decided to do the cool hipster thing and move my blog to Jekyll. Both for the nerd credit and the super awesome minimal design (static site = no moving parts! awesome!). After reading about Josh Kaufman&#39;s experience with Jekyll in his book it sounded like a pretty easy and maintainable platform to blog on.
+However&amp;hellip; On the way I encountered a few issues that almost took the chill out of a refreshing Thursday night in Berlin.</description>
+    </item>
+    
+    <item>
+      <title>Optimising CoffeeScript files with r.js - &#34;Unexpected Character&#34;</title>
+      <link>https://donaldhutchison.info/blog/2012-06-11-optimising-coffeescript-files-with-r-js-unexpected-character/</link>
+      <pubDate>Mon, 11 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2012-06-11-optimising-coffeescript-files-with-r-js-unexpected-character/</guid>
+      <description>The Problem&amp;hellip; When trying to optimise a coffeescript project with the latest r.js optimiser from the requirejs npm module I ran into the following error:
+Cannot uglify file: /path/to/main.js. Skipping it. Error is: Unexpected character &amp;#39;&amp;#39; (line: 363, col: 3, pos: 15612) I downloaded the uglify-js package which r.js is using here to minify the script. Running it on the file in question in the output directory of the r.js build process gave me more information - specifically that uglify is dying on the character sequence ï»¿ - a utf-8 byte order mark.</description>
+    </item>
+    
+    <item>
+      <title>Coffeescript RequireJS and You!</title>
+      <link>https://donaldhutchison.info/blog/2012-04-24-coffeescript-requirejs-and-you/</link>
+      <pubDate>Tue, 24 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2012-04-24-coffeescript-requirejs-and-you/</guid>
+      <description>Contents  * Auto generated table of contents {:toc}   Best friends together at last! So you want to create a javascript application with some kind of non trivial complexity, but separating the functionality out into different script files gets hairy. You need to forward declare certain functions before you execute certain functions, and things need to be loaded before they can be displayed. Then when you add CoffeeScript into the mix you&#39;ve got a whole new set of problems.</description>
+    </item>
+    
+    <item>
+      <title>Conway&#39;s Game of Life in Ruby (gosu &#43; chingu)</title>
+      <link>https://donaldhutchison.info/blog/2010-06-06-conways-game-of-life-in-ruby-gosu-chingu/</link>
+      <pubDate>Sun, 06 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2010-06-06-conways-game-of-life-in-ruby-gosu-chingu/</guid>
+      <description>inspired by this awesome nds tracker and an old boingboing post, i decided to make an implementation of conway&#39;s game of life in ruby, using the gosu and chingu game development gems.
+after finding a way round the terrible deep cloning in ruby it was incredibly painless and very interesting. i like how the initial choice of cells influences whether you have a beautiful symmetrical oscillating pattern or a horrible cancerous mess, after 100 or so generations.</description>
+    </item>
+    
+    <item>
+      <title>2D OBB Collisions in XNA</title>
+      <link>https://donaldhutchison.info/blog/2010-03-07-2d-obb-collisions-in-xna/</link>
+      <pubDate>Sun, 07 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2010-03-07-2d-obb-collisions-in-xna/</guid>
+      <description>OBBs (Oriented Bounding Boxes) allow for a greater degree of accuracy than their axis aligned counterparts in the field of collision detection. It turns out this is a lot simpler to implement in 2D than 3D.
+Here&#39;s my own take on it, which I hope to put to heavy use in an ongoing project. The OBB is modelled by an orientation matrix (in the form of two Vector2&#39;s because the Matrix type seems to suck), an origin and a Vector2 representing the +ve half widths in the x and y axis.</description>
+    </item>
+    
+    <item>
+      <title>Search Results</title>
+      <link>https://donaldhutchison.info/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml
+[outputs] home = [&amp;quot;HTML&amp;quot;, &amp;quot;JSON&amp;quot;] Searching additional fileds To search additional fields defined in front matter, you must add it in 2 places.</description>
+    </item>
+    
+  </channel>
+</rss>

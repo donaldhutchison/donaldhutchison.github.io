@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/programming/</link>
+    <description>Recent content in programming on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jul 2016 19:16:03 +0000</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install referrer testing</title>
+      <link>https://donaldhutchison.info/blog/2016-07-05-install_referrer/</link>
+      <pubDate>Tue, 05 Jul 2016 19:16:03 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2016-07-05-install_referrer/</guid>
+      <description>Note: The broadcast referral functionality has been deprecated by Google Play and will be removed on March 2020. The new implementation involves connecting directly to the Play Store app - documentation is available at https://developer.android.com/google/play/installreferrer
+ The install referrer is an intent on android, which is broadcast after the app install to give the app information about the reason it was installed. This is useful if you&#39;re tracking marketing / paid installs and you want to tell between paid and organic installs.</description>
+    </item>
+    
+    <item>
+      <title>CCNode Recursive Description</title>
+      <link>https://donaldhutchison.info/blog/2014-02-04-ccnode-recursive-description/</link>
+      <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2014-02-04-ccnode-recursive-description/</guid>
+      <description>recusiveDescription is a pretty cool method. It&#39;s on each UIView, and when called it gives you a quick and dirty description of the current view hierarchy relative to that view.
+Usually you&#39;d use this in the debugger, whilst on a breakpoint, to sanity check the positions and children of a view. This is a short gist that adds the same functionality to a CCNode subclass - the common subclass of most visual entities in a Cocos2d project.</description>
+    </item>
+    
+    <item>
+      <title>Optimising CoffeeScript files with r.js - &#34;Unexpected Character&#34;</title>
+      <link>https://donaldhutchison.info/blog/2012-06-11-optimising-coffeescript-files-with-r-js-unexpected-character/</link>
+      <pubDate>Mon, 11 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2012-06-11-optimising-coffeescript-files-with-r-js-unexpected-character/</guid>
+      <description>The Problem&amp;hellip; When trying to optimise a coffeescript project with the latest r.js optimiser from the requirejs npm module I ran into the following error:
+Cannot uglify file: /path/to/main.js. Skipping it. Error is: Unexpected character &amp;#39;&amp;#39; (line: 363, col: 3, pos: 15612) I downloaded the uglify-js package which r.js is using here to minify the script. Running it on the file in question in the output directory of the r.js build process gave me more information - specifically that uglify is dying on the character sequence ï»¿ - a utf-8 byte order mark.</description>
+    </item>
+    
+    <item>
+      <title>Conway&#39;s Game of Life in Ruby (gosu &#43; chingu)</title>
+      <link>https://donaldhutchison.info/blog/2010-06-06-conways-game-of-life-in-ruby-gosu-chingu/</link>
+      <pubDate>Sun, 06 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2010-06-06-conways-game-of-life-in-ruby-gosu-chingu/</guid>
+      <description>inspired by this awesome nds tracker and an old boingboing post, i decided to make an implementation of conway&#39;s game of life in ruby, using the gosu and chingu game development gems.
+after finding a way round the terrible deep cloning in ruby it was incredibly painless and very interesting. i like how the initial choice of cells influences whether you have a beautiful symmetrical oscillating pattern or a horrible cancerous mess, after 100 or so generations.</description>
+    </item>
+    
+    <item>
+      <title>2D OBB Collisions in XNA</title>
+      <link>https://donaldhutchison.info/blog/2010-03-07-2d-obb-collisions-in-xna/</link>
+      <pubDate>Sun, 07 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2010-03-07-2d-obb-collisions-in-xna/</guid>
+      <description>OBBs (Oriented Bounding Boxes) allow for a greater degree of accuracy than their axis aligned counterparts in the field of collision detection. It turns out this is a lot simpler to implement in 2D than 3D.
+Here&#39;s my own take on it, which I hope to put to heavy use in an ongoing project. The OBB is modelled by an orientation matrix (in the form of two Vector2&#39;s because the Matrix type seems to suck), an origin and a Vector2 representing the +ve half widths in the x and y axis.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kindle on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/kindle/</link>
+    <description>Recent content in Kindle on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Jan 2018 12:41:05 -0500</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/kindle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jelly Splash (Android &#43; iOS)</title>
+      <link>https://donaldhutchison.info/projects/creations/jelly-splash/</link>
+      <pubDate>Thu, 11 Jan 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/projects/creations/jelly-splash/</guid>
+      <description>Jelly Splash was a cross platform mobile game where the goal was to connect as many jellies as possible in order to beat the level and advance. Jelly Splash has had over 75 million players and was a huge success for Wooga.
+As part of the core team, I was involved in daily feature development and maintenance. I focused heavily on the Android side in this project and was personally responsible for porting the game to the Kindle Fire store, where it was heavily featured and relatively successful given the market size.</description>
+    </item>
+    
+  </channel>
+</rss>

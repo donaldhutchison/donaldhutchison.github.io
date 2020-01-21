@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Donald Hutchison! Software Development!</title>
+  <meta property="og:title" content="Donald Hutchison! Software Development!" />
+  <meta property="og:image" content="https://donaldhutchison.info/img/me.jpeg" />
+  <meta name="description" content="Full Stack &#43; DevOps &#43; Mobile Engineer">
+  <meta property="og:description" content="Full Stack &#43; DevOps &#43; Mobile Engineer" />
+  <meta name="author" content="Donald Hutchison">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+  
+  <link href="https://donaldhutchison.info/css/resume.css" rel="stylesheet">
+  <link href="https://donaldhutchison.info/css/tweaks.css" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.62.2" />
+  
+   
+  
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Donald Hutchison</span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/me.jpeg" alt="">
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+      </li>
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#skills">Skills</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#projects">Projects</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#open">Open Source</a>
+          </li>
+      
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#blog">Blog</a>
+          </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid p-0">
+    
+<section class="resume-section p-3 p-lg-5 d-flex d-column" id="AnkiRB---spaced-repetition-flashcards-made-in-ruby">
+  <div class="my-auto">
+    <h1 class="mb-0"><span class="text-primary">AnkiRB - spaced repetition flashcards made in ruby</span></h1>
+    <p>In the past few weeks I discovered <a href="http://www.omniglot.com/">Omniglot</a> and <a href="http://ankisrs.net/">Anki</a> and thought it'd be pretty cool to be able to create flashcards for the <a href="http://www.omniglot.com/language/phrases/index.htm#lang">useful phrases</a> listing. Being able to say &ldquo;this guy pays for everything&rdquo; in Turkish, or &ldquo;my hovercraft is full of eels&rdquo; in Norwegian could be an incredibly useful life skill.</p>
+<p>And so <a href="https://github.com/rkachowski/anki-rb">AnkiRB</a> came into existence.</p>
+<p>The library basically replicates what the application itself does when you create flashcards via the gui, except uses ruby's sqlite package to create flashcards and bundle media files together.</p>
+<p>With a combination of this and some jQuery, its pretty easy to grab all the phrases + sound files for a language and create flashcards for them.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">require <span style="color:#e6db74">&#39;ankirb&#39;</span>
+
+<span style="color:#75715e">#create a deck</span>
+deck <span style="color:#f92672">=</span> <span style="color:#66d9ef">Anki</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Deck</span><span style="color:#f92672">.</span>new <span style="color:#e6db74">&#39;FancyExampleDeck&#39;</span>
+
+<span style="color:#75715e">#create a basic card</span>
+card <span style="color:#f92672">=</span> <span style="color:#66d9ef">Anki</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Card</span><span style="color:#f92672">.</span>new(<span style="color:#e6db74">:front</span><span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">What is the french for cheese omelette?</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74">:back</span><span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Omelette au fromage</span><span style="color:#e6db74">&#34;</span>)
+
+<span style="color:#75715e">#add audio to the back</span>
+card<span style="color:#f92672">.</span>back <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">dexters_lab_omelette.wav</span><span style="color:#e6db74">&#34;</span>
+
+<span style="color:#75715e">#add card to the deck</span>
+deck<span style="color:#f92672">.</span>add_card card
+
+<span style="color:#75715e">#export to ~/Anki/Decks/FancyExampleDeck.apkg</span>
+<span style="color:#66d9ef">Anki</span><span style="color:#f92672">::</span>apkg<span style="color:#f92672">.</span>export deck, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">~/Anki/Decks</span><span style="color:#e6db74">&#34;</span> </code></pre></div>
+
+  </div>
+</section>
+
+
+    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>
+    
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  
+  <script src="/js/resume.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=XX-123446-01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'XX-123446-01');
+  </script>
+  
+
+  
+</body>
+</html>

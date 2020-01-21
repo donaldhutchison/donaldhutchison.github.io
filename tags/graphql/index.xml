@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GraphQL on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/graphql/</link>
+    <description>Recent content in GraphQL on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Feb 2018 12:41:05 -0500</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/graphql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kiekmo (Android)</title>
+      <link>https://donaldhutchison.info/projects/creations/kiekmo/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/projects/creations/kiekmo/</guid>
+      <description>Kiekmo was an Android app developed for Hamburg Sparkasse and designed to bring customers physically into the branch locations by offering a free item storage system (for use with online sales ala ebay). The customer would place an item within a locker provided at a Sparkasse branch and receive a lock code via the app. The customer would then provide the code to whoever purchased their item online and conveniently let the buyer access the item at will.</description>
+    </item>
+    
+  </channel>
+</rss>

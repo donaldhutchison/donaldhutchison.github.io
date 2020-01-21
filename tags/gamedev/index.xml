@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gamedev on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/gamedev/</link>
+    <description>Recent content in gamedev on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Jun 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/gamedev/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Conway&#39;s Game of Life in Ruby (gosu &#43; chingu)</title>
+      <link>https://donaldhutchison.info/blog/2010-06-06-conways-game-of-life-in-ruby-gosu-chingu/</link>
+      <pubDate>Sun, 06 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2010-06-06-conways-game-of-life-in-ruby-gosu-chingu/</guid>
+      <description>inspired by this awesome nds tracker and an old boingboing post, i decided to make an implementation of conway&#39;s game of life in ruby, using the gosu and chingu game development gems.
+after finding a way round the terrible deep cloning in ruby it was incredibly painless and very interesting. i like how the initial choice of cells influences whether you have a beautiful symmetrical oscillating pattern or a horrible cancerous mess, after 100 or so generations.</description>
+    </item>
+    
+    <item>
+      <title>2D OBB Collisions in XNA</title>
+      <link>https://donaldhutchison.info/blog/2010-03-07-2d-obb-collisions-in-xna/</link>
+      <pubDate>Sun, 07 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2010-03-07-2d-obb-collisions-in-xna/</guid>
+      <description>OBBs (Oriented Bounding Boxes) allow for a greater degree of accuracy than their axis aligned counterparts in the field of collision detection. It turns out this is a lot simpler to implement in 2D than 3D.
+Here&#39;s my own take on it, which I hope to put to heavy use in an ongoing project. The OBB is modelled by an orientation matrix (in the form of two Vector2&#39;s because the Matrix type seems to suck), an origin and a Vector2 representing the +ve half widths in the x and y axis.</description>
+    </item>
+    
+  </channel>
+</rss>

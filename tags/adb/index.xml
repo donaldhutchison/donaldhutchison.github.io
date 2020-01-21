@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>adb on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/adb/</link>
+    <description>Recent content in adb on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Jul 2016 19:16:03 +0000</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/adb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install referrer testing</title>
+      <link>https://donaldhutchison.info/blog/2016-07-05-install_referrer/</link>
+      <pubDate>Tue, 05 Jul 2016 19:16:03 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2016-07-05-install_referrer/</guid>
+      <description>Note: The broadcast referral functionality has been deprecated by Google Play and will be removed on March 2020. The new implementation involves connecting directly to the Play Store app - documentation is available at https://developer.android.com/google/play/installreferrer
+ The install referrer is an intent on android, which is broadcast after the app install to give the app information about the reason it was installed. This is useful if you&#39;re tracking marketing / paid installs and you want to tell between paid and organic installs.</description>
+    </item>
+    
+  </channel>
+</rss>

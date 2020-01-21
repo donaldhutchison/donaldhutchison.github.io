@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Donald Hutchison! Software Development!</title>
+  <meta property="og:title" content="Donald Hutchison! Software Development!" />
+  <meta property="og:image" content="https://donaldhutchison.info/img/me.jpeg" />
+  <meta name="description" content="Full Stack &#43; DevOps &#43; Mobile Engineer">
+  <meta property="og:description" content="Full Stack &#43; DevOps &#43; Mobile Engineer" />
+  <meta name="author" content="Donald Hutchison">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+  
+  <link href="https://donaldhutchison.info/css/resume.css" rel="stylesheet">
+  <link href="https://donaldhutchison.info/css/tweaks.css" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.62.2" />
+  
+   
+  
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Donald Hutchison</span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/me.jpeg" alt="">
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+      </li>
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#skills">Skills</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#projects">Projects</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#open">Open Source</a>
+          </li>
+      
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#blog">Blog</a>
+          </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid p-0">
+    
+<nav aria-label="breadcrumb">
+  <ol  class="breadcrumb">
+    
+
+
+
+
+
+<li class="breadcrumb-item">
+  <a href="https://donaldhutchison.info/"></a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="https://donaldhutchison.info/blog/">Blogs</a>
+</li>
+
+
+<li class="breadcrumb-item active">
+  <a href="https://donaldhutchison.info/blog/2014-02-17-how-to-write-bug-reports/">How to write a bug report</a>
+</li>
+
+  </ol>
+</nav>
+
+
+
+
+<section class="resume-section p-3 p-lg-5 d-flex d-column">
+  <div class="my-auto">
+    <h2 ><span class="text-primary">How to write a bug report</span></h2>
+    <div class="text-primary">February 17, 2014</div>
+    </br>
+    <blockquote>
+<p><strong>Note:</strong> This is a post I created for internal distribution when writing bug reports for mobile applications. I'm sharing it here because I think it's useful for future situations.</p>
+</blockquote>
+<h2 id="whats-a-bug-report">What's a bug report</h2>
+<p>Bug reports exist only to inform people about software defects. They are not for notes, for tracking work done or for planning. There are better systems for this. The best bug reports will have as much appropriate information as possible to help asses get kicked as fast and effectively as possible.</p>
+<p>Including the correct information in a bug report will help the problem to be discovered, diagnosed and solved in a timely manner - without this information, more questions will be needed before an attempt can be made at trying to fix whatever went wrong.</p>
+<h2 id="what-should-be-in-a-bug-report">What should be in a bug report</h2>
+<h3 id="steps-to-reproduce">Steps to reproduce</h3>
+<p>The <em>most</em> important thing in a bug report is <em>reproduction steps</em>. This means a short description of what you did to make things go wrong. The best version of this will include only the steps necessary to recreate the defect. By following this, a developer should be able to come across the same problem as was reported by the tester / user. If the problem isn't always reproducible, a rough estimate of how often the problem occurs would be helpful in keeping sanity in check..</p>
+<p>This is useful not only in helping locate the issue, but can be used to identify duplicates or related issues.</p>
+<h3 id="version--device-information">Version / Device information</h3>
+<p>A listing of the artifact version and device used when the defect was encountered will help pinpoint where the problem lies and when it was released. It is also very helpful when trying to reproduce the problem in the same situation as it was discovered. Without this info, there is no way of really knowing if the problem has already been fixed or tracking it's lifetime.</p>
+<h3 id="tester-assumptions--expectations">Tester assumptions / expectations</h3>
+<p>Next, a listing of the results that the tester had in mind when encountering the problem can be used to help assess the validity of the problem. This is usually in the form of &ldquo;Expected Results&rdquo; and &ldquo;Actual Results&rdquo;, i.e. &ldquo;I <em>expected</em> the items in the well to increase when tapping on the resource icon, but what <em>actually</em> happened was that the application didn't respond to the input.&rdquo;</p>
+<h3 id="summary">Summary</h3>
+<p>A very short and concise summary is great. Try and balance it between being as short as possible and as specific as possible. &ldquo;Graphical Issues in UI&rdquo; is pretty bad, but there have been worse. &ldquo;UI distorted in Contact View with German locale&rdquo; is great.</p>
+<h3 id="other-awesome-things">Other awesome things</h3>
+<ul>
+<li>Screenshots - if it's a UI based issue or something that can only really be seen, screenshots are awesome</li>
+<li>Related Issues - if there are existing bugs that have a similar scope, linking against them will be useful in finding the severity of the issue.</li>
+<li>Logs / Crash Dumps / Stack Traces - if you have related logs, please attach them to your ticket. Everyone will love you for it.</li>
+</ul>
+<h2 id="an-example-bug-report">An example bug report</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Items are uncollectable on far left of screen
+
+If you try to touch something on the left edge of the screen <span style="color:#f92672">(</span>a resource or collectable item<span style="color:#f92672">)</span>, the touch seems to be registered in the wrong place and the item cannot be collected.
+
+To Reproduce:  
+1. Start harvesting something on the left edge of the map <span style="color:#f92672">(</span>in an explored area<span style="color:#f92672">)</span>  
+2. Move the screen so that the object is just barely contained within the viewport  
+3. Try to tap on the item  
+
+Expected:  
+You can collect the stuff, and the functionality works as <span style="color:#66d9ef">if</span> it was touched in regular circumstances.
+
+Actual:  
+The wrong functionality is invoked. In the above <span style="color:#66d9ef">case</span> an <span style="color:#e6db74">&#34;Explore Area&#34;</span> popup is usually shown, as <span style="color:#66d9ef">if</span> an expansion had been tapped instead of a resource.
+
+Incidence:  
+Happens about <span style="color:#ae81ff">3</span> out of <span style="color:#ae81ff">5</span> times
+
+Tested on:  
+* Snapshot <span style="color:#75715e">#2874</span>
+* iphone5 running ios 6.1.4</code></pre></div>
+
+    
+    <ul class="tags">
+    
+      <li><a class="tag" href="/tags/qa">qa</a></li>
+    
+      <li><a class="tag" href="/tags/testing">testing</a></li>
+    
+      <li><a class="tag" href="/tags/software">software</a></li>
+    
+      <li><a class="tag" href="/tags/bugs">bugs</a></li>
+    
+</ul>
+
+  </div>
+</section>
+
+
+    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>
+    
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  
+  <script src="/js/resume.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=XX-123446-01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'XX-123446-01');
+  </script>
+  
+
+  
+</body>
+</html>

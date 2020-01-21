@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ruboto on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/ruboto/</link>
+    <description>Recent content in ruboto on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Feb 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/ruboto/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ruby Development in the Bar</title>
+      <link>https://donaldhutchison.info/blog/2014-02-02-ruby-at-the-bar/</link>
+      <pubDate>Sun, 02 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2014-02-02-ruby-at-the-bar/</guid>
+      <description>For reasons I won&#39;t get into, I found myself spending Christmas in Wick on the north east tip of Scotland. This being the second time it&#39;s occurred I was familiar with the quirks and isolation of this part of the world. One of the more upswinging things that happens is that every 26th December, there&#39;s a charity raffle in the local Seaforth Club. This is where you buy some tickets, drink, win prizes and drink some more.</description>
+    </item>
+    
+  </channel>
+</rss>

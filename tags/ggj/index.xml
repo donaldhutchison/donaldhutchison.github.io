@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ggj on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/ggj/</link>
+    <description>Recent content in ggj on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jan 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/ggj/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Global Game Jam 2014</title>
+      <link>https://donaldhutchison.info/blog/2014-01-30-global-game-jame2014/</link>
+      <pubDate>Thu, 30 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2014-01-30-global-game-jame2014/</guid>
+      <description>Last weekend was the Berlin Global Game Jam 2014. I&#39;d made it part of a new years resolution plan to get more involved and release some games / projects, and this represented the first step towards doing something.
+My awesome team and I worked all weekend making a twin stick style shooter in Unity. This was my first experience with Unity, and as such I spent most of the time watching tutorials and desparately deciphering the mysteries of Unity&#39;s component / entity system.</description>
+    </item>
+    
+  </channel>
+</rss>

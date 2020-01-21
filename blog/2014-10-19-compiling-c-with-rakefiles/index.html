@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Donald Hutchison! Software Development!</title>
+  <meta property="og:title" content="Donald Hutchison! Software Development!" />
+  <meta property="og:image" content="https://donaldhutchison.info/img/me.jpeg" />
+  <meta name="description" content="Full Stack &#43; DevOps &#43; Mobile Engineer">
+  <meta property="og:description" content="Full Stack &#43; DevOps &#43; Mobile Engineer" />
+  <meta name="author" content="Donald Hutchison">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+  
+  <link href="https://donaldhutchison.info/css/resume.css" rel="stylesheet">
+  <link href="https://donaldhutchison.info/css/tweaks.css" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.62.2" />
+  
+   
+  
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Donald Hutchison</span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/me.jpeg" alt="">
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+      </li>
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#skills">Skills</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#projects">Projects</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#open">Open Source</a>
+          </li>
+      
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#blog">Blog</a>
+          </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid p-0">
+    
+<nav aria-label="breadcrumb">
+  <ol  class="breadcrumb">
+    
+
+
+
+
+
+<li class="breadcrumb-item">
+  <a href="https://donaldhutchison.info/"></a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="https://donaldhutchison.info/blog/">Blogs</a>
+</li>
+
+
+<li class="breadcrumb-item active">
+  <a href="https://donaldhutchison.info/blog/2014-10-19-compiling-c-with-rakefiles/">Compiling C with Rakefiles</a>
+</li>
+
+  </ol>
+</nav>
+
+
+
+
+<section class="resume-section p-3 p-lg-5 d-flex d-column">
+  <div class="my-auto">
+    <h2 ><span class="text-primary">Compiling C with Rakefiles</span></h2>
+    <div class="text-primary">October 19, 2014</div>
+    </br>
+    <p><a href="https://www.gnu.org/software/make/">Make</a> is solid. It's been around since before the internet and still one of the most important tools used today. As such - it's tried, proven, tested, and was used in some of the most successful projects out there.</p>
+<p>&hellip;but what are the chances that something so old got it right the first time? What are the chances that good old <em>Make</em> is the be-all, end-all, perfect ultimate solution for every possible development project? Of course not, and noone says it is - so let's try an exercise in frustration and compile some C using <a href="https://github.com/jimweirich/rake">Rake</a> - the cool fresh ruby little brother to big pappy Make.</p>
+<h3 id="whats-rake">What's Rake?</h3>
+<blockquote>
+<p>Rake is a Make-like program implemented in Ruby</p>
+</blockquote>
+<p><em>Rake</em> is Ruby's version of the <em>Make</em> build system. Created in 2003 by the late Jim Weirich, it's goal is to get away from the idiosyncratic build system syntax and express build rules in plain Ruby. According to <a href="https://en.wikipedia.org/wiki/Jim_Weirich#Rake">wikipedia</a>, it's the most downloaded ruby gem of all time and has been bundled with OSX since 2011.</p>
+<p>Rake has a diverse set of functions but in my experience it's primarily used to drive a single command line interface for a ton of unrelated scripts and tools. By invoking your scripts from rake tasks you can create a single unified point of access for both developers and other tools to work with. This is cool for a variety of reasons, e.g. having a Continuous Integration server run the rake task directly gives a build system that is both under version control and available locally. But this is true of many build systems&hellip; Where <em>Rake</em> really shines is in it's incredibly powerful <code>File</code>, <code>Rule</code> and <code>Task</code> functionality.</p>
+<p>I was lucky enough to see Jim's <a href="https://www.youtube.com/watch?v=KaEqZtulOus">Power Rake</a> presentation at the Scottish Ruby Conference in 2012 where he spoke at length about the awesomeness of the <code>pathmap</code> method and the <code>FileList</code> class. Why not use these tools for modern C development? Even though one of the <a href="https://github.com/jimweirich/rake/blob/de564de4e2f189e1b133e4adf05ab8fc820a044b/rake/doc/example/Rakefile1">first examples</a> ever provided was using Rake to compile a basic C program, it still lacks behind <em>Make</em>&lsquo;s out of the box no-config compilation rules. Let's see what it takes to get a <em>Rake</em> to walk like a <em>Make</em>.</p>
+<h3 id="lets-make-rake-like-make">Let's Make Rake Like Make</h3>
+<p>Even without a Makefile, <em>Make</em> can still work out how to compile and link your C files. Without a Rakefile, <em>Rake</em> is a thing that isn't useful.</p>
+<p>This is because of the huge library of implicit rules and behaviour that <em>Make</em> has collected over it's lifetime in the battlefield. Type <code>make -p</code> in a directory without a Makefile to list what it already knows before you've told it anything. Rake has none of this, so we'll need to replicate some functionality before we have a contender on our hands.</p>
+<h4 id="our-goal">Our Goal</h4>
+<p>What we want is the same &ldquo;no config&rdquo; approach in Rake that Make has. Given a directory that looks like</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">├── Rakefile
+├── foo.c</code></pre></div>
+<p>We want to be able to run <code>rake foo</code> and end up with an executable named <code>foo</code>. Additionally we could also run <code>rake foo.o</code> and create the intermediate object file directly.</p>
+<h4 id="stealing-makes-implicit-rules">Stealing Make's Implicit Rules</h4>
+<p>The functionality we need to steal from <em>Make</em> to get our basic compilation working is</p>
+<ul>
+<li><strong>creating .o files from .c files</strong></li>
+<li><strong>creating executables</strong></li>
+<li><strong>automatically linking object files we depend on</strong></li>
+</ul>
+<p>We can see from Rake's <a href="https://github.com/jimweirich/rake/blob/f374191fdeca537c57472bb2b469f4b5faa8ed7f/lib/rake/task_manager.rb#L66">task manager</a> source that a file
+task is generated when rake is given an argument which matches an existing file in the pwd. Now that we know this fact, we can add rules that will force arbitrary filenames passed to <em>Rake</em> result in compilation.</p>
+<h4 id="creating-o-files-from-c-files">Creating .o Files From .c Files</h4>
+<p>The first step will be to compile an object ( <code>.o</code>) file from a corresponding <code>.c</code> file. <em>Make</em> has this defined as <code>$(CC) $(CFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c</code>, stripping this down and expressing it in <em>Rake</em>&lsquo;s rule syntax, we get</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">rule <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">.o</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">.c</span><span style="color:#e6db74">&#34;</span> <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>t<span style="color:#f92672">|</span>
+    <span style="color:#e6db74">`</span><span style="color:#e6db74">cc -c </span><span style="color:#e6db74">#{</span>t<span style="color:#f92672">.</span>source<span style="color:#e6db74">}</span><span style="color:#e6db74"> -o </span><span style="color:#e6db74">#{</span>t<span style="color:#f92672">.</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+<span style="color:#66d9ef">end</span></code></pre></div>
+<p>The first line basically says &ldquo;whenever I need a *.o file, I also need an existing .c file with the same name&rdquo;. Now in our example - when we run <code>rake foo.o</code>, the foo.o will match against the .o section, and then following the rule rake will look for a corresponding <code>foo.c</code> file, find it, and finally execute the block.</p>
+<p>Rake passes a <a href="https://github.com/jimweirich/rake/blob/master/lib/rake/task.rb">Task</a> instance into the block, which is populated with a lot of information about the rule we just followed. From this task we take out the source (<code>foo.c</code>) and the output name (<code>foo.o</code>) and then pass them into the compiler via a shell invocation.</p>
+<h4 id="create-executable-from-c">Create Executable From .c</h4>
+<p>What we want to do here is solve the situation of <code>rake foo</code> and directly create an executable without the intermediate fluff hanging around. This can be done by matching the rule against a regular expression.</p>
+<p>Rather awkwardly, we want something that matches against a string <em>without</em> a file extension. To specify that we match against any string would end up creating a circular dependency with the rule above. We can naively match a file extension with the expression <code>/\w*\.\w*/</code> (we're not going to take multiple dots in filename into account), then we can <a href="http://zijab.blogspot.de/2008/09/finding-opposite-of-regular-expression.html">invert that pattern</a> and get the horrible looking <code>/^((?!\w*\.\w*).)*$/</code>which should match any single word without a file extension attached.</p>
+<p>Throwing that into <em>Rake</em> and adding the compilation + linking will give us</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">rule <span style="color:#e6db74">/</span><span style="color:#e6db74">^((?!</span><span style="color:#e6db74">\</span><span style="color:#e6db74">w*</span><span style="color:#e6db74">\</span><span style="color:#e6db74">.</span><span style="color:#e6db74">\</span><span style="color:#e6db74">w*).)*$</span><span style="color:#e6db74">/</span> <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">.c</span><span style="color:#e6db74">&#34;</span> <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>t<span style="color:#f92672">|</span>
+    <span style="color:#e6db74">`</span><span style="color:#e6db74">cc </span><span style="color:#e6db74">#{</span>t<span style="color:#f92672">.</span>source<span style="color:#e6db74">}</span><span style="color:#e6db74"> -o </span><span style="color:#e6db74">#{</span>t<span style="color:#f92672">.</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+<span style="color:#66d9ef">end</span></code></pre></div>
+<h4 id="linking-from-multiple-files">Linking From Multiple Files</h4>
+<p>So far so good. We can now compile very simple C executables with nothing but Ruby. Granted, we need the presence of a Rakefile and some arcane rules to compile everything correctly, but we can compile arbitrary programs nonetheless.</p>
+<p>But what if we want to do something non trivial?? With a single line in a Makefile like <code>x: y.o z.o</code> we can compile and link against any number of object files. This makes it  actually useful! How can we go about adding this into <em>Rake</em>?</p>
+<p>Pretty easily actually, thanks to the Ruby standard library. As mentioned above, the <code>Task</code> object in <em>Rake</em> contains a lot of useful information, including a list of dependencies for the task. We can extract any object files and then pass them into the call to <code>cc</code> by changing the rule above as follows.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">rule <span style="color:#e6db74">/</span><span style="color:#e6db74">^((?!</span><span style="color:#e6db74">\</span><span style="color:#e6db74">w*</span><span style="color:#e6db74">\</span><span style="color:#e6db74">.</span><span style="color:#e6db74">\</span><span style="color:#e6db74">w*).)*$</span><span style="color:#e6db74">/</span> <span style="color:#f92672">=</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">.c</span><span style="color:#e6db74">&#34;</span> <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>t<span style="color:#f92672">|</span>
+    deps <span style="color:#f92672">=</span> t<span style="color:#f92672">.</span>prerequisites
+    objects <span style="color:#f92672">=</span> deps<span style="color:#f92672">.</span>select { <span style="color:#f92672">|</span>d<span style="color:#f92672">|</span> d<span style="color:#f92672">.</span>pathmap <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">.o</span><span style="color:#e6db74">&#34;</span> }
+    <span style="color:#e6db74">`</span><span style="color:#e6db74">cc </span><span style="color:#e6db74">#{</span>t<span style="color:#f92672">.</span>source<span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">#{</span>objects<span style="color:#f92672">.</span>join <span style="color:#e6db74">&#39; &#39;</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> -o </span><span style="color:#e6db74">#{</span>t<span style="color:#f92672">.</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+<span style="color:#66d9ef">end</span></code></pre></div>
+<p>Now if we add a similar rule to our <em>Rakefile</em> (in our case <code>file 'x' =&gt; [&quot;y.o',&quot;z.o&quot;]</code>) <em>Rake</em> will resolve the dependencies, compiling <code>y.c</code> and <code>z.c</code> into object files before compiling <code>x.c</code> and linking against <code>y.o</code> and <code>z.o</code>. Cool!</p>
+<p>Now (after some minor tidying) we have a  very basic <em>Rakefile</em> like this which will let us compile just like we're using <em>Make</em></p>
+<script type="application/javascript" src="https://gist.github.com/rkachowski/be91c426b46725c20250.js"></script>
+
+<h3 id="round-one---fight">Round One - Fight!</h3>
+<p>OK, now we have our contender. Let's throw him in the ring and see how he stands against a pro. Let's not start small, let's go all out brave or grave. We're going to take the <em>Makefile</em> from <a href="http://zedshaw.com/">Zed A. Shaw's</a> awesome <a href="http://c.learncodethehardway.org/">Learn C The Hard Way</a> series, and see how we can trick out our <em>Rakefile</em> to do the same tasks. Then we'll decide which solution is more convenient, readable and maintainable.</p>
+<p>After following through <em>Learn C The Hard Way</em> you end up with a <em>Makefile</em> that should look like <a href="https://github.com/rkachowski/c-the-hard-way/blob/master/liblcthw/Makefile">this</a>. There's quite a lot going on here - a lot of tasks and targets with multiple dependencies and outputs. What we are trying to do here is replicate the exact same functionality, all tasks, in our <em>Rakefile</em>. Let's quickly breakdown what's going on and see what's there.</p>
+<h4 id="zeds-makefile-contents">Zed's Makefile contents</h4>
+<p>I'm going to give a very brief overview of the cool <em>Rake</em> features that we're going to use to get the same result as what's going on in this Makefile.</p>
+<h4 id="configuration">Configuration</h4>
+<p><em>Make</em> has a lot of variables built into it's compilation rules, which allows for a very flexible and direct means of passing parameters into the build commands. You can see this is used in the <a href="https://github.com/rkachowski/c-the-hard-way/blob/master/liblcthw/Makefile#L1">first line of the Makefile</a>. Since <em>Rake</em> doesn't have any of this by default, we're going to take a simple means of keeping our config in constants, without optional environment overrides.</p>
+<h4 id="source-files">Source Files</h4>
+<p>In <a href="https://github.com/rkachowski/c-the-hard-way/blob/master/liblcthw/Makefile#L5-9">lines 5-9 of the Makefile</a>, we can see that applicable file lists are being constructed using <em>Make</em>&lsquo;s built in filesystem functions, <code>wildcard</code> and <code>pathsubst</code>. This is where we can use <em>Rake</em>&lsquo;s awesome <code>FileList</code> class to construct these collections. In addition, <em>Rake</em> extends the <code>String</code> class with some nice methods that let us interact with standard strings as if they are filepaths. Changing file extensions and getting path components is really easy with this functionality. We'll use the same approach for the target definitions too.</p>
+<h4 id="tasks">Tasks</h4>
+<p>Here's where we start getting into the actual work of the build system. <em>Make</em>&lsquo;s default task is simply the first declared in the Makefile, <em>Rake</em> has an explicit <code>:default</code> task that can be set to  any desired value. We can set dependencies to have the default task build everything, much like in Zed's Makefile.</p>
+<p>The interesting part comes to when we encounter the programmatic tasks, like the <code>$(PROGRAMS)</code> task on <a href="https://github.com/rkachowski/c-the-hard-way/blob/master/liblcthw/Makefile#L22">line 22</a>. Here the <code>PROGRAMS</code> variable has been set to the contents of the <code>bin</code> directory, but with all suffixes removed - to indicate executable files that need to be created. This is already handled by the rules we made earlier, but the Makefile also modifies the <code>CFLAGS</code> variable to link against the entire built library.</p>
+<p>Here we can see that <em>Make</em> has a pretty interesting feature where it exploits a the way it variables, and essentially changes the existing <code>CFLAGS</code> variable <em>within the scope of a certain task.</em> This means that <code>CFLAGS</code> refers to something different for each task, namely it has the built library appended to it for the <code>PROGRAMS</code> and <code>SO_TARGET</code> tasks.</p>
+<p>For more info on how make does this, you can check out <em>Make's</em> manual in the section <a href="https://www.gnu.org/software/make/manual/make.html#Flavors">Two Flavours of Variable</a>
+{: .notice}</p>
+<p>This is another feature we're going to have to replicate in <em>Rake</em>, and since we are just looking to prove a concept - unfortunately it's going to be a bit dirty. Instead of the variable replacement functionality, we'll just add the ability to specify additional <code>CFLAGS</code> for a task. Having task specific options implies a place to store task specific information, so let's do the bad thing and open up the <code>Task</code> class and add a field to it. In doing this we are tying the abstract concept of a build task to concrete C compiler options - and in a larger project that would be totally inexcusable - but in the context of a single <code>Rakefile</code> let's just go for it.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">module</span> Rake
+    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Task</span>
+        <span style="color:#66d9ef">attr_accessor</span> <span style="color:#e6db74">:task_flags</span>
+        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e"></span><span style="color:#f92672"></span><span style="color:#a6e22e">task_flags</span>
+            @task_flags <span style="color:#f92672">||</span><span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#f92672">]</span>
+            @task_flags
+        <span style="color:#66d9ef">end</span>
+    <span style="color:#66d9ef">end</span>
+<span style="color:#66d9ef">end</span></code></pre></div>
+<h5 id="clean-and-clobber">Clean and Clobber</h5>
+<p>Simply by adding the line <code>require 'rake/clean'</code>, we get <code>clean</code> and <code>clobber</code> tasks for free (<code>clobber</code> is <code>clean</code>'s big brother, removing all generated files instead of just intermediate files). This is supported via the addition of two built in <code>FileList</code> instances with the appropriate names. By adding files to this list we can ensure that they'll be cleaned up with the correct task.</p>
+<h5 id="tests">Tests</h5>
+<p>By default in <em>Make</em>, every task is a file task. This means that for every task you declare, <em>Make</em> wants to create a file with the same name. If a file with that name already exists, then nothing will happen. In this case we have a &ldquo;tests&rdquo; directory and a task with the same name. To override this feature in <em>Make</em> you can add the file to the <code>.PHONY</code> target, which basically means &ldquo;run this task even if it's file exists anyway&rdquo;. In <em>Rake</em> we don't have such problems, so we can just define standard task's and skip along our merry way.</p>
+<h5 id="valgrind">Valgrind</h5>
+<p>One final quirk that we need to address is how <em>Learn C the Hard Way</em> tells it's test script to run the unit tests under <a href="http://valgrind.org/">Valgrind</a>. From <em>Make</em> we can export variables directly to the environment, whilst with <em>Rake</em> we will need to do this explicitly in our shell invocations. We can use the convenience method we implemented above, and due to the way <a href="http://www.ruby-doc.org/core-2.1.3/Kernel.html#method-i-system">Kernel#system</a> takes an optional hash as the first parameter for environment vars, we can just add our stuff here.</p>
+<h3 id="conclusion">Conclusion!</h3>
+<p>Awesome! We can now build and link our library using nothing but <em>Rake</em>. Following the steps above, we now have a <a href="https://github.com/rkachowski/c-the-hard-way/blob/master/liblcthw/Rakefile">Rakefile that looks like this</a>, and can do everything our <em>Makefile</em> initially did.</p>
+<p>Except uh&hellip; we have almost doubled the LOC&hellip; we've made awful compromises to one of the core classes of <em>Rake</em> itself, and we don't nearly have the flexibility and control that <em>Make</em> gives us from the get go. It's pretty clear from this that we are forcing <em>Rake</em> to do something that it's not totally designed for. Not to mention the dependencies and portablity concerns we're placing on having Ruby + Rake installed on every target build machine. Were we to take this further we'd ideally have a set of <code>Task</code> / <code>FileTask</code> subclasses to encapsulate any C specific options, and we'd have a set of rules that match <em>Make</em>&lsquo;s impressive repertoire that we could painlessly import at the top.</p>
+<p>It looks like <em>Make</em> is the Apollo Creed to <em>Rake</em>&lsquo;s Rocky Balboa. <em>Make</em> has ultimately won out in the first instance through technical prowess and experience, but perhaps in a series of unsatisfying followup movies (read: blog posts) <em>Rake</em> will come back to win the world heavyweight build system title. It's clear that <em>Rake</em> can go the distance once you put in enough effort.</p>
+
+    
+    <ul class="tags">
+    
+      <li><a class="tag" href="/tags/ruby">ruby</a></li>
+    
+      <li><a class="tag" href="/tags/rake">rake</a></li>
+    
+      <li><a class="tag" href="/tags/c">c</a></li>
+    
+</ul>
+
+  </div>
+</section>
+
+
+    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>
+    
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  
+  <script src="/js/resume.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=XX-123446-01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'XX-123446-01');
+  </script>
+  
+
+  
+</body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/tools/</link>
+    <description>Recent content in Tools on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Jan 2018 12:41:05 -0500</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SpriteBuilder (MacOS)</title>
+      <link>https://donaldhutchison.info/projects/creations/sprite-builder/</link>
+      <pubDate>Fri, 12 Jan 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/projects/creations/sprite-builder/</guid>
+      <description>Whether you’re an expert developer or just getting started, SpriteBuilder will help you build top-quality games in a fraction of the time. Open source and free.o
+ SpriteBuilder is an IDE designed around Swift / Objective C games development with the Cocos2D framework. Using SpriteBuilder you can visually design games and applications through the editor and know they will look consistent on both iOS and Android.
+As one of the core team members I was responsible for working with the community, managing pull requests and helping guide the roadmap.</description>
+    </item>
+    
+  </channel>
+</rss>

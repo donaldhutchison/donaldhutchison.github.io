@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Donald Hutchison! Software Development!</title>
+  <meta property="og:title" content="Donald Hutchison! Software Development!" />
+  <meta property="og:image" content="https://donaldhutchison.info/img/me.jpeg" />
+  <meta name="description" content="Full Stack &#43; DevOps &#43; Mobile Engineer">
+  <meta property="og:description" content="Full Stack &#43; DevOps &#43; Mobile Engineer" />
+  <meta name="author" content="Donald Hutchison">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+  
+  <link href="https://donaldhutchison.info/css/resume.css" rel="stylesheet">
+  <link href="https://donaldhutchison.info/css/tweaks.css" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.62.2" />
+  
+   
+  
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Donald Hutchison</span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/me.jpeg" alt="">
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+      </li>
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#skills">Skills</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#projects">Projects</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#open">Open Source</a>
+          </li>
+      
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#blog">Blog</a>
+          </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid p-0">
+    
+<section class="resume-section p-3 p-lg-5 d-flex d-column" id="Coffeescript-RequireJS-and-You!">
+  <div class="my-auto">
+    <h1 class="mb-0"><span class="text-primary">Coffeescript RequireJS and You!</span></h1>
+    <section id="table-of-contents" class="toc">
+  <header>
+    <h3>Contents</h3>
+  </header>
+<div id="drawer" markdown="1">
+*  Auto generated table of contents
+{:toc}
+</div>
+</section>
+<h2 id="best-friends-together-at-last">Best friends together at last!</h2>
+<p>So you want to create a javascript application with some kind of non trivial complexity, but separating the functionality out into different script files gets hairy. You need to forward declare certain functions before you execute certain functions, and things need to be loaded before they can be displayed. </p>
+<p>Then when you add <a href="http://coffeescript.org/">CoffeeScript</a> into the mix you've got a whole new set of problems. Ultimately you want one big file containing the logic of your application, but unless you've passed your discrete <i>.coffee </i>files to the coffee compiler (or included them in the head of your html) in a specific order, you won't be able to execute functions before they've been declared. </p>
+<h2 id="oh-no-save-me-requirejs">Oh no save me, RequireJS!</h2>
+<p>What <a href="http://requirejs.org/">RequireJS</a> does in this situation is provide a solution to the dependency problem mentioned above. What you do is create your separate script files to the <a href="https://github.com/amdjs/amdjs-api/wiki/AMD">AMD</a> format, which tells you to explicitly mention the files (modules) that each script file depends upon. You do this by wrapping your script in a call to the function <a href="http://requirejs.org/docs/api.html#define">define</a>, where the parameters passed to <code>define</code> reference the dependencies of your new script.</p>
+<p>By returning from this <code>define</code> function, you decide what to expose from this module when it's requested by something else. This is similar to the <code>exports.blah = ExportedObject</code> format within CommonJS. If we manipulate exactly what is returned we can expose any number of class definitions, functions or arbitrary values that we choose.</p>
+<h2 id="lets-go">Let's Go</h2>
+<h3 id="setup">Setup</h3>
+<p>We're going to make a test project to understand how to make these things work together. This will give us an idea of how to structure our application in a way that removes the problems of dependency resolution. The first thing we'll need to do is to get the required libraries to run RequireJS with CoffeeScript. The specific files we need are as follows:</p>
+<ul>
+<li>The RequireJS library</li>
+<ul>
+<li><a href="http://requirejs.org/docs/download.html">http://requirejs.org/docs/download.html</a></li>
+</ul>
+<li>The CoffeeScript plugin for RequireJS</li>
+<ul>
+<li><a href="https://raw.github.com/jrburke/require-cs/latest/cs.js">https://raw.github.com/jrburke/require-cs/latest/cs.js</a></li>
+</ul>
+<li>The latest <i>coffee-script.js</i> compiler (for use with the above plugin)</li>
+<ul>
+<li><a href="https://raw.github.com/jashkenas/coffee-script/master/extras/coffee-script.js">https://raw.github.com/jashkenas/coffee-script/master/extras/coffee-script.js</a></li>
+</ul>
+</ul>
+<p>Next we'll create some folders for our application, and for the sake of this example we'll organise the above files that we've downloaded as follows. </p>
+<p><img src="http://3.bp.blogspot.com/-9JMMfQqrthc/T4wXMwmsdpI/AAAAAAAAAdI/j2B_0KSZ1gE/s1600/Screen+Shot+2012-04-16+at+13.57.00.png" alt="">
+Our file layout on disk
+{: .notice }</p>
+<p>Next we'll create our html file for loading the scripts, this'll be nothing more than a standard html document with a script tag in the head to load the <i>require.js</i> library.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+&lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;RequireJS + Coffeescript&lt;/<span style="color:#f92672">title</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lib/require.js&#34;</span> <span style="color:#a6e22e">data-main</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;src/main&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;/<span style="color:#f92672">head</span>&gt;
+&lt;<span style="color:#f92672">body</span>&gt;
+    
+&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+<p>Note the <i>data-main </i>attribute on the script tag. This is specific to RequireJS, and it defines the entry point to our application. What we're doing is telling RequireJS where the first file we want to execute is located, in this case it's at &ldquo;<i>src/main.js</i>&rdquo; (we've intentionally left out the <i>.js</i> suffix on this path). </p>
+<p>We could set this to be anywhere in the directory tree, but it's important that the <i>coffee-script.js</i> and <i>cs.js</i> files are located in the same place as the entry point. Also at this point we want to <b><u>rename</u></b> <i>coffee-script.js</i> <b><u>to</u></b> <i>CoffeeScript.js. </i>This is a requirement specific to the <i>cs.js</i> plugin.</p>
+<p>Now we'll create a simple <i>main.js</i> file for use in our application. We'll make sure it follows the AMD format by wrapping everything in a <i>define</i> call, and because we don't yet depend on anything it'll be straightforward.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">define</span>([], <span style="color:#66d9ef">function</span>(){
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Running main.js!&#34;</span>);
+});
+</code></pre></div>
+<p>Our tree should now look like this:</p>
+<p><img src="http://1.bp.blogspot.com/-3yNdVUICo-A/T4xKKVq_PAI/AAAAAAAAAdg/USB6k2r38zg/s1600/Screen+Shot+2012-04-16+at+17.34.27.png" alt="">
+{: .notice }</p>
+<p>From here we can serve the files from the root of the project, and we should see our message output in the console for the index page.</p>
+<p><img src="http://4.bp.blogspot.com/-Rrla57aSdaM/T4wcTaLeVnI/AAAAAAAAAdY/syTx25m8OpE/s1600/Screen+Shot+2012-04-16+at+14.18.49.png" alt=""></p>
+<p>It's humble, but that little message means we've almost configured everything correctly, and we can finally get down to writing the logic of our application. whoopty doo!</p>
+<h3 id="the-application">The application</h3>
+<p>We'll create a simple test application in coffeescript. Let's make it simple and add some text to the dom when the user clicks on the page. We'll do it in three steps</p>
+<ul>
+<li>populate the dom with a super cool html button</li>
+<li>bind to a click event and write to the console</li>
+<li>bind to the same event and add some text to the page</li>
+</ul>
+<p>For demonstrating how to organise an application, we'll also experiment with different ways of returning values from a module to show how we can expose different objects.</p>
+<h3 id="adding-a-button-to-the-page">Adding a button to the page</h3>
+<p>We'll do this by creating a module which simply adds a standard button element to the page. We'll call into this module from our <i>main.js </i>module utilising the CoffeeScript plugin we have sitting nicely in the <i>src</i> folder.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-coffeescript" data-lang="coffeescript"><span style="color:#a6e22e">define</span> [], <span style="color:#a6e22e">() -&gt;</span>
+    <span style="color:#a6e22e">-&gt;</span>
+        input = document.<span style="color:#a6e22e">createElement</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">button</span><span style="color:#e6db74">&#34;</span>
+        input.innerText = <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Super Cool Test Button!</span><span style="color:#e6db74">&#34;</span>
+        <span style="color:#a6e22e">input</span>.<span style="color:#a6e22e">setAttribute</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">id</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">the-button</span><span style="color:#e6db74">&#34;</span>
+        document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">input</span><span style="color:#e6db74">&#34;</span></code></pre></div>
+<p>As before, we've created a file that follows the AMD format. This is implemented via wrapping the entire module in a <i>define</i> call. The empty array is to say that this module depends on nothing, and the empty parameter list for the function reflects that we aren't passing any dependencies in.</p>
+<p>What's happening here is that within the define call we are saying &ldquo;here comes a module with no dependencies&rdquo; - then within that function we are defining a single function which manipulates the dom to add a button to the document</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-coffeescript" data-lang="coffeescript">        input = document.<span style="color:#a6e22e">createElement</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">button</span><span style="color:#e6db74">&#34;</span>
+        input.innerText = <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Super Cool Test Button!</span><span style="color:#e6db74">&#34;</span>
+        <span style="color:#a6e22e">input</span>.<span style="color:#a6e22e">setAttribute</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">id</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">the-button</span><span style="color:#e6db74">&#34;</span>
+        document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">input</span><span style="color:#e6db74">&#34;</span></code></pre></div>
+<p>Because this is CoffeeScript, the last expression of a function is returned. In this case, the last expression within the define call is the definition the function above - the one that adds the button. This means that when we import this module elsewhere, all we are importing is the function above. Which we're going to do now!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">define</span>([<span style="color:#e6db74">&#34;cs!app/add_button&#34;</span>]), <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">AddButton</span>){
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Running main.js!&#34;</span>);
+    <span style="color:#a6e22e">AddButton</span>();
+});
+</code></pre></div>
+<p>In this case we've imported the module we just created and associated it with the parameter <i>AddButton. </i>Now within the context of main.js we have access to whatever we exported, which in this case was the single function we defined. By executing it directly we're performing the add button functionality.</p>
+<p><img src="http://4.bp.blogspot.com/-VLwGrtfATDs/T5aUl4tKZ_I/AAAAAAAAAeg/AtRkR6GVrhU/s1600/Screen+Shot+2012-04-24+at+12.54.38.png" alt=""></p>
+<p>Nice!</p>
+
+  </div>
+</section>
+
+
+    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>
+    
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  
+  <script src="/js/resume.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=XX-123446-01"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'XX-123446-01');
+  </script>
+  
+
+  
+</body>
+</html>

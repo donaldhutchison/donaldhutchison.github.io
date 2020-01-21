@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iOS on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/ios/</link>
+    <description>Recent content in iOS on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Mar 2018 12:41:05 -0500</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cocos2D-ObjC - Game Development Tookit for iOS</title>
+      <link>https://donaldhutchison.info/projects/contributions/cocos-2d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/projects/contributions/cocos-2d/</guid>
+      <description>The now defunct Cocos2D-ObjC project was a hugely successful games development library for developing iPhone games. Building on top of OpenGLES, it offered a more performant means of rendering graphics and manipulating visual objects than the UIKit based API offered by default. The scene graph API implemented in Cocos2D is now reflected in Apple&#39;s own SpriteKit framework.
+After using the library for several years in a few mobile game projects, I got a position working as a full time maintainer of the library, making contributions to the core library as well as it&#39;s companion UI building app SpriteBuilder (analogous to Interface Builder for UIKit).</description>
+    </item>
+    
+    <item>
+      <title>Marvelroad (iOS)</title>
+      <link>https://donaldhutchison.info/projects/creations/marvelroad/</link>
+      <pubDate>Sun, 11 Mar 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/projects/creations/marvelroad/</guid>
+      <description>Marvelroad was an app designed around an MVP for Mercedes owners. The idea was to both host a curated selection of enjoyable driving routes, as well as generate new routes and content based on user preferences. The user would provide a list of desirable features, such as landmarks, speed limits, nice views and driving time, and then the app would calculate a driving route based on these choices.
+I was the sole developer for the backend of this app, and created a simple REST api which would provide the app with data and routes based on the user&#39;s choices.</description>
+    </item>
+    
+    <item>
+      <title>Jelly Splash (Android &#43; iOS)</title>
+      <link>https://donaldhutchison.info/projects/creations/jelly-splash/</link>
+      <pubDate>Thu, 11 Jan 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://donaldhutchison.info/projects/creations/jelly-splash/</guid>
+      <description>Jelly Splash was a cross platform mobile game where the goal was to connect as many jellies as possible in order to beat the level and advance. Jelly Splash has had over 75 million players and was a huge success for Wooga.
+As part of the core team, I was involved in daily feature development and maintenance. I focused heavily on the Android side in this project and was personally responsible for porting the game to the Kindle Fire store, where it was heavily featured and relatively successful given the market size.</description>
+    </item>
+    
+    <item>
+      <title>CCNode Recursive Description</title>
+      <link>https://donaldhutchison.info/blog/2014-02-04-ccnode-recursive-description/</link>
+      <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/2014-02-04-ccnode-recursive-description/</guid>
+      <description>recusiveDescription is a pretty cool method. It&#39;s on each UIView, and when called it gives you a quick and dirty description of the current view hierarchy relative to that view.
+Usually you&#39;d use this in the debugger, whilst on a breakpoint, to sanity check the positions and children of a view. This is a short gist that adds the same functionality to a CCNode subclass - the common subclass of most visual entities in a Cocos2d project.</description>
+    </item>
+    
+  </channel>
+</rss>
