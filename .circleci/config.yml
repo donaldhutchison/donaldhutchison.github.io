@@ -13,10 +13,25 @@ jobs:
           name: "Fetch latest release asset"
           command: |
               URL=$(curl --silent "https://api.github.com/repos/rkachowski/donaldhutchison.info/releases/latest?access_token=$GITHUB_TOKEN" | grep '"url":' | grep 'releases/assets' | sed -E 's/.*"([^"]+)".*/\1/')
-              curl -s -K -v -H "Accept: application/octet-stream" $URL?access_token=$GITHUB_TOKEN -o /tmp/release.tar.gz
+              curl -s -L -H "Accept: application/octet-stream" $URL?access_token=$GITHUB_TOKEN -o /tmp/release.tar.gz
       - run:
-          name: "Unzip"
+          name: "Copy id files"
+          command: |
+            cp CNAME /tmp/CNAME
+            cp keybase.txt /tmp/keybase.txt
+      - run:
+          name: "Remove old version"
+          command: |
+            echo pwd
+            rm -fr *
+      - run:
+          name: "Unzip new version"
           command: tar -xzf /tmp/release.tar.gz .
+      - run:
+          name: "Copy id files back"
+          command: |
+            cp /tmp/CNAME CNAME
+            cp /tmp/keybase.txt keybase.txt
 
       - persist_to_workspace:
           root: /home/circleci/project
