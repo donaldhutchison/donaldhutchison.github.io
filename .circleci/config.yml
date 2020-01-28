@@ -48,7 +48,7 @@ jobs:
               git config --global user.email "git@toastymofo.net"
               git config --global user.name "CircleCI Workflow"
               git add .
-              git commit -am "Updated at $(date)"
+              git commit -am "Updated at $(date) [ci skip]"
               git push origin master
 
 
@@ -56,11 +56,7 @@ workflows:
   version: 2
   deploy:
     jobs:
-    - update:
-        filters:
-          branches:
-            only:
-              - force_auto
+    - update
     - commit:
         requires:
         - update
