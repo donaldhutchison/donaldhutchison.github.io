@@ -42,10 +42,14 @@ jobs:
       - attach_workspace:
           at: /home/circleci/project
       - run:
-          name: "Commit me and then push yeah"
+          name: "Commit and push + deploy new changes"
           command: |
-              URL=$(curl --silent "https://api.github.com/repos/rkachowski/donaldhutchison.info/releases/latest?access_token=$GITHUB_TOKEN" | grep '"url":' | grep 'releases/assets' | sed -E 's/.*"([^"]+)".*/\1/')
-              curl -s -K -v -H "Accept: application/octet-stream" $URL?access_token=$GITHUB_TOKEN -o /tmp/release.tar.gz
+              git remote set-url origin https://donaldhutchison:$GITHUB_TOKEN@github.com/donaldhutchison/donaldhutchison.github.io.git
+              git config --global user.email "nobody@nowhere.com"
+              git config --global user.name "CircleCI Workflow"
+              git add .
+              git commit -am "Updated at $(date)"
+              git push origin master
 
 
 workflows:
