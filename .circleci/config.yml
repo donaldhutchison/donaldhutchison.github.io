@@ -45,7 +45,7 @@ jobs:
           name: "Commit and push + deploy new changes"
           command: |
               git remote set-url origin https://donaldhutchison:$GITHUB_TOKEN@github.com/donaldhutchison/donaldhutchison.github.io.git
-              git config --global user.email "nobody@nowhere.com"
+              git config --global user.email "git@toastymofo.net"
               git config --global user.name "CircleCI Workflow"
               git add .
               git commit -am "Updated at $(date)"
@@ -56,7 +56,11 @@ workflows:
   version: 2
   deploy:
     jobs:
-    - update
+    - update:
+        filters:
+          branches:
+            only:
+              - force_auto
     - commit:
         requires:
         - update
