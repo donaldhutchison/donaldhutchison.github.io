@@ -12,8 +12,8 @@ jobs:
       - run:
           name: "Fetch latest release asset"
           command: |
-              URL=$(curl --silent "https://api.github.com/repos/rkachowski/donaldhutchison.info/releases/latest?access_token=$GITHUB_TOKEN" | grep '"url":' | grep 'releases/assets' | sed -E 's/.*"([^"]+)".*/\1/')
-              curl -s -L -H "Accept: application/octet-stream" $URL?access_token=$GITHUB_TOKEN -o /tmp/release.tar.gz
+              URL=$(curl --silent -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/repos/rkachowski/donaldhutchison.info/releases/latest" | grep '"url":' | grep 'releases/assets' | sed -E 's/.*"([^"]+)".*/\1/')
+              curl -s -L -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/octet-stream" $URL -o /tmp/release.tar.gz
       - run:
           name: "Copy id files"
           command: |
