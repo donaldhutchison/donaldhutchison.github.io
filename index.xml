@@ -33,6 +33,16 @@ After using the library for several years in a few mobile game projects, I got a
     </item>
     
     <item>
+      <title>Advent of Code 2020</title>
+      <link>https://donaldhutchison.info/blog/advent-of-code-2020/</link>
+      <pubDate>Sun, 10 Jan 2021 21:38:41 +0100</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/advent-of-code-2020/</guid>
+      <description>Completed! I finished the Advent of Code for 2020, and this time pushed myself past the holiday indulgences to actually complete all 50 challenges!
+I pushed myself to use Elixir for everything this year, and barring a few small instances where being able to mutate a value would have saved me a lot of headaches (specifically this evil creation) it was a pretty awesome experience. Aside from the usual 2D grid geometry problems, there were a lot of new things in there and I discovered some nice things on the way.</description>
+    </item>
+    
+    <item>
       <title>Marvelroad (iOS)</title>
       <link>https://donaldhutchison.info/projects/creations/marvelroad/</link>
       <pubDate>Sun, 11 Mar 2018 12:41:05 -0500</pubDate>

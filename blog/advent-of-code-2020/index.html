@@ -78,22 +78,92 @@
 
   <div class="container-fluid p-0">
     
+<nav aria-label="breadcrumb">
+  <ol  class="breadcrumb">
+    
+
+
+
+
+
+<li class="breadcrumb-item">
+  <a href="https://donaldhutchison.info/"></a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="https://donaldhutchison.info/blog/">Blogs</a>
+</li>
+
+
+<li class="breadcrumb-item active">
+  <a href="https://donaldhutchison.info/blog/advent-of-code-2020/">Advent of Code 2020</a>
+</li>
+
+  </ol>
+</nav>
+
+
+
 
 <section class="resume-section p-3 p-lg-5 d-flex d-column">
   <div class="my-auto">
+    <h2 class="mb-0"><span class="text-primary">Advent of Code 2020</span></h2>
+    <span class="text-primary">January 10, 2021</span>
+    <h3 id="completed">Completed!</h3>
+<p>I finished the <a href="https://www.adventofcode.com">Advent of Code</a> for 2020, and this time pushed myself past the holiday indulgences to actually complete all 50 challenges!</p>
+<p>I pushed myself to use Elixir for everything this year, and barring a few small instances where being able to mutate a value would have saved me a lot of headaches (specifically <a href="https://adventofcode.com/2020/day/23">this</a> evil creation) it was a pretty awesome experience. Aside from the usual 2D grid geometry problems, there were a lot of new things in there and I discovered some nice things on the way.</p>
+<p>Here's some unsorted notes and discoveries I made during the whole process.</p>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>Elixir's pattern matching is really nice for interpreting VM instructions
+<ul>
+<li>Just pattern match the op code, extract the params and do the operation!</li>
+</ul>
+</li>
+<li>Conway's game of life can be extended to higher dimensions (hypercubes of life haha)
+<ul>
+<li>Simply keep track of the live nodes, and create a function to find the neighbors of each node</li>
+<li>The number of times a certain neighbor is duplicated in the output is the number of live neighbors it has</li>
+<li>By changing the neighbor function to work on 2D, 3D or 4D coordinates, you get the behavior of the system in a higher dimension!</li>
+</ul>
+</li>
+<li>Day 20 was by far the most involving
+<ul>
+<li>To even get to validate the test cases took a lot of effort</li>
+<li>A lot of image convolution</li>
+</ul>
+</li>
+<li>Elixir / Erlang map keys are ordered by default up to 32 entries
+<ul>
+<li>This frustrates a lot of image convolution, especially when the test cases are far below 32x32..</li>
+<li><a href="https://github.com/erlang/otp/blob/1dbfc5fdc7dfecd69bb7e8a86fbadc844c5ffa58/erts/emulator/beam/erl_map.h#L73-L77">https://github.com/erlang/otp/blob/1dbfc5fdc7dfecd69bb7e8a86fbadc844c5ffa58/erts/emulator/beam/erl_map.h#L73-L77</a></li>
+<li>Explicitly call your map keys in order if you need order!</li>
+</ul>
+</li>
+<li>Regex lookahead is a thing
+<ul>
+<li>I've somehow never needed to find overlapping matches in a pattern space before</li>
+<li>A deep sense of fear sets within me..</li>
+</ul>
+</li>
+</ul>
+<p>Checkout the code in my <a href="https://github.com/rkachowski/advent-of-code/tree/master/2020">GitHub Repo</a></p>
+<p>
+<img src="/img/adventofcode2020.png " alt="drawing" width="50%"/>
+</p>
 
-  Content tagged with  <span class="tag">learning</span>
-    <ul>
-      
-          <li>
-             <a href="https://donaldhutchison.info/blog/advent-of-code-2020/">Advent of Code 2020</a>
-         </li>
-      
-          <li>
-             <a href="https://donaldhutchison.info/blog/2016-03-28-anki-rb/">AnkiRB - spaced repetition flashcards made in ruby</a>
-         </li>
-      
-    </ul>
+    
+    <ul class="tags">
+    
+      <li><a class="tag" href="/tags/elixir">elixir</a></li>
+    
+      <li><a class="tag" href="/tags/learning">learning</a></li>
+    
+      <li><a class="tag" href="/tags/advent-of-code">advent of code</a></li>
+    
+</ul>
+
   </div>
 </section>
 

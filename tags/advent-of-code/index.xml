@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>advent of code on Donald Hutchison! Software Development!</title>
+    <link>https://donaldhutchison.info/tags/advent-of-code/</link>
+    <description>Recent content in advent of code on Donald Hutchison! Software Development!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Jan 2021 21:38:41 +0100</lastBuildDate>
+    
+	<atom:link href="https://donaldhutchison.info/tags/advent-of-code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Advent of Code 2020</title>
+      <link>https://donaldhutchison.info/blog/advent-of-code-2020/</link>
+      <pubDate>Sun, 10 Jan 2021 21:38:41 +0100</pubDate>
+      
+      <guid>https://donaldhutchison.info/blog/advent-of-code-2020/</guid>
+      <description>Completed! I finished the Advent of Code for 2020, and this time pushed myself past the holiday indulgences to actually complete all 50 challenges!
+I pushed myself to use Elixir for everything this year, and barring a few small instances where being able to mutate a value would have saved me a lot of headaches (specifically this evil creation) it was a pretty awesome experience. Aside from the usual 2D grid geometry problems, there were a lot of new things in there and I discovered some nice things on the way.</description>
+    </item>
+    
+  </channel>
+</rss>

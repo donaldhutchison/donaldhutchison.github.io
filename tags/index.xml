@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Donald Hutchison! Software Development!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Mar 2018 12:41:05 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 10 Jan 2021 21:38:41 +0100</lastBuildDate>
     
 	<atom:link href="https://donaldhutchison.info/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>advent of code</title>
+      <link>https://donaldhutchison.info/tags/advent-of-code/</link>
+      <pubDate>Sun, 10 Jan 2021 21:38:41 +0100</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/advent-of-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>elixir</title>
+      <link>https://donaldhutchison.info/tags/elixir/</link>
+      <pubDate>Sun, 10 Jan 2021 21:38:41 +0100</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/elixir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>learning</title>
+      <link>https://donaldhutchison.info/tags/learning/</link>
+      <pubDate>Sun, 10 Jan 2021 21:38:41 +0100</pubDate>
+      
+      <guid>https://donaldhutchison.info/tags/learning/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>AWS</title>
@@ -197,15 +224,6 @@
       <pubDate>Mon, 28 Mar 2016 21:26:45 +0000</pubDate>
       
       <guid>https://donaldhutchison.info/tags/anki/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>learning</title>
-      <link>https://donaldhutchison.info/tags/learning/</link>
-      <pubDate>Mon, 28 Mar 2016 21:26:45 +0000</pubDate>
-      
-      <guid>https://donaldhutchison.info/tags/learning/</guid>
       <description></description>
     </item>
     
